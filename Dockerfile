@@ -43,7 +43,7 @@ COPY /first_toot/index.html /srv/shiny-server/first_toot
 
 
 
-# EXPOSE 3838
+EXPOSE 3838
 
 # COPY shiny-server.sh /usr/bin/shiny-server.sh
 # CMD ["/usr/bin/shiny-server.sh"]
