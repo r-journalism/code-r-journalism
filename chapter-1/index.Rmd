@@ -1,5 +1,8 @@
 ---
 title: "Chapter 1"
+tutorial:
+  id: "code.r-journalism/chapter-1"
+  version: .8
 output:
   learnr::tutorial:
     progressive: true
@@ -11,10 +14,7 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 library(tidyverse)
-library(checkr)
 knitr::opts_chunk$set(echo = FALSE)
-tutorial_options(exercise.checker = checkr::check_for_learnr)
-#knitr::opts_chunk$set(exercise.checker = checker)
 ```
 
 
@@ -24,8 +24,12 @@ tutorial_options(exercise.checker = checkr::check_for_learnr)
 
 Assign the number 17 to the object **ub**
 
-```{r object-check, exercise=T, exercise.timelimit=60}
-ub    17
+```{r ub, include=FALSE}
+ub <- NA
+```
+
+```{r object, exercise=T, exercise.timelimit=60}
+ub    
 
 ub
 ```

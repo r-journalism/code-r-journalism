@@ -1,0 +1,136 @@
+---
+title: "Chapter 2"
+tutorial:
+  id: "code.r-journalism/chapter-2"
+  version: .8
+output:
+  learnr::tutorial:
+    progressive: true
+    theme: lumen
+    highlight: espresso
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+#install.packages("learnr")
+#install.packages("tidyverse")
+library(learnr)
+library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## CSVs
+
+```{r quiz1, echo=FALSE}
+quiz(caption = "Quiz 1",
+  question("If you import a CSV with read.csv(), what argument do you pass to make sure strings are not interpreted as factors?",
+    answer('read.csv("data.csv", stringsAsFactors=F)', correct=T),
+    answer('read.csv("data.csv", interpretStrings=T)'),
+    answer('read.csv("data.csv", factors=F)'),
+    answer('read.csv("data.csv", strings=T)'),
+    random_answer_order= TRUE
+  ),
+  question("When exporting a csv, how do you get rid of NAs with the readr package?",
+    answer('write_csv(df_csv, "data/transformed_data.csv", na="")', correct = TRUE),
+    answer('write.csv(df_csv, "data/transformed_data.csv", na="")'),
+    answer('write_csv(df_csv, "data/transformed_data.csv", NA="")'),
+    answer('write.csv(df_csv, "data/transformed_data.csv", is.na=F)'),
+    random_answer_order= TRUE
+  )
+)
+
+```
+
+## Excel
+
+```{r quiz2, echo=FALSE}
+quiz(caption = "Quiz 2",
+  question("If you import an Excel file and it has 5 buffer rows at the top before the real data starts, how do you deal with that using the **readxl** package?",
+    answer('read_excel("stats.xls", sheet=1, skip=5)', correct=T),
+    answer('read_excel("stats.xls", sheet=1, row=5)'),
+    answer('read_excel("stats.xls", sheet=1, row=6)'),
+    answer('read_excel("stats.xls", sheet=1, row=6)'),
+    random_answer_order= TRUE
+  ),
+  question("When exporting a csv, how do you get rid of NAs with the readr package?",
+    answer('write_csv(df_csv, "data/transformed_data.csv", na="")', correct = TRUE),
+    answer('write.csv(df_csv, "data/transformed_data.csv", na="")'),
+    answer('write_csv(df_csv, "data/transformed_data.csv", NA="")'),
+    answer('write.csv(df_csv, "data/transformed_data.csv", is.na=F)'),
+    random_answer_order= TRUE
+  )
+)
+```
+
+
+### Column names
+
+What if you import in a spreadsheet with a space in the column name like below?
+
+```{r column_names, include=F}
+burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), shirt=c("White", "Red", "Pink", "Blue", "Yellow"))
+burgers$shirt<- factor(burgers$shirt)
+burgers$id <- factor(burgers$id)
+burgers$name <- as.character(burgers$name)
+burgers <- rename(burgers, `First name`=name)
+```
+
+```{r show_burgers}
+burgers
+```
+
+How do you refer to the the *First name* variable/column with **$** and not the **[]**?
+
+```{r variable2, exercise=T, exercise.timelimit=60}
+# Add to the line below
+
+burgers$
+```
+
+### Clean up column name
+
+Run the command on the *First name* variable/column to strip out the spaces and characters and replace them with periods.
+
+```{r variable3, exercise=T, exercise.timelimit=60}
+# Modify the line of code below
+
+colnames(burgers) <-     colnames(burgers)
+```
+
+### Rename a column
+
+Use the special **dplyr** function to rename the *id* variable in **burgers** to *employee_id*
+
+```{r rename, exercise=T, exercise.timelimit=60}
+# Modify the line of code below
+
+burgers <- 
+  
+burgers
+```
+
+
+### Filter out NAs
+
+```{r na_df, include=F}
+burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), grade=c(NA, NA, "seventh", "eighth", "sixth"))
+burgers$grade <- factor(burgers$grade)
+burgers$id <- factor(burgers$id)
+burgers$name <- as.character(burgers$name)
+burgers <- rename(burgers, `First name`=name)
+```
+
+```{r show_burgers2}
+burgers
+```
+
+Create a new data frame called **kids** by filtering out the NAs from *grade* column in **burgers**.
+
+```{r filter, exercise=T, exercise.timelimit=60}
+# Modify the line of code below
+
+kids <-     burgers
+
+kids
+```

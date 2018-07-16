@@ -1,0 +1,10 @@
+title: "r-class"
+name: "nicks-website"
+output_dir: "."
+navbar:
+  title: "Nicks Website"
+  left:
+    - text: "Home"
+      href: "https://r-journalism.com"
+    - text: "extra"
+      href: index.html
