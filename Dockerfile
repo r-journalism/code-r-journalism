@@ -33,9 +33,9 @@ RUN export JAVA_HOME
 RUN R -e "install.packages(c('shiny', 'shinydashboard', 'tidyverse', 'learnr', 'rmarkdown'), repos='http://cran.rstudio.com/')"
 
 
-RUN mkdir -p /srv/shiny-server/chapter-7
-COPY /chapter-7/index.Rmd /srv/shiny-server/chapter-7
-COPY /chapter-7/index.html /srv/shiny-server/chapter-7
+RUN mkdir -p /srv/shiny-server/chapter-1
+COPY /chapter-1/index.Rmd /srv/shiny-server/chapter-1
+COPY /chapter-1/index.html /srv/shiny-server/chapter-1
 
 
 
