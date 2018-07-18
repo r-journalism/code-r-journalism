@@ -1,0 +1,495 @@
+﻿NOAA ID,Acquisition,Name,Sex,Species,Birth Date,Captivity Date,Owner,Facility,Purpose,Status,Facility Date
+NOA0000141,UNKNOWN,-,MALE,Killer Whale; Orca,1-Jan-78,Unknown,Windsor Safari Park,Windsor Safari Park,Public Display,DEAD,Unknown
+NOA0000719,UNKNOWN,BLANCHON,MALE,Beluga Whale,-,Unknown,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000719,TRANSFER,BLANCHON,MALE,Beluga Whale,-,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000719,TRANSPORT,BLANCHON,MALE,Beluga Whale,-,-,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,19-Jun-62
+NOA0000720,CAPTURE,KATHY,FEMALE,Beluga Whale,1-Jan-72,25-Jul-76,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000720,TRANSFER,KATHY,FEMALE,Beluga Whale,1-Jan-72,-,Mystic Aquarium,New York Aquarium,Public Display,-,-
+NOA0000720,TRANSPORT,AMY LOU,FEMALE,Beluga Whale,1-Jan-72,-,Mystic Aquarium,New York Aquarium,Public Display,-,29-Jul-76
+NOA0000720,TRANSFER,AMY LOU,FEMALE,Beluga Whale,1-Jan-72,-,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,-
+NOA0000721,CAPTURE,KATHY,FEMALE,Beluga Whale,1-Jan-69,15-Jul-73,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000721,TRANSFER,KATHY,FEMALE,Beluga Whale,1-Jan-69,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0000721,TRANSPORT,KATHY,FEMALE,Beluga Whale,1-Jan-69,-,Sea World LLC,Unknown,Public Display,-,Unknown
+NOA0000721,TRANSFER,KATHY,FEMALE,Beluga Whale,1-Jan-69,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000721,TRANSPORT,KATHY,FEMALE,Beluga Whale,1-Jan-69,-,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,24-Feb-76
+NOA0000722,UNKNOWN,NEWFY,MALE,Beluga Whale,1-Jan-70,Unknown,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000722,TRANSFER,NEWFY,MALE,Beluga Whale,1-Jan-70,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000722,TRANSPORT,NEWFY,MALE,Beluga Whale,1-Jan-70,-,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,22-Jul-75
+NOA0000723,UNKNOWN,-,UNKNOWN,Beluga Whale,-,Unknown,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,Unknown
+NOA0000724,UNKNOWN,-,UNKNOWN,Beluga Whale,-,Unknown,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,Unknown
+NOA0000737,BIRTH,NYCI,FEMALE,Beluga Whale,24-Aug-81,24-Aug-81,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,24-Aug-81
+NOA0000748,CAPTURE,-,FEMALE,Beluga Whale,1-Jan-80,16-Jul-84,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000748,TRANSFER,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000748,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,16-Jul-84
+NOA0000748,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,Mystic Aquarium,Public Display,-,18-Dec-02
+NOA0000748,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,26-May-05
+NOA0000748,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,Georgia Aquarium,Public Display,-,7-Nov-05
+NOA0000748,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,Sea World of Texas,Public Display,ALIVE,5-Oct-09
+NOA0000749,CAPTURE,-,FEMALE,Beluga Whale,1-Jan-80,20-Jul-84,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000749,TRANSFER,KRISTOL,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000749,TRANSPORT,KRISTOL,FEMALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,22-Jul-84
+NOA0000750,CAPTURE,WINSTON,MALE,Beluga Whale,1-Jan-80,16-Jul-84,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000750,TRANSFER,WINSTON,MALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000750,TRANSPORT,WINSTON,MALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,22-Jul-84
+NOA0000750,TRANSPORT,WINSTON,MALE,Beluga Whale,1-Jan-80,-,Wildlife Conservation Society,Mystic Aquarium,Public Display,DEAD,7-Oct-96
+NOA0000764,CAPTURE,MARINA,FEMALE,Beluga Whale,1-Jan-83,25-Jul-87,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000764,TRANSFER,MARINA,FEMALE,Beluga Whale,1-Jan-83,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0000764,TRANSPORT,MARINA,FEMALE,Beluga Whale,1-Jan-83,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,2-Aug-87
+NOA0000764,TRANSPORT,MARINA,FEMALE,Beluga Whale,1-Jan-83,-,Wildlife Conservation Society,Georgia Aquarium,Public Display,DEAD,7-Nov-05
+NOA0000787,BIRTH,HUDSON,MALE,Beluga Whale,7-Aug-91,7-Aug-91,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,7-Aug-91
+NOA0000788,BIRTH,CASEY,MALE,Beluga Whale,14-Aug-91,14-Aug-91,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,14-Aug-91
+NOA0000798,BIRTH,AURORA,FEMALE,Beluga Whale,6-Jul-93,6-Jul-93,Wildlife Conservation Society,New York Aquarium,Public Display,DEAD,6-Jul-93
+NOA0000946,CAPTURE,-,MALE,Beluga Whale,1-Jan-70,22-Jul-75,Mystic Aquarium,Mystic Aquarium,Public Display,-,22-Jul-75
+NOA0000946,TRANSFER,-,MALE,Beluga Whale,1-Jan-70,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0000946,TRANSPORT,-,MALE,Beluga Whale,1-Jan-70,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,26-Jul-75
+NOA0000947,CAPTURE,-,FEMALE,Beluga Whale,1-Jan-71,24-Jul-75,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0000947,TRANSFER,OKANITOO,FEMALE,Beluga Whale,1-Jan-71,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0000947,TRANSPORT,OKANITOO,FEMALE,Beluga Whale,1-Jan-71,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,26-Jul-75
+NOA0000948,CAPTURE,ALEX,MALE,Beluga Whale,1-Jan-59,28-Aug-61,Wildlife Conservation Society,New York Aquarium,Public Display,-,28-Aug-61
+NOA0000948,TRANSFER,ALEX,MALE,Beluga Whale,1-Jan-59,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0000948,TRANSPORT,ALEX,MALE,Beluga Whale,1-Jan-59,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,6-May-76
+NOA0001071,CAPTURE,NANUK,MALE,Beluga Whale,1-Jan-80,16-Jul-84,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,22-Jul-84
+NOA0001071,TRANSFER,NANUK,MALE,Beluga Whale,1-Jan-80,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0001071,TRANSPORT,NANUK,MALE,Beluga Whale,1-Jan-80,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,22-Jul-84
+NOA0001072,CAPTURE,AURORA,FEMALE,Beluga Whale,1-Jan-81,17-Jul-84,Mystic Aquarium,Mystic Aquarium,Public Display,-,22-Jul-84
+NOA0001072,TRANSFER,AURORA,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0001072,TRANSPORT,AURORA,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,22-Jul-84
+NOA0001077,CAPTURE,KELA,FEMALE,Beluga Whale,1-Jan-81,31-Jul-85,Mystic Aquarium,Mystic Aquarium,Public Display,-,4-Aug-85
+NOA0001077,TRANSFER,KELALUKAK,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0001077,TRANSPORT,KELA,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,ALIVE,4-Aug-85
+NOA0001079,CAPTURE,NAKU,FEMALE,Beluga Whale,1-Jan-81,29-Jul-85,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0001079,TRANSFER,NAKUNGAYOK,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,-,-
+NOA0001079,TRANSPORT,NAKUNGAYOK,FEMALE,Beluga Whale,1-Jan-81,-,Mystic Aquarium,Mystic Aquarium,Public Display,DEAD,4-Aug-85
+NOA0001332,CAPTURE,NUKILIK,MALE,Beluga Whale,1-Jan-69,31-Jul-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0001332,TRANSFER,NUKILIK,MALE,Beluga Whale,1-Jan-69,-,Minnesota Zoological Garden,Minnesota Zoological Garden,Public Display,-,-
+NOA0001332,TRANSPORT,NUKILIK,MALE,Beluga Whale,1-Jan-69,-,Minnesota Zoological Garden,Minnesota Zoological Garden,Public Display,DEAD,16-Aug-77
+NOA0001333,CAPTURE,ANANA,FEMALE,Beluga Whale,1-Jan-74,11-Aug-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0001333,TRANSFER,ANANA,FEMALE,Beluga Whale,1-Jan-74,-,Minnesota Zoological Garden,Minnesota Zoological Garden,Public Display,-,-
+NOA0001333,TRANSPORT,ANANA,FEMALE,Beluga Whale,1-Jan-74,-,Minnesota Zoological Garden,Minnesota Zoological Garden,Public Display,DEAD,16-Aug-77
+NOA0001460,CAPTURE,BONNIE,FEMALE,Killer Whale; Orca,1-Jan-64,9-May-68,Marine World Africa USA,Marine World Africa USA,Public Display,DEAD,Unknown
+NOA0001461,CAPTURE,NEPO,MALE,Killer Whale; Orca,1-Jan-66,15-Dec-69,Marine World Africa USA,Marine World Africa USA,Public Display,DEAD,Unknown
+NOA0001462,CAPTURE,YAKA,FEMALE,Killer Whale; Orca,1-Jan-65,15-Dec-69,Marine World Africa USA,Marine World Africa USA,Public Display,-,Unknown
+NOA0001462,TRANSFER,YAKA,FEMALE,Killer Whale; Orca,1-Jan-65,-,Marine World Joint Powers Authority,Marine World Africa USA,Public Display,DEAD,-
+NOA0001484,CAPTURE,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,19-Nov-80,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0001484,TRANSFER,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,-,Marine World Africa USA,Marine World Africa USA,Public Display,-,-
+NOA0001484,TRANSPORT,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,-,Marine World Africa USA,Marine World Africa USA,Public Display,-,15-Mar-81
+NOA0001484,TRANSFER,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,-,Marine World Joint Powers Authority,Marine World Africa USA,Public Display,-,-
+NOA0001484,TRANSPORT,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,-,Marine World Joint Powers Authority,Marine World,Public Display,-,1-Mar-98
+NOA0001484,TRANSPORT,VIGGA,FEMALE,Killer Whale; Orca,1-Jan-77,-,Marine World Joint Powers Authority,Six Flags Marine World,Public Display,DEAD,1-Dec-98
+NOA0002126,CAPTURE,ANORE,FEMALE,Beluga Whale,1-Jan-82,29-Jul-85,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0002126,TRANSFER,ANORE,FEMALE,Beluga Whale,1-Jan-82,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,-
+NOA0002126,TRANSPORT,ANORE,FEMALE,Beluga Whale,1-Jan-82,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,DEAD,29-Jul-85
+NOA0002127,CAPTURE,ANORE,FEMALE,Beluga Whale,1-Jan-82,29-Jul-85,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0002127,TRANSFER,ILLAMAR,FEMALE,Beluga Whale,1-Jan-82,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,-
+NOA0002127,TRANSPORT,ANORE,FEMALE,Beluga Whale,1-Jan-82,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,DEAD,29-Jul-85
+NOA0002277,UNKNOWN,INUK,MALE,Beluga Whale,1-Jan-81,Unknown,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0002277,TRANSFER,INUK,MALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,-
+NOA0002277,TRANSPORT,INUK,MALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,10-Jul-84
+NOA0002277,TRANSPORT,INUK,MALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Shedd (John G.) Aquarium,Public Display,-,16-Mar-97
+NOA0002277,TRANSPORT,INUK,MALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Mystic Aquarium,Public Display,DEAD,13-Dec-99
+NOA0002278,UNKNOWN,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,Unknown,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0002278,TRANSFER,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,-
+NOA0002278,TRANSPORT,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,9-Jul-84
+NOA0002278,TRANSPORT,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Shedd (John G.) Aquarium,Public Display,-,16-Mar-97
+NOA0002278,TRANSPORT,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Mystic Aquarium,Public Display,-,4-Sep-08
+NOA0002278,TRANSPORT,MAUYAK,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,2-May-09
+NOA0002279,CAPTURE,-,FEMALE,Beluga Whale,1-Jan-81,9-Jul-84,unreported facility in Canada,unreported facility in Canada,Public Display,-,9-Jul-84
+NOA0002279,TRANSFER,-,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,-
+NOA0002279,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,9-Jul-84
+NOA0002279,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-81,-,Point Defiance Zoo and Aquarium,Sea World of California,Public Display,DEAD,22-Nov-98
+NOA0002290,BIRTH,-,MALE,Beluga Whale,2-Aug-92,2-Aug-92,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,DEAD,2-Aug-92
+NOA0002292,BIRTH,-,FEMALE,Beluga Whale,15-Jul-94,15-Jul-94,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,DEAD,15-Jul-94
+NOA0002491,CAPTURE,-,MALE,Beluga Whale,-,16-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,16-Jul-79
+NOA0002491,TRANSFER,-,MALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002491,TRANSPORT,-,MALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,24-Jul-79
+NOA0002492,CAPTURE,-,MALE,Beluga Whale,-,16-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,16-Jul-79
+NOA0002492,TRANSFER,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002492,TRANSPORT,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,12-Nov-91
+NOA0002493,CAPTURE,-,FEMALE,Beluga Whale,-,16-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,16-Jul-79
+NOA0002493,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002493,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,4-Oct-86
+NOA0002494,CAPTURE,-,FEMALE,Beluga Whale,-,16-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,16-Jul-79
+NOA0002494,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002494,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,DEAD,5-May-95
+NOA0002495,CAPTURE,-,FEMALE,Beluga Whale,-,22-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,22-Jul-79
+NOA0002495,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002495,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,17-Sep-83
+NOA0002496,CAPTURE,-,FEMALE,Beluga Whale,-,22-Jul-79,unreported facility in Canada,unreported facility in Canada,Public Display,-,22-Jul-79
+NOA0002496,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002496,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,24-Jul-79
+NOA0002497,CAPTURE,-,FEMALE,Beluga Whale,-,15-Jul-73,unreported facility in unspecified foreign country,Seattle Aquarium,Public Display,-,15-Jul-73
+NOA0002497,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002497,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,25-Oct-73
+NOA0002498,CAPTURE,-,FEMALE,Beluga Whale,-,22-Jul-73,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,22-Jul-73
+NOA0002498,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002498,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,25-Oct-73
+NOA0002499,CAPTURE,-,FEMALE,Beluga Whale,-,15-Jul-73,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,15-Jul-73
+NOA0002499,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002499,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Unknown,Public Display,DEAD,25-Oct-73
+NOA0002500,UNKNOWN,KATHY,MALE,Beluga Whale,1-Jan-71,22-Jul-75,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,22-Jul-75
+NOA0002500,TRANSFER,KATHY,MALE,Beluga Whale,1-Jan-71,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,-
+NOA0002500,TRANSPORT,KATHY,MALE,Beluga Whale,1-Jan-71,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,22-Jul-75
+NOA0002500,TRANSFER,KATHY,MALE,Beluga Whale,1-Jan-71,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0002500,TRANSPORT,KATHY,MALE,Beluga Whale,1-Jan-71,-,Sea World LLC,Sea World of California,Public Display,DEAD,25-Feb-76
+NOA0002501,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-75,1-Jan-78,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-78
+NOA0002501,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-75,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002501,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-75,-,Sea World LLC,Sea World of Florida,Public Display,ALIVE,23-Nov-84
+NOA0002502,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-76,1-Jan-78,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-78
+NOA0002502,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002502,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Unknown,Public Display,DEAD,26-Oct-78
+NOA0002503,CAPTURE,-,FEMALE,Killer Whale; Orca,-,1-Jan-78,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-78
+NOA0002503,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002503,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,DEAD,26-Oct-78
+NOA0002504,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-76,1-Jan-78,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-78
+NOA0002504,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002504,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Unknown,Public Display,DEAD,26-Oct-78
+NOA0002505,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-76,1-Jan-78,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-78
+NOA0002505,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0002505,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-76,-,Sea World LLC,Sea World of California,Public Display,DEAD,13-Feb-90
+NOA0002506,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-74,1-Jan-76,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-76
+NOA0002506,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-74,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002506,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-74,-,Sea World LLC,Unknown,Public Display,DEAD,9-Jun-77
+NOA0002507,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-75,1-Jan-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-77
+NOA0002507,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-75,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002507,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-75,-,Sea World LLC,Unknown,Public Display,DEAD,12-Dec-77
+NOA0002508,CAPTURE,-,MALE,Killer Whale; Orca,-,1-Jan-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-77
+NOA0002508,TRANSFER,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002508,TRANSPORT,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,DEAD,12-Dec-77
+NOA0002509,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-74,1-Jan-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,1-Jan-77
+NOA0002509,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-74,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002509,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-74,-,Sea World LLC,Unknown,Public Display,DEAD,12-Dec-77
+NOA0002510,CAPTURE,-,MALE,Killer Whale; Orca,-,25-Feb-67,Sea World LLC,Sea World of Florida,Public Display,DEAD,21-Mar-75
+NOA0002511,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-63,1-Jun-70,"Trident Television, Ltd.","Windsor Safari Park, Ltd.",Public Display,-,1-Jun-70
+NOA0002511,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-63,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002511,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-63,-,Sea World LLC,Unknown,Public Display,DEAD,17-Oct-76
+NOA0002512,CAPTURE,-,FEMALE,Killer Whale; Orca,-,27-Aug-71,Sea World LLC,Sea World of Florida,Public Display,DEAD,9-Dec-73
+NOA0002513,CAPTURE,-,MALE,Killer Whale; Orca,-,12-Mar-72,Sea World LLC,Sea World of Florida,Public Display,DEAD,18-Nov-73
+NOA0002514,STRANDED,-,MALE,Killer Whale; Orca,-,13-Mar-73,Sea World LLC,Sea World of Florida,Public Display,DEAD,2-Oct-77
+NOA0002515,CAPTURE,-,MALE,Killer Whale; Orca,-,Unknown,Sea World LLC,Sea World of California,Public Display,DEAD,11-Mar-67
+NOA0002516,CAPTURE,-,FEMALE,Killer Whale; Orca,-,31-Oct-65,Sea World LLC,Sea World of California,Public Display,DEAD,25-Dec-65
+NOA0002517,CAPTURE,-,FEMALE,Killer Whale; Orca,-,15-Feb-67,Sea World LLC,Sea World of California,Public Display,DEAD,16-Dec-69
+NOA0002518,CAPTURE,-,FEMALE,Killer Whale; Orca,-,26-Aug-71,Sea World LLC,Sea World of California,Public Display,DEAD,10-Sep-71
+NOA0002519,CAPTURE,-,MALE,Killer Whale; Orca,-,1-Jul-73,unreported facility in Canada,unreported facility in Canada,Public Display,-,1-Jul-73
+NOA0002519,TRANSFER,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002519,TRANSPORT,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,DEAD,25-Oct-73
+NOA0002817,BIRTH,-,FEMALE,Killer Whale; Orca,26-Sep-85,26-Sep-85,Sea World LLC,Sea World of Florida,Public Display,DEAD,29-Oct-94
+NOA0002826,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-62,1-Mar-70,Marineland of Canada,Marineland of Canada,Public Display,-,Unknown
+NOA0002826,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-62,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002826,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-62,-,Sea World LLC,Unknown,Public Display,DEAD,27-Apr-86
+NOA0002835,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-65,16-Aug-75,Marineland of Canada,Marineland of Canada,Public Display,-,1-Oct-75
+NOA0002835,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-65,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002835,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-65,-,Sea World LLC,Unknown,Public Display,DEAD,9-Jan-87
+NOA0002846,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-58,10-May-68,"Twentieth Century-Fox Marineland, Inc.","Twentieth Century-Fox Marineland, Inc.",Public Display,-,10-May-68
+NOA0002846,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-58,-,Hanna-Barbera's Marineland (Marineland of the Pacific),Hanna-Barbera's Marineland (Marineland of the Pacific),Public Display,-,-
+NOA0002846,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-58,-,Hanna-Barbera's Marineland (Marineland of the Pacific),Hanna-Barbera's Marineland (Marineland of the Pacific),Public Display,-,7-Nov-77
+NOA0002846,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-58,-,Marineland Amusements Corporation,Marineland Amusements Corporation,Public Display,-,-
+NOA0002846,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-58,-,Marineland Amusements Corporation,Marineland Amusements Corporation,Public Display,-,11-Jan-82
+NOA0002846,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-58,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0002846,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-58,-,Sea World LLC,Sea World of California,Public Display,DEAD,21-Jan-87
+NOA0002847,CAPTURE,-,FEMALE,Killer Whale; Orca,-,Unknown,"Twentieth Century-Fox Marineland, Inc.","Twentieth Century-Fox Marineland, Inc.",Public Display,-,27-Dec-69
+NOA0002847,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Hanna-Barbera's Marineland (Marineland of the Pacific),Hanna-Barbera's Marineland (Marineland of the Pacific),Public Display,-,-
+NOA0002847,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Hanna-Barbera's Marineland (Marineland of the Pacific),Hanna-Barbera's Marineland (Marineland of the Pacific),Public Display,-,7-Nov-77
+NOA0002847,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Marineland Amusements Corporation,Marineland Amusements Corporation,Public Display,-,-
+NOA0002847,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Marineland Amusements Corporation,Marineland Amusements Corporation,Public Display,-,11-Jan-82
+NOA0002847,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0002847,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of California,Public Display,ALIVE,21-Jan-87
+NOA0002916,CAPTURE,-,MALE,Beluga Whale,-,18-Jul-87,unreported facility in unspecified foreign country,Sea World of California,Public Display,-,22-Jul-87
+NOA0002916,TRANSFER,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002916,TRANSPORT,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,12-Nov-91
+NOA0002917,CAPTURE,-,FEMALE,Beluga Whale,-,19-Jul-87,unreported facility in unspecified foreign country,Sea World of California,Public Display,-,22-Jul-87
+NOA0002917,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002917,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,15-Feb-88
+NOA0002918,CAPTURE,-,FEMALE,Beluga Whale,-,19-Jul-87,unreported facility in unspecified foreign country,Sea World of California,Public Display,-,22-Jul-87
+NOA0002918,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002918,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,DEAD,5-May-95
+NOA0002919,CAPTURE,-,MALE,Beluga Whale,-,20-Jul-87,unreported facility in unspecified foreign country,Sea World of California,Public Display,-,22-Jul-87
+NOA0002919,TRANSFER,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002919,TRANSPORT,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,5-May-95
+NOA0002919,TRANSPORT,-,MALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,18-Oct-98
+NOA0002920,CAPTURE,-,FEMALE,Killer Whale; Orca,-,13-Nov-76,Zeedierenpark Harderwijk B V,Zeedierenpark Harderwijk B V,Public Display,-,Unknown
+NOA0002920,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002920,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Florida,Public Display,DEAD,17-Nov-87
+NOA0002947,CAPTURE,-,FEMALE,Beluga Whale,-,16-Jul-88,unreported facility in unspecified foreign country,Sea World of Texas,Public Display,-,21-Jul-88
+NOA0002947,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0002947,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Florida,Public Display,-,5-May-95
+NOA0002947,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,18-Oct-98
+NOA0002948,CAPTURE,-,FEMALE,Beluga Whale,-,17-Jul-88,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,17-Jul-88
+NOA0002948,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002948,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,21-Jul-88
+NOA0002949,CAPTURE,-,FEMALE,Beluga Whale,-,17-Jul-88,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,17-Jul-88
+NOA0002949,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002949,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,21-Jul-88
+NOA0002950,CAPTURE,-,FEMALE,Beluga Whale,-,18-Jul-88,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,18-Jul-88
+NOA0002950,TRANSFER,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0002950,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,21-Jul-88
+NOA0002959,BIRTH,-,FEMALE,Killer Whale; Orca,23-Sep-88,23-Sep-88,Sea World LLC,Sea World of California,Public Display,ALIVE,23-Sep-88
+NOA0002960,BIRTH,-,FEMALE,Killer Whale; Orca,4-Nov-88,4-Nov-88,Sea World LLC,Sea World of Texas,Public Display,DEAD,29-Oct-94
+NOA0002961,BIRTH,-,FEMALE,Killer Whale; Orca,26-Nov-88,26-Nov-88,Sea World LLC,Sea World of Ohio,Public Display,-,26-Nov-88
+NOA0002961,TRANSPORT,-,FEMALE,Killer Whale; Orca,26-Nov-88,-,Sea World LLC,Sea World of Texas,Public Display,-,4-Oct-99
+NOA0002961,TRANSPORT,-,FEMALE,Killer Whale; Orca,26-Nov-88,-,Sea World LLC,Sea World of Florida,Public Display,ALIVE,18-Nov-06
+NOA0002978,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-78,Unknown,Acuarama S A,Acuarama S A,Public Display,-,Unknown
+NOA0002978,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-78,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0002978,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-78,-,Sea World LLC,Unknown,Public Display,DEAD,3-May-89
+NOA0002984,BIRTH,-,FEMALE,Killer Whale; Orca,11-Jul-89,11-Jul-89,Sea World LLC,Sea World of Florida,Public Display,DEAD,11-Jul-89
+NOA0003035,CAPTURE,-,FEMALE,Killer Whale; Orca,-,15-Nov-77,Windsor Safari Park,Windsor Safari Park,Public Display,-,Unknown
+NOA0003035,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Ohio,Public Display,-,-
+NOA0003035,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Ohio,Public Display,-,13-Apr-93
+NOA0003035,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,5-Oct-99
+NOA0003036,CAPTURE,-,MALE,Killer Whale; Orca,-,1-Nov-83,"Sealand of the Pacific, Ltd.","Sealand of the Pacific, Ltd.",Public Display,-,1-Nov-84
+NOA0003036,TRANSFER,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0003036,TRANSPORT,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Florida,Public Display,DEAD,9-Jan-92
+NOA0003037,BIRTH,-,FEMALE,Killer Whale; Orca,9-Jul-91,9-Jul-91,Sea World LLC,Sea World of California,Public Display,-,9-Jul-91
+NOA0003037,TRANSPORT,-,FEMALE,Killer Whale; Orca,9-Jul-91,-,Sea World LLC,Sea World of Florida,Public Display,-,24-Apr-04
+NOA0003037,TRANSPORT,-,FEMALE,Killer Whale; Orca,9-Jul-91,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,5-Feb-09
+NOA0003051,CAPTURE,KIA,FEMALE,Beluga Whale,1-Jan-84,24-Jul-87,unreported facility in unspecified foreign country,New York Aquarium,Public Display,-,2-Aug-87
+NOA0003051,TRANSFER,KIA,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,-
+NOA0003051,TRANSPORT,KIA,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,24-Jul-88
+NOA0003051,TRANSPORT,KIA,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,Sea World of Texas,Public Display,DEAD,19-Mar-92
+NOA0003052,CAPTURE,SIKKU,FEMALE,Beluga Whale,1-Jan-84,29-Jul-87,unreported facility in unspecified foreign country,New York Aquarium,Public Display,-,2-Aug-87
+NOA0003052,TRANSFER,SIKKU,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,-
+NOA0003052,TRANSPORT,SIKKU,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,National Aquarium in Baltimore,Public Display,-,4-Sep-90
+NOA0003052,TRANSPORT,SIKKU,FEMALE,Beluga Whale,1-Jan-84,-,National Aquarium in Baltimore,Sea World of Texas,Public Display,-,19-Mar-92
+NOA0003052,TRANSFER,SIKKU,FEMALE,Beluga Whale,1-Jan-84,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,-
+NOA0003053,BIRTH,-,MALE,Killer Whale; Orca,15-Aug-89,15-Aug-89,Marineland of Canada,Marineland of Canada,Public Display,-,15-Aug-89
+NOA0003053,TRANSFER,-,MALE,Killer Whale; Orca,15-Aug-89,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0003053,TRANSPORT,-,MALE,Killer Whale; Orca,15-Aug-89,-,Sea World LLC,Sea World of California,Public Display,DEAD,17-Apr-92
+NOA0003068,CAPTURE,-,FEMALE,Killer Whale; Orca,-,1-Jan-82,"Sealand of the Pacific, Ltd.","Sealand of the Pacific, Ltd.",Public Display,-,6-May-83
+NOA0003068,TRANSFER,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0003068,TRANSPORT,-,FEMALE,Killer Whale; Orca,-,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,8-Jan-93
+NOA0003069,BIRTH,-,MALE,Killer Whale; Orca,24-Dec-91,24-Dec-91,"Sealand of the Pacific, Ltd.","Sealand of the Pacific, Ltd.",Public Display,-,24-Dec-91
+NOA0003069,TRANSFER,-,MALE,Killer Whale; Orca,24-Dec-91,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0003069,TRANSPORT,-,MALE,Killer Whale; Orca,24-Dec-91,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,8-Jan-93
+NOA0003070,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Jan-80,1-Jan-82,"Sealand of the Pacific, Ltd.","Sealand of the Pacific, Ltd.",Public Display,-,6-May-83
+NOA0003070,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Jan-80,-,Sea World LLC,Unknown,Public Display,-,-
+NOA0003070,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Jan-80,-,Sea World LLC,Unknown,Public Display,DEAD,8-Jan-93
+NOA0003071,BIRTH,-,MALE,Beluga Whale,8-Aug-92,8-Aug-92,Sea World LLC,Sea World of Texas,Public Display,-,8-Aug-92
+NOA0003071,TRANSPORT,-,MALE,Beluga Whale,8-Aug-92,-,Sea World LLC,Sea World of California,Public Display,-,20-Apr-97
+NOA0003071,TRANSPORT,-,MALE,Beluga Whale,8-Aug-92,-,Sea World LLC,Point Defiance Zoo and Aquarium,Public Display,-,21-Nov-98
+NOA0003071,TRANSPORT,-,MALE,Beluga Whale,8-Aug-92,-,Sea World LLC,Sea World of Texas,Public Display,-,13-May-09
+NOA0003071,TRANSPORT,-,MALE,Beluga Whale,8-Aug-92,-,Sea World LLC,Georgia Aquarium,Public Display,-,22-Feb-10
+NOA0003071,TRANSPORT,-,MALE,Beluga Whale,8-Aug-92,-,Sea World LLC,Shedd (John G.) Aquarium,Public Display,ALIVE,19-Oct-14
+NOA0003082,BIRTH,-,MALE,Beluga Whale,25-Sep-93,25-Sep-93,Sea World LLC,Sea World of Texas,Public Display,DEAD,25-Sep-93
+NOA0003083,BIRTH,-,MALE,Beluga Whale,13-Sep-93,13-Sep-93,Sea World LLC,Sea World of Texas,Public Display,-,13-Sep-93
+NOA0003083,TRANSPORT,-,MALE,Beluga Whale,13-Sep-93,-,Sea World LLC,Sea World of California,Public Display,-,20-Apr-97
+NOA0003083,TRANSPORT,-,MALE,Beluga Whale,13-Sep-93,-,Sea World LLC,Point Defiance Zoo and Aquarium,Public Display,DEAD,21-Nov-98
+NOA0003087,BIRTH,-,MALE,Killer Whale; Orca,2-Feb-93,2-Feb-93,Sea World LLC,Sea World of Texas,Public Display,-,2-Feb-93
+NOA0003087,TRANSPORT,-,MALE,Killer Whale; Orca,2-Feb-93,-,Sea World LLC,Sea World of California,Public Display,-,7-Nov-99
+NOA0003087,TRANSPORT,-,MALE,Killer Whale; Orca,2-Feb-93,-,Sea World LLC,Sea World of Ohio,Public Display,-,15-Apr-00
+NOA0003087,TRANSPORT,-,MALE,Killer Whale; Orca,2-Feb-93,-,Sea World LLC,Sea World of California,Public Display,-,15-Feb-01
+NOA0003087,TRANSPORT,-,MALE,Killer Whale; Orca,2-Feb-93,-,Sea World LLC,Sea World of Texas,Public Display,-,24-Apr-04
+NOA0003087,TRANSPORT,-,MALE,Killer Whale; Orca,2-Feb-93,-,Sea World LLC,Sea World of California,Public Display,ALIVE,27-Feb-12
+NOA0003088,BIRTH,-,MALE,Killer Whale; Orca,9-Sep-93,9-Sep-93,Sea World LLC,Sea World of Florida,Public Display,-,9-Sep-93
+NOA0003088,TRANSPORT,-,MALE,Killer Whale; Orca,9-Sep-93,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,18-Nov-06
+NOA0003089,BIRTH,-,FEMALE,Killer Whale; Orca,31-Dec-93,31-Dec-93,Sea World LLC,Sea World of Florida,Public Display,DEAD,31-Dec-93
+NOA0003091,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-78,19-Nov-80,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,30-Dec-81
+NOA0003091,TRANSFER,-,MALE,Killer Whale; Orca,1-Jan-78,-,Parc Zoologic De Barcelona,Parc Zoologic De Barcelona,Public Display,-,-
+NOA0003091,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-78,-,Parc Zoologic De Barcelona,Parc Zoologic De Barcelona,Public Display,-,30-Dec-85
+NOA0003091,TRANSPORT,-,MALE,Killer Whale; Orca,1-Jan-78,-,Parc Zoologic De Barcelona,Sea World of California,Public Display,ALIVE,9-Feb-94
+NOA0003108,BIRTH,-,FEMALE,Killer Whale; Orca,20-Nov-94,20-Nov-94,Sea World LLC,Sea World of Texas,Public Display,DEAD,20-Nov-94
+NOA0003168,BIRTH,-,FEMALE,Killer Whale; Orca,18-Jun-82,18-Jun-82,Marineland Amusements Corporation,Marineland Amusements Corporation,Public Display,DEAD,18-Jun-82
+NOA0003419,CAPTURE,HUGO,MALE,Killer Whale; Orca,1-Jan-65,22-Mar-67,Miami Seaquarium,Miami Seaquarium,Public Display,DEAD,Unknown
+NOA0003420,CAPTURE,TOKITAE (LOLITA),FEMALE,Killer Whale; Orca,1-Jan-67,24-Sep-70,Miami Seaquarium,Miami Seaquarium,Public Display,ALIVE,Unknown
+NOA0003699,CAPTURE,IMMIAYUK,FEMALE,Beluga Whale,1-Jan-86,28-Jul-89,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0003699,TRANSFER,IMMIAYUK,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003699,TRANSPORT,IMMIAYUK,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,4-Mar-91
+NOA0003700,CAPTURE,PUIJI,FEMALE,Beluga Whale,1-Jan-86,1-Aug-89,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0003700,TRANSFER,PUIJI,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003700,TRANSPORT,PUIJI,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,4-Mar-91
+NOA0003700,TRANSPORT,PUIJI,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,30-Aug-08
+NOA0003700,TRANSPORT,PUIJI,FEMALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,25-Apr-09
+NOA0003704,CAPTURE,-,FEMALE,Beluga Whale,1-Jan-89,13-Aug-92,unreported facility in Canada,unreported facility in Canada,Public Display,-,Unknown
+NOA0003704,TRANSFER,-,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003704,TRANSPORT,-,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,18-Aug-92
+NOA0003705,CAPTURE,-,MALE,Beluga Whale,1-Jan-89,14-Aug-92,unreported facility in Canada,unreported facility in Canada,Public Display,-,Unknown
+NOA0003705,TRANSFER,-,MALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003705,TRANSPORT,-,MALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,18-Aug-92
+NOA0003706,CAPTURE,NALUARK,MALE,Beluga Whale,1-Jan-86,14-Aug-92,Shedd (John G.) Aquarium,unreported facility in Canada,Public Display,-,Unknown
+NOA0003706,TRANSFER,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,18-Aug-92
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,15-Nov-01
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,6-Dec-03
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,30-Aug-08
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,25-Apr-09
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,16-Oct-11
+NOA0003706,TRANSPORT,NALUARK,MALE,Beluga Whale,1-Jan-86,-,Shedd (John G.) Aquarium,Sea World of Florida,Public Display,ALIVE,7-Feb-16
+NOA0003707,CAPTURE,NAYA,FEMALE,Beluga Whale,1-Jan-89,17-Aug-92,unreported facility in Canada,unreported facility in Canada,Public Display,-,Unknown
+NOA0003707,TRANSFER,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,-
+NOA0003707,TRANSPORT,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,18-Aug-92
+NOA0003707,TRANSPORT,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Point Defiance Zoo and Aquarium,Public Display,-,16-Mar-97
+NOA0003707,TRANSPORT,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,10-Jan-99
+NOA0003707,TRANSPORT,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,4-Sep-08
+NOA0003707,TRANSPORT,NAYA,FEMALE,Beluga Whale,1-Jan-89,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,25-Apr-09
+NOA0004863,CAPTURE,CHU,MALE,Beluga Whale,15-Jun-71,3-Aug-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Scientific Research,-,Unknown
+NOA0004863,TRANSFER,CHU,MALE,Beluga Whale,15-Jun-71,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,-
+NOA0004863,TRANSPORT,CHU,MALE,Beluga Whale,15-Jun-71,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,DEAD,3-Aug-77
+NOA0004864,CAPTURE,MUK,FEMALE,Beluga Whale,15-Jun-67,1-Aug-77,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Scientific Research,-,5-Aug-77
+NOA0004864,TRANSFER,MUK,FEMALE,Beluga Whale,15-Jun-67,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,-
+NOA0004864,TRANSPORT,MUK,FEMALE,Beluga Whale,15-Jun-67,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,1-Aug-77
+NOA0004864,TRANSPORT,MUK,FEMALE,Beluga Whale,15-Jun-67,-,"Navy, U.S. (SPAWAR)",Sea World of California,Public Display,DEAD,7-Feb-01
+NOA0004865,CAPTURE,NOC,MALE,Beluga Whale,15-Jun-75,4-Aug-77,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,DEAD,10-Aug-77
+NOA0004936,CAPTURE,RUB,FEMALE,Beluga Whale,15-Jun-78,15-Jul-80,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Scientific Research,-,22-Jul-80
+NOA0004936,TRANSFER,RUB,FEMALE,Beluga Whale,15-Jun-78,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,-
+NOA0004936,TRANSPORT,RUB,FEMALE,Beluga Whale,15-Jun-78,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,22-Jul-80
+NOA0004936,TRANSPORT,RUB,FEMALE,Beluga Whale,15-Jun-78,-,"Navy, U.S. (SPAWAR)",Sea World of California,Scientific Research,DEAD,18-Apr-97
+NOA0004937,CAPTURE,LLY,FEMALE,Beluga Whale,15-Jun-78,16-Jul-80,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Scientific Research,-,22-Jul-80
+NOA0004937,TRANSFER,LLY,FEMALE,Beluga Whale,15-Jun-78,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,-
+NOA0004937,TRANSPORT,LLY,FEMALE,Beluga Whale,15-Jun-78,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,DEAD,22-Jul-80
+NOA0004938,CAPTURE,CHR,FEMALE,Beluga Whale,15-Jun-77,16-Jul-80,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Scientific Research,-,20-Jul-80
+NOA0004938,TRANSFER,CHR,FEMALE,Beluga Whale,15-Jun-77,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,-,-
+NOA0004938,TRANSPORT,CHR,FEMALE,Beluga Whale,15-Jun-77,-,"Navy, U.S. (SPAWAR)","Navy, U.S. (SPAWAR)",Scientific Research,DEAD,20-Jul-80
+NOA0005191,CAPTURE,Mamuk,MALE,Killer Whale; Orca,1-Jan-64,15-Oct-68,"Sea-Arama, Inc. (not active)","Sea-Arama, Inc. (not active)",Public Display,DEAD,Unknown
+NOA0005192,CAPTURE,-,MALE,Killer Whale; Orca,1-Jan-68,20-Aug-70,"Sea-Arama, Inc. (not active)","Sea-Arama, Inc. (not active)",Public Display,DEAD,Unknown
+NOA0005449,CAPTURE,KIANU,FEMALE,Killer Whale; Orca,1-Jan-52,9-May-68,Marine World Africa USA,Marine World Africa USA,Public Display,-,Unknown
+NOA0005449,TRANSFER,KIANU,FEMALE,Killer Whale; Orca,1-Jan-52,-,unreported facility in Japan,unreported facility in Japan,unknown,-,-
+NOA0005449,TRANSPORT,KIANU,FEMALE,Killer Whale; Orca,1-Jan-52,-,unreported facility in Japan,unreported facility in Japan,unknown,ALIVE,Unknown
+NOA0005473,BIRTH,-,MALE,Killer Whale; Orca,17-Jun-95,17-Jun-95,Sea World LLC,Sea World of Florida,Public Display,-,17-Jun-95
+NOA0005473,TRANSPORT,-,MALE,Killer Whale; Orca,17-Jun-95,-,Sea World LLC,Sea World of California,Public Display,-,8-Mar-99
+NOA0005473,TRANSPORT,-,MALE,Killer Whale; Orca,17-Jun-95,-,Sea World LLC,Sea World of Ohio,Public Display,-,15-Apr-00
+NOA0005473,TRANSPORT,-,MALE,Killer Whale; Orca,17-Jun-95,-,Sea World LLC,Sea World of Texas,Public Display,-,18-Feb-01
+NOA0005473,TRANSPORT,-,MALE,Killer Whale; Orca,17-Jun-95,-,Sea World LLC,Loro Parque S A,Public Display,-,13-Feb-06
+NOA0005473,TRANSFER,-,MALE,Killer Whale; Orca,17-Jun-95,-,Loro Parque S A,Loro Parque S A,Public Display,ALIVE,-
+NOA0005485,BIRTH,-,FEMALE,Beluga Whale,19-Jul-95,19-Jul-95,Sea World LLC,Sea World of Texas,Public Display,DEAD,19-Jul-95
+NOA0005587,BIRTH,MARIS,FEMALE,Beluga Whale,28-Jul-94,28-Jul-94,Wildlife Conservation Society,New York Aquarium,Public Display,-,28-Jul-94
+NOA0005587,TRANSPORT,MARIS,FEMALE,Beluga Whale,28-Jul-94,-,Wildlife Conservation Society,Mystic Aquarium,Public Display,-,18-Dec-02
+NOA0005587,TRANSPORT,MARIS,FEMALE,Beluga Whale,28-Jul-94,-,Wildlife Conservation Society,New York Aquarium,Public Display,-,26-May-05
+NOA0005587,TRANSPORT,MARIS,FEMALE,Beluga Whale,28-Jul-94,-,Wildlife Conservation Society,Georgia Aquarium,Public Display,-,7-Nov-05
+NOA0005587,TRANSPORT,MARIS,FEMALE,Beluga Whale,28-Jul-94,-,Wildlife Conservation Society,Sea World of Texas,Public Display,-,5-Oct-09
+NOA0005587,TRANSPORT,MARIS,FEMALE,Beluga Whale,28-Jul-94,-,Wildlife Conservation Society,Georgia Aquarium,Public Display,DEAD,22-Feb-10
+NOA0005588,CAPTURE,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,1-Nov-79,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0005588,TRANSFER,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Oregon Coast Aquarium,Oregon Coast Aquarium,Public Display,-,-
+NOA0005588,TRANSPORT,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Oregon Coast Aquarium,Oregon Coast Aquarium,Public Display,-,7-Jan-96
+NOA0005588,TRANSFER,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Free Willy Keiko Foundation,Oregon Coast Aquarium,Public Display,-,-
+NOA0005588,TRANSPORT,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Free Willy Keiko Foundation,Klettsvik Cove Underwater Pen,Public Display,-,10-Sep-98
+NOA0005588,TRANSFER,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Ocean Futures Society,Klettsvik Cove Underwater Pen,Public Display,-,-
+NOA0005588,TRANSFER,KEIKO,MALE,Killer Whale; Orca,1-Jan-77,-,Free Willy Keiko Foundation,Klettsvik Cove Underwater Pen,Scientific Research,RELEASED,-
+NOA0005645,BIRTH,-,FEMALE,Killer Whale; Orca,27-Dec-96,27-Dec-96,Sea World LLC,Sea World of Florida,Public Display,-,27-Dec-96
+NOA0005645,TRANSPORT,-,FEMALE,Killer Whale; Orca,27-Dec-96,-,Sea World LLC,Sea World of Texas,Public Display,DEAD,7-Dec-02
+NOA0005752,BIRTH,-,FEMALE,Beluga Whale,19-Jun-98,19-Jun-98,Sea World LLC,Sea World of Texas,Public Display,DEAD,19-Jun-98
+NOA0005770,BIRTH,-,MALE,Killer Whale; Orca,14-May-98,14-May-98,Sea World LLC,Sea World of Florida,Public Display,-,14-May-98
+NOA0005770,TRANSPORT,-,MALE,Killer Whale; Orca,14-May-98,-,Sea World LLC,Sea World of California,Public Display,-,8-Mar-99
+NOA0005770,TRANSPORT,-,MALE,Killer Whale; Orca,14-May-98,-,Sea World LLC,Sea World of Ohio,Public Display,-,15-Apr-00
+NOA0005770,TRANSPORT,-,MALE,Killer Whale; Orca,14-May-98,-,Sea World LLC,Sea World of California,Public Display,DEAD,18-Feb-01
+NOA0005797,CAPTURE,-,MALE,Beluga Whale,1-Jan-83,15-Aug-90,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,15-Aug-90
+NOA0005797,TRANSFER,-,MALE,Beluga Whale,1-Jan-83,-,Vancouver Aquarium,Sea World of California,Public Display,-,-
+NOA0005797,TRANSPORT,-,MALE,Beluga Whale,1-Jan-83,-,Vancouver Aquarium,Sea World of California,Public Display,-,27-Jul-97
+NOA0005797,TRANSPORT,-,MALE,Beluga Whale,1-Jan-83,-,Vancouver Aquarium,Sea World of Texas,Public Display,-,12-Feb-05
+NOA0005797,TRANSPORT,-,MALE,Beluga Whale,1-Jan-83,-,Vancouver Aquarium,Sea World of California,Public Display,-,27-Jan-08
+NOA0005797,TRANSPORT,-,MALE,Beluga Whale,1-Jan-83,-,Vancouver Aquarium,Sea World of Florida,Public Display,DEAD,31-May-14
+NOA0005840,BIRTH,-,MALE,Killer Whale; Orca,22-Jun-99,22-Jun-99,Sea World LLC,Sea World of Florida,Public Display,-,22-Jun-99
+NOA0005840,TRANSPORT,-,MALE,Killer Whale; Orca,22-Jun-99,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,25-Apr-04
+NOA0005850,BIRTH,-,MALE,Beluga Whale,23-Jul-99,23-Jul-99,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,23-Jul-99
+NOA0005851,BIRTH,KAYAVAK,FEMALE,Beluga Whale,3-Aug-99,3-Aug-99,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,3-Aug-99
+NOA0005851,TRANSPORT,KAYAVAK,FEMALE,Beluga Whale,3-Aug-99,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,30-Aug-08
+NOA0005851,TRANSPORT,KAYAVAK,FEMALE,Beluga Whale,3-Aug-99,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,2-May-09
+NOA0005856,BIRTH,-,FEMALE,Beluga Whale,25-Jul-99,25-Jul-99,Sea World LLC,Sea World of Texas,Public Display,-,25-Jul-99
+NOA0005856,TRANSPORT,-,FEMALE,Beluga Whale,25-Jul-99,-,Sea World LLC,Sea World of Florida,Public Display,ALIVE,21-Nov-10
+NOA0005857,BIRTH,-,MALE,Beluga Whale,27-Jul-99,27-Jul-99,Sea World LLC,Sea World of Florida,Public Display,DEAD,27-Jul-99
+NOA0005912,BIRTH,-,FEMALE,Beluga Whale,24-Jul-00,24-Jul-00,Sea World LLC,Sea World of Texas,Public Display,ALIVE,24-Jul-00
+NOA0005931,BIRTH,-,MALE,Killer Whale; Orca,8-Nov-00,8-Nov-00,Sea World LLC,Sea World of Florida,Public Display,-,8-Nov-00
+NOA0005931,TRANSPORT,-,MALE,Killer Whale; Orca,8-Nov-00,-,Sea World LLC,Sea World of Texas,Public Display,-,25-Apr-04
+NOA0005931,TRANSPORT,-,MALE,Killer Whale; Orca,8-Nov-00,-,Sea World LLC,Loro Parque S A,Public Display,-,13-Feb-06
+NOA0005931,TRANSFER,-,MALE,Killer Whale; Orca,8-Nov-00,-,Loro Parque S A,Loro Parque S A,Public Display,ALIVE,-
+NOA0005948,CAPTURE,-,FEMALE,Killer Whale; Orca,1-Nov-78,20-Dec-80,Vancouver Aquarium,Vancouver Aquarium,Public Display,-,Unknown
+NOA0005948,TRANSFER,-,FEMALE,Killer Whale; Orca,1-Nov-78,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0005948,TRANSPORT,-,FEMALE,Killer Whale; Orca,1-Nov-78,-,Sea World LLC,Sea World of California,Public Display,DEAD,22-Apr-01
+NOA0005995,BIRTH,-,MALE,Killer Whale; Orca,1-Sep-01,1-Sep-01,Sea World LLC,Sea World of California,Public Display,ALIVE,1-Sep-01
+NOA0006021,BIRTH,-,FEMALE,Killer Whale; Orca,3-May-02,3-May-02,Sea World LLC,Sea World of California,Public Display,-,3-May-02
+NOA0006021,TRANSPORT,-,FEMALE,Killer Whale; Orca,3-May-02,-,Sea World LLC,Sea World of Florida,Public Display,-,24-Apr-04
+NOA0006021,TRANSPORT,-,FEMALE,Killer Whale; Orca,3-May-02,-,Sea World LLC,Loro Parque S A,Public Display,-,13-Feb-06
+NOA0006021,TRANSFER,-,FEMALE,Killer Whale; Orca,3-May-02,-,Loro Parque S A,Loro Parque S A,Public Display,ALIVE,-
+NOA0006061,BIRTH,-,MALE,Killer Whale; Orca,25-Aug-02,25-Aug-02,Sea World LLC,Sea World of Florida,Public Display,-,25-Aug-02
+NOA0006061,TRANSPORT,-,MALE,Killer Whale; Orca,25-Aug-02,-,Sea World LLC,Marineland of Canada,Public Display,-,18-Nov-06
+NOA0006061,TRANSPORT,-,MALE,Killer Whale; Orca,25-Aug-02,-,Sea World LLC,Sea World of California,Public Display,ALIVE,13-Nov-11
+NOA0006172,BIRTH,-,FEMALE,Killer Whale; Orca,9-Feb-04,9-Feb-04,Sea World LLC,Sea World of Florida,Public Display,-,9-Feb-04
+NOA0006172,TRANSPORT,-,FEMALE,Killer Whale; Orca,9-Feb-04,-,Sea World LLC,Loro Parque S A,Public Display,-,13-Feb-06
+NOA0006172,TRANSFER,-,FEMALE,Killer Whale; Orca,9-Feb-04,-,Loro Parque S A,Loro Parque S A,Public Display,ALIVE,-
+NOA0006225,CAPTURE,-,MALE,Beluga Whale,1-Jan-70,31-Jul-75,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,31-Jul-75
+NOA0006225,TRANSFER,-,MALE,Beluga Whale,1-Jan-70,-,Sea World LLC,Sea World of California,Public Display,-,-
+NOA0006225,TRANSPORT,-,MALE,Beluga Whale,1-Jan-70,-,Sea World LLC,Sea World of California,Public Display,ALIVE,12-Sep-04
+NOA0006239,BIRTH,-,FEMALE,Killer Whale; Orca,21-Dec-04,21-Dec-04,Sea World LLC,Sea World of California,Public Display,ALIVE,21-Dec-04
+NOA0006283,CAPTURE,-,FEMALE,Beluga Whale,-,21-Jun-85,Vancouver Aquarium,Vancouver Aquarium,Public Display,-,1-Aug-85
+NOA0006283,TRANSFER,-,FEMALE,Beluga Whale,-,-,Vancouver Aquarium,Sea World of California,Public Display,-,-
+NOA0006283,TRANSPORT,-,FEMALE,Beluga Whale,-,-,Vancouver Aquarium,Sea World of California,Public Display,ALIVE,24-Jul-05
+NOA0006291,CAPTURE,-,MALE,Beluga Whale,-,1-Jan-97,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0006291,TRANSFER,GASPER,MALE,Beluga Whale,-,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,-
+NOA0006291,TRANSPORT,GASPER,MALE,Beluga Whale,-,-,Georgia Aquarium,Georgia Aquarium,Public Display,DEAD,17-Oct-05
+NOA0006292,CAPTURE,NICO,MALE,Beluga Whale,1-Jun-90,1-Jan-96,unreported facility in unspecified foreign country,unreported facility in unspecified foreign country,Public Display,-,Unknown
+NOA0006292,TRANSFER,NICO,MALE,Beluga Whale,1-Jun-90,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,-
+NOA0006292,TRANSPORT,NICO,MALE,Beluga Whale,1-Jun-90,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,17-Oct-05
+NOA0006292,TRANSPORT,NICO,MALE,Beluga Whale,1-Jun-90,-,Georgia Aquarium,Sea World of Texas,Public Display,DEAD,5-Oct-09
+NOA0006295,BIRTH,-,FEMALE,Killer Whale; Orca,9-Oct-05,9-Oct-05,Sea World LLC,Sea World of Texas,Public Display,DEAD,9-Oct-05
+NOA0006301,BIRTH,-,MALE,Killer Whale; Orca,23-Nov-05,23-Nov-05,Sea World LLC,Sea World of Florida,Public Display,ALIVE,23-Nov-05
+NOA0006355,BIRTH,BELLA,FEMALE,Beluga Whale,17-Jul-06,17-Jul-06,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,17-Jul-06
+NOA0006355,TRANSPORT,BELLA,FEMALE,Beluga Whale,17-Jul-06,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,30-Aug-08
+NOA0006355,TRANSPORT,BELLA,FEMALE,Beluga Whale,17-Jul-06,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,25-Apr-09
+NOA0006358,BIRTH,-,FEMALE,Killer Whale; Orca,18-Sep-06,18-Sep-06,Sea World LLC,Sea World of Florida,Public Display,ALIVE,18-Sep-06
+NOA0006362,BIRTH,JUNO,MALE,Beluga Whale,6-Jul-02,6-Jul-02,Marineland of Canada,Marineland of Canada,Public Display,-,6-Jul-02
+NOA0006362,TRANSFER,JUNO,MALE,Beluga Whale,6-Jul-02,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0006362,TRANSPORT,JUNO,MALE,Beluga Whale,6-Jul-02,-,Sea World LLC,Sea World of Florida,Public Display,-,19-Nov-06
+NOA0006362,TRANSPORT,JUNO,MALE,Beluga Whale,6-Jul-02,-,Sea World LLC,Mystic Aquarium,Public Display,ALIVE,25-Jan-10
+NOA0006363,BIRTH,-,MALE,Beluga Whale,13-Jul-02,13-Jul-02,Marineland of Canada,Marineland of Canada,Public Display,-,13-Jul-02
+NOA0006363,TRANSFER,-,MALE,Beluga Whale,13-Jul-02,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0006363,TRANSPORT,-,MALE,Beluga Whale,13-Jul-02,-,Sea World LLC,Sea World of Florida,Public Display,-,19-Nov-06
+NOA0006363,TRANSPORT,-,MALE,Beluga Whale,13-Jul-02,-,Sea World LLC,Sea World of California,Public Display,ALIVE,1-Jun-14
+NOA0006364,BIRTH,-,MALE,Beluga Whale,27-Jul-03,27-Jul-03,Marineland of Canada,Marineland of Canada,Public Display,-,27-Jul-03
+NOA0006364,TRANSFER,AUKEK,MALE,Beluga Whale,27-Jul-03,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0006364,TRANSPORT,AUKEK,MALE,Beluga Whale,27-Jul-03,-,Sea World LLC,Sea World of Florida,Public Display,-,19-Nov-06
+NOA0006364,TRANSFER,AUREK,MALE,Beluga Whale,27-Jul-03,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,-
+NOA0006364,TRANSPORT,AUREK,MALE,Beluga Whale,27-Jul-03,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,7-Feb-16
+NOA0006364,TRANSPORT,AUREK,MALE,Beluga Whale,27-Jul-03,-,Georgia Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,24-Sep-17
+NOA0006375,BIRTH,QANNIK,MALE,Beluga Whale,15-Jul-00,15-Jul-00,Point Defiance Zoo and Aquarium,Shedd (John G.) Aquarium,Public Display,-,15-Jul-00
+NOA0006375,TRANSPORT,QANNIK,MALE,Beluga Whale,15-Jul-00,-,Point Defiance Zoo and Aquarium,Point Defiance Zoo and Aquarium,Public Display,DEAD,10-Jun-07
+NOA0006378,BIRTH,-,FEMALE,Killer Whale; Orca,12-Mar-07,12-Mar-07,Sea World LLC,Sea World of Florida,Public Display,ALIVE,12-Mar-07
+NOA0006410,BIRTH,GRAYSON,MALE,Beluga Whale,26-Jun-07,26-Jun-07,Sea World LLC,Sea World of Texas,Public Display,-,26-Jun-07
+NOA0006410,TRANSPORT,GRAYSON,MALE,Beluga Whale,26-Jun-07,-,Sea World LLC,Georgia Aquarium,Public Display,-,21-Nov-10
+NOA0006410,TRANSPORT,GRAYSON,MALE,Beluga Whale,26-Jun-07,-,Sea World LLC,Shedd (John G.) Aquarium,Public Display,ALIVE,6-Feb-16
+NOA0006414,BIRTH,-,MALE,Beluga Whale,23-Jun-07,23-Jun-07,Sea World LLC,Sea World of Texas,Public Display,ALIVE,23-Jun-07
+NOA0006479,BIRTH,-,FEMALE,Beluga Whale,2-Jul-05,2-Jul-05,Marineland of Canada,Marineland of Canada,Public Display,-,2-Jul-05
+NOA0006479,TRANSFER,MAPLE,FEMALE,Beluga Whale,2-Jul-05,-,Sea World LLC,Sea World of Florida,Public Display,-,-
+NOA0006479,TRANSPORT,MAPLE,FEMALE,Beluga Whale,2-Jul-05,-,Sea World LLC,Sea World of Florida,Public Display,-,14-Jul-08
+NOA0006479,TRANSFER,MAPLE,FEMALE,Beluga Whale,2-Jul-05,-,Georgia Aquarium,Georgia Aquarium,Public Display,-,-
+NOA0006479,TRANSPORT,MAPLE,FEMALE,Beluga Whale,2-Jul-05,-,Georgia Aquarium,Georgia Aquarium,Public Display,ALIVE,7-Feb-16
+NOA0006490,BIRTH,MIKI,MALE,Beluga Whale,16-Aug-07,16-Aug-07,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,16-Aug-07
+NOA0006490,TRANSPORT,MIKI,MALE,Beluga Whale,16-Aug-07,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,-,4-Sep-08
+NOA0006490,TRANSPORT,MIKI,MALE,Beluga Whale,16-Aug-07,-,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,2-May-09
+NOA0006490,TRANSPORT,MIKI,MALE,Beluga Whale,16-Aug-07,-,Shedd (John G.) Aquarium,Mystic Aquarium,Public Display,DEAD,7-Feb-16
+NOA0006497,BIRTH,-,FEMALE,Beluga Whale,27-Jul-08,27-Jul-08,Sea World LLC,Sea World of Texas,Public Display,DEAD,27-Jul-08
+NOA0006498,BIRTH,QINU,FEMALE,Beluga Whale,31-Jul-08,31-Jul-08,Vancouver Aquarium,Sea World of Texas,Public Display,-,31-Jul-08
+NOA0006498,TRANSPORT,QINU,FEMALE,Beluga Whale,31-Jul-08,-,Vancouver Aquarium,Georgia Aquarium,Public Display,ALIVE,21-Nov-10
+NOA0006540,BIRTH,-,FEMALE,Beluga Whale,12-Jun-09,12-Jun-09,Sea World LLC,Sea World of Texas,Public Display,DEAD,12-Jun-09
+NOA0006601,BIRTH,-,FEMALE,Killer Whale; Orca,7-Jan-10,7-Jan-10,Sea World LLC,Sea World of Texas,Public Display,ALIVE,7-Jan-10
+NOA0006607,BIRTH,NUNAVIK,MALE,Beluga Whale,14-Dec-09,14-Dec-09,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,-,14-Dec-09
+NOA0006607,TRANSPORT,NUNAVIK,MALE,Beluga Whale,14-Dec-09,-,Shedd (John G.) Aquarium,Georgia Aquarium,Public Display,ALIVE,7-Feb-16
+NOA0006608,BIRTH,-,MALE,Beluga Whale,20-Dec-09,20-Dec-09,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,DEAD,20-Dec-09
+NOA0006657,BIRTH,-,FEMALE,Beluga Whale,23-Jun-10,23-Jun-10,Sea World LLC,Sea World of Texas,Public Display,-,23-Jun-10
+NOA0006657,TRANSPORT,-,FEMALE,Beluga Whale,23-Jun-10,-,Sea World LLC,Sea World of California,Public Display,ALIVE,1-Jun-14
+NOA0006658,BIRTH,-,FEMALE,Beluga Whale,23-Jun-10,23-Jun-10,Sea World LLC,Sea World of California,Public Display,ALIVE,23-Jun-10
+NOA0006689,BIRTH,-,MALE,Killer Whale; Orca,9-Oct-10,9-Oct-10,Sea World LLC,Sea World of Florida,Public Display,ALIVE,9-Oct-10
+NOA0006690,BIRTH,-,MALE,Killer Whale; Orca,12-Oct-10,12-Oct-10,Loro Parque S A,Loro Parque S A,Public Display,ALIVE,12-Oct-10
+NOA0006731,CAPTURE,-,MALE,Beluga Whale,1-Jan-88,12-Aug-90,Vancouver Aquarium,Vancouver Aquarium,Public Display,-,Unknown
+NOA0006731,TRANSFER,-,MALE,Beluga Whale,1-Jan-88,-,Sea World LLC,Sea World of Texas,Public Display,-,-
+NOA0006731,TRANSPORT,-,MALE,Beluga Whale,1-Jan-88,-,Sea World LLC,Sea World of Texas,Public Display,ALIVE,17-Apr-11
+NOA0008002,BIRTH,-,FEMALE,Killer Whale; Orca,25-Feb-93,25-Feb-93,Marineland S.A. (in France),Marineland S.A. (in France),Public Display,-,25-Feb-93
+NOA0008002,TRANSPORT,-,FEMALE,Killer Whale; Orca,25-Feb-93,-,Marineland S.A. (in France),Six Flags Worlds of Adventure,Public Display,-,20-May-02
+NOA0008002,TRANSPORT,-,FEMALE,Killer Whale; Orca,25-Feb-93,-,Marineland S.A. (in France),Six Flags Marine World,Public Display,-,19-Apr-04
+NOA0008002,TRANSPORT,-,FEMALE,Killer Whale; Orca,25-Feb-93,-,Marineland S.A. (in France),Six Flags Discovery Kingdom,Public Display,-,31-Jul-07
+NOA0008002,TRANSPORT,-,FEMALE,Killer Whale; Orca,25-Feb-93,-,Marineland S.A. (in France),Sea World of California,Public Display,ALIVE,20-Aug-12
+NOA0010000,BIRTH,-,FEMALE,Killer Whale; Orca,3-Aug-12,3-Aug-12,Sea World LLC,Loro Parque S A,Public Display,DEAD,3-Aug-12
+NOA0010029,BIRTH,-,MALE,Killer Whale; Orca,14-Feb-13,14-Feb-13,Sea World LLC,Sea World of California,Public Display,ALIVE,14-Feb-13
+NOA0010087,BIRTH,-,MALE,Beluga Whale,9-Jul-13,9-Jul-13,Sea World LLC,Sea World of Texas,Public Display,ALIVE,9-Jul-13
+NOA0010095,BIRTH,-,FEMALE,Beluga Whale,26-Jul-13,26-Jul-13,Sea World LLC,Sea World of Texas,Public Display,DEAD,26-Jul-13
+NOA0010123,BIRTH,-,FEMALE,Killer Whale; Orca,6-Dec-13,6-Dec-13,Sea World LLC,Sea World of Texas,Public Display,ALIVE,6-Dec-13
+NOA0010189,BIRTH,-,FEMALE,Killer Whale; Orca,2-Dec-14,2-Dec-14,Sea World LLC,Sea World of California,Public Display,ALIVE,2-Dec-14
+NOA0010367,BIRTH,KIMALU,FEMALE,Beluga Whale,27-Aug-12,27-Aug-12,Shedd (John G.) Aquarium,Shedd (John G.) Aquarium,Public Display,ALIVE,27-Aug-12
+NOA0010372,BIRTH,-,MALE,Beluga Whale,11-Aug-16,11-Aug-16,Sea World LLC,Sea World of Texas,Public Display,ALIVE,11-Aug-16
+NOA0010374,BIRTH,CALF 1,FEMALE,Beluga Whale,18-May-12,18-May-12,Georgia Aquarium,Georgia Aquarium,Public Display,DEAD,18-May-12
+NOA0010375,BIRTH,CALF 2,FEMALE,Beluga Whale,10-May-15,10-May-15,Georgia Aquarium,Georgia Aquarium,Public Display,DEAD,10-May-15
+NOA0010386,BIRTH,-,FEMALE,Killer Whale; Orca,19-Apr-17,19-Apr-17,Sea World LLC,Sea World of Texas,Public Display,DEAD,19-Apr-17
+NOA0010417,BIRTH,-,FEMALE,Beluga Whale,4-Jul-17,4-Jul-17,Sea World LLC,Sea World of Florida,Public Display,DEAD,4-Jul-17
+NOA0010448,BIRTH,-,MALE,Beluga Whale,17-Sep-17,17-Sep-17,Sea World LLC,Sea World of Texas,Public Display,ALIVE,17-Sep-17
+NOA0010470,BIRTH,-,FEMALE,Beluga Whale,8-Nov-17,8-Nov-17,Georgia Aquarium,Georgia Aquarium,-,DEAD,8-Nov-17
+NOA0010477,STRANDED,Tyonek,MALE,Beluga Whale,1-Sep-17,30-Sep-17,NMFS (MMPA Sec. 109h/112c),Alaska SeaLife Center,Rehabilitation,-,30-Sep-17
+NOA0010477,TRANSPORT,Tyonek,MALE,Beluga Whale,1-Sep-17,-,NMFS (MMPA Sec. 109h/112c),Sea World of Texas,Scientific Research,ALIVE,8-Mar-18
+UNK0000590,UNKNOWN,-,MALE,Killer Whale; Orca,-,1-Jun-70,"Trident Television, Ltd.","Trident Television, Ltd.",Public Display,-,Unknown
+UNK0000590,TRANSFER,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,-,-
+UNK0000590,TRANSPORT,-,MALE,Killer Whale; Orca,-,-,Sea World LLC,Unknown,Public Display,ALIVE,17-Oct-76
