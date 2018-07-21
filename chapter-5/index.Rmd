@@ -1,10 +1,16 @@
 ---
-title: "Chapter 1"
+title: "Chapter 5"
+tutorial:
+  id: "code.r-journalism/chapter-5"
+  version: .8
 output:
   learnr::tutorial:
     progressive: true
     theme: lumen
     highlight: espresso
+    
+    include:
+      before_body: _navbar.html
 runtime: shiny_prerendered
 ---
 

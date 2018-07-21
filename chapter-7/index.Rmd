@@ -1,13 +1,18 @@
 ---
-title: "Chapter 1"
+title: "Chapter 7"
+tutorial:
+  id: "code.r-journalism/chapter-7"
+  version: .8
 output:
   learnr::tutorial:
     progressive: true
     theme: lumen
     highlight: espresso
+    
+    include:
+      before_body: _navbar.html
 runtime: shiny_prerendered
 ---
-
 ```{r setup, include=FALSE}
 library(learnr)
 library(tidyverse)
