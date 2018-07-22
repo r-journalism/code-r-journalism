@@ -327,11 +327,14 @@ movies %&gt;%
 library(ggrepel)
 
 movies %&gt;% 
-  filter(director_name %in% c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
-  ggplot(aes(x=gross, y=budget, color=director_name, label=movie_title)) +
+  filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
+  ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
   geom_point() +
-  geom_text_repel()</code></pre>
+  geom_____________()</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":9,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":864,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label = NULL, user_code = NULL, solution_code = NULL, ","    check_code = NULL, envir_result = NULL, evaluate_result = NULL, ","    ..., debug = FALSE) ","{","    if (debug) {","        save_file_name <- sprintf(\"~/Downloads/CheckR/chunk-%s.rds\", ","            label)","        saveRDS(list(label = label, user_code = user_code, solution_code = solution_code, ","            check_code = check_code, envir = envir_result, evaluate_result = evaluate_result), ","            file = save_file_name)","    }","    if (is.null(envir_result)) {","        res <- pre_check(user_code, solution_code)","        if (failed(res)) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","        else {","            return(TRUE)","        }","    }","    if (!is.null(envir_result)) {","        res <- parse_check(user_code)","        if (!res$correct) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","    }","    parsed_check_code <- parse(text = check_code)","    res <- eval(parsed_check_code, envir = list(USER_CODE = user_code))","    if (res$action == \"ok\" && res$message == \"\") ","        res$message = \"Good\"","    feedback_type <- switch(res$action, pass = \"success\", fail = \"error\", ","        ok = \"warning\")","    final <- list(correct = (res$action == \"pass\"), message = res$message, ","        type = feedback_type, location = \"prepend\")","    final","}"]}</script>
+</div>
+<div id="section-ggrepel-hint">
+<p><strong>Hint:</strong> The filter code that lets you filter by group is <code>%in%</code>. The color is based on the director and the label is based on the movie name. Can you find those variable names in the <strong>movies</strong> data frame? And what’s the function for the last line? If you forgot, refer to <a href="http://learn.r-journalism.com/en/visualizing/more_charts/fancy-charts/">the lesson</a>.</p>
 </div>
 </div>
 <div id="section-small-multiples" class="section level3">
@@ -339,14 +342,16 @@ movies %&gt;%
 <p>Nice! Let’s break them out individually by director so it’s easier to see the patterns.</p>
 <div class="tutorial-exercise" data-label="ggrepel_facet" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
-  filter(director_name %in% c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
-  ggplot(aes(x=gross, y=budget, color=director_name, label=movie_title)) +
+  filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
+  ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
   geom_point() +
-  geom_text_repel() +
-  facet_wrap(~director_name, nrow=2) +
-  theme(legend.position=&quot;none&quot;) +
-  theme(text=element_text(size=9))</code></pre>
+  geom_____________(size=2)
+  _____________(~____________, nrow=2) +
+  theme(legend.position=&quot;none&quot;)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":576,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label = NULL, user_code = NULL, solution_code = NULL, ","    check_code = NULL, envir_result = NULL, evaluate_result = NULL, ","    ..., debug = FALSE) ","{","    if (debug) {","        save_file_name <- sprintf(\"~/Downloads/CheckR/chunk-%s.rds\", ","            label)","        saveRDS(list(label = label, user_code = user_code, solution_code = solution_code, ","            check_code = check_code, envir = envir_result, evaluate_result = evaluate_result), ","            file = save_file_name)","    }","    if (is.null(envir_result)) {","        res <- pre_check(user_code, solution_code)","        if (failed(res)) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","        else {","            return(TRUE)","        }","    }","    if (!is.null(envir_result)) {","        res <- parse_check(user_code)","        if (!res$correct) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","    }","    parsed_check_code <- parse(text = check_code)","    res <- eval(parsed_check_code, envir = list(USER_CODE = user_code))","    if (res$action == \"ok\" && res$message == \"\") ","        res$message = \"Good\"","    feedback_type <- switch(res$action, pass = \"success\", fail = \"error\", ","        ok = \"warning\")","    final <- list(correct = (res$action == \"pass\"), message = res$message, ","        type = feedback_type, location = \"prepend\")","    final","}"]}</script>
+</div>
+<div id="section-ggrepel_facet-hint">
+<p><strong>Hint:</strong> What’s the term for creating facets of the chart? It’s facet_<em>something</em>. There’s <a href="http://learn.r-journalism.com/en/visualizing/charts_with_ggplot/ggplot2/">more than one</a>, but we want the one that we can specify the number of rows in the output (with <code>nrow</code>).</p>
 </div>
 
 <script type="application/shiny-prerendered" data-context="server-start">

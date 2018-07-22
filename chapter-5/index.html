@@ -13,7 +13,7 @@
 <meta name="progressive" content="true" />
 <meta name="allow-skip" content="false" />
 
-<title>Chapter 1</title>
+<title>Chapter 5</title>
 
 
 <!-- highlightjs -->
@@ -39,11 +39,68 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- NOTE: add "navbar-inverse" class for an alternate navbar background -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div style="padding-top:5px; padding-bottom:5px; padding-right:10px; float:left;"><a href="#" class="navbar-left"><img src="https://r-journalism.com/images/avatar.png" height="40px"></a></div>
+
+     <a class="navbar-brand" href="https://learn.r-journalism.com">R for Journalists</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="https://learn.r-journalism.com/en/mapping/">Chapter 5: Spatial analysis</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/r-journalism/learn-chapter-5">GitHub</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
 <div class="pageContent band">
 <div class="bandContent page">
 
 <div class="topics">
 
+<div id="section-static-maps" class="section level2">
+<h2>Static maps</h2>
+<div id="section-map-a-shapefile" class="section level3">
+<h3>Map a shapefile</h3>
+</div>
+<div id="section-join-it-to-data" class="section level3">
+<h3>Join it to data</h3>
+</div>
+<div id="section-map-out-the-joined-data" class="section level3">
+<h3>Map out the joined data</h3>
+</div>
+<div id="section-facet-maps" class="section level3">
+<h3>Facet maps</h3>
+</div>
+<div id="section-map-out-locations-as-circles" class="section level3">
+<h3>Map out locations as circles</h3>
+</div>
+</div>
+<div id="section-interactive-maps" class="section level2">
+<h2>Interactive maps</h2>
+<div id="section-find-the-latitude-and-longitude-of-an-address" class="section level3">
+<h3>Find the latitude and longitude of an address</h3>
+</div>
+<div id="section-map-that-out-in-an-interactive-map" class="section level3">
+<h3>Map that out in an interactive map</h3>
+</div>
+<div id="section-points-in-a-polygon-join" class="section level3">
+<h3>Points in a polygon join</h3>
+</div>
+<div id="section-map-out-joined-data-as-interactive-choropleth" class="section level3">
+<h3>Map out joined data as interactive choropleth</h3>
+</div>
+</div>
 <div id="section-intro-to-r" class="section level2">
 <h2>Intro to R</h2>
 <div id="section-objects" class="section level3">
@@ -87,14 +144,14 @@ years</code></pre>
 <tr>
 <td>
 
-<div id="htmlwidget-697c7f4ac565fec53193" style="width:100%;height:auto;", class = "quiz html-widget">
+<div id="htmlwidget-c30ab0c840daa95db1b8" style="width:100%;height:auto;", class = "quiz html-widget">
 <div class="panel panel-default">
 <div class="panel-body quizArea">
 </div>
 </div>
 </div>
 
-<script type="application/json" data-for="htmlwidget-697c7f4ac565fec53193">{"x":{"question":"What kind of class is the variable id?","answers":[{"option":"character","correct":false,"message":null},{"option":"number","correct":false,"message":null},{"option":"factor","correct":true,"message":null},{"option":"date","correct":false,"message":null}],"label":"first_quiz-1","skipStartButton":true,"perQuestionResponseAnswers":true,"perQuestionResponseMessaging":true,"preventUnanswered":true,"displayQuestionCount":false,"displayQuestionNumber":false,"disableRanking":true,"nextQuestionText":"","checkAnswerText":"Submit Answer","allowRetry":false,"randomSortAnswers":true,"json":{"info":{"name":"","main":""},"questions":[{"q":"What kind of class is the variable id?","a":[{"option":"character","correct":false,"message":null},{"option":"number","correct":false,"message":null},{"option":"factor","correct":true,"message":null},{"option":"date","correct":false,"message":null}],"correct":"Correct!","incorrect":"Incorrect."}]}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-c30ab0c840daa95db1b8">{"x":{"question":"What kind of class is the variable id?","answers":[{"option":"character","correct":false,"message":null},{"option":"number","correct":false,"message":null},{"option":"factor","correct":true,"message":null},{"option":"date","correct":false,"message":null}],"label":"first_quiz-1","skipStartButton":true,"perQuestionResponseAnswers":true,"perQuestionResponseMessaging":true,"preventUnanswered":true,"displayQuestionCount":false,"displayQuestionNumber":false,"disableRanking":true,"nextQuestionText":"","checkAnswerText":"Submit Answer","allowRetry":false,"randomSortAnswers":true,"json":{"info":{"name":"","main":""},"questions":[{"q":"What kind of class is the variable id?","a":[{"option":"character","correct":false,"message":null},{"option":"number","correct":false,"message":null},{"option":"factor","correct":true,"message":null},{"option":"date","correct":false,"message":null}],"correct":"Correct!","incorrect":"Incorrect."}]}},"evals":[],"jsHooks":[]}</script>
 </td>
 </tr>
 </table>
@@ -128,11 +185,11 @@ burgers</code></pre>
 </div>
 <div id="section-pulling-a-row-of-data" class="section level3">
 <h3>Pulling a row of data</h3>
-<p>Extract the row of data for Linda using [].</p>
+<p>Extract entire row for Linda using [].</p>
 <div class="tutorial-exercise" data-label="variable4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-burgers</code></pre>
+    burgers</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label = NULL, user_code = NULL, solution_code = NULL, ","    check_code = NULL, envir_result = NULL, evaluate_result = NULL, ","    ..., debug = FALSE) ","{","    if (debug) {","        save_file_name <- sprintf(\"~/Downloads/CheckR/chunk-%s.rds\", ","            label)","        saveRDS(list(label = label, user_code = user_code, solution_code = solution_code, ","            check_code = check_code, envir = envir_result, evaluate_result = evaluate_result), ","            file = save_file_name)","    }","    if (is.null(envir_result)) {","        res <- pre_check(user_code, solution_code)","        if (failed(res)) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","        else {","            return(TRUE)","        }","    }","    if (!is.null(envir_result)) {","        res <- parse_check(user_code)","        if (!res$correct) {","            return(list(correct = FALSE, type = \"error\", location = \"prepend\", ","                message = res$message))","        }","    }","    parsed_check_code <- parse(text = check_code)","    res <- eval(parsed_check_code, envir = list(USER_CODE = user_code))","    if (res$action == \"ok\" && res$message == \"\") ","        res$message = \"Good\"","    feedback_type <- switch(res$action, pass = \"success\", fail = \"error\", ","        ok = \"warning\")","    final <- list(correct = (res$action == \"pass\"), message = res$message, ","        type = feedback_type, location = \"prepend\")","    final","}"]}</script>
 </div>
 </div>
@@ -149,6 +206,7 @@ burgers</code></pre>
 <div id="section-boolean-logic" class="section level3">
 <h3>Boolean logic</h3>
 <p>Check if Gene’s age is 11.</p>
+<p><em>Note:</em> Is the answer the same as above (correct) or is it 1-5 (false)?</p>
 <div class="tutorial-exercise" data-label="boolean" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Modify the line of code below
 
@@ -168,7 +226,7 @@ tutorial_options(exercise.checker = checkr::check_for_learnr)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::register_http_handlers(session, metadata = NULL)
+learnr:::register_http_handlers(session, metadata = list(id = "code.r-journalism/chapter-5", version = 0.8))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -250,7 +308,7 @@ output$`tutorial-exercise-boolean-output` <- renderUI({
 
 <!-- begin doc-metadata -->
 <div id="doc-metadata">
-<h2 class="title toc-ignore" style="display:none;">Chapter 1</h2>
+<h2 class="title toc-ignore" style="display:none;">Chapter 5</h2>
 </div>
 <!-- end doc-metadata -->
 
