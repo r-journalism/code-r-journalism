@@ -64,6 +64,7 @@ RUN mkdir -p /srv/shiny-server/chapter-5
 COPY /chapter-5/index.Rmd /srv/shiny-server/chapter-5
 COPY /chapter-5/index.html /srv/shiny-server/chapter-5
 COPY /chapter-5/_navbar.html /srv/shiny-server/chapter-5
+COPY /chapter-5/bw.rds /srv/shiny-server/chapter-5
 
 
 RUN mkdir -p /srv/shiny-server/chapter-6
