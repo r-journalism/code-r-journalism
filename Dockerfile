@@ -30,7 +30,7 @@ RUN export JAVA_HOME
 # RUN Rscript depends.r
 # COPY start.sh /srv/shiny-server/
 
-RUN R -e "install.packages(c('shiny', 'shinydashboard', 'tidyverse', 'learnr', 'rmarkdown', 'lubridate', 'stringr'), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages(c('shiny', 'shinydashboard', 'tidyverse', 'learnr', 'rmarkdown', 'lubridate', 'stringr', 'forcats', 'wesanderson', 'ggrepel'), repos='http://cran.rstudio.com/')"
 
 
 RUN mkdir -p /srv/shiny-server/chapter-1
@@ -57,6 +57,7 @@ RUN mkdir -p /srv/shiny-server/chapter-4
 COPY /chapter-4/index.Rmd /srv/shiny-server/chapter-4
 COPY /chapter-4/index.html /srv/shiny-server/chapter-4
 COPY /chapter-4/_navbar.html /srv/shiny-server/chapter-4
+COPY /chapter-4/movies.rds /srv/shiny-server/chapter-4
 
 
 RUN mkdir -p /srv/shiny-server/chapter-5

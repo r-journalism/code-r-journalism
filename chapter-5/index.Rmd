@@ -24,6 +24,36 @@ tutorial_options(exercise.checker = checkr::check_for_learnr)
 ```
 
 
+
+
+## Static maps
+
+### Map a shapefile
+
+### Join it to data
+
+### Map out the joined data
+
+### Facet maps
+
+### Map out locations as circles
+
+
+## Interactive maps
+
+### Find the latitude and longitude of an address
+
+### Map that out in an interactive map
+
+### Points in a polygon join
+
+### Map out joined data as interactive choropleth
+
+
+
+
+
+
 ## Intro to R
 
 ### Objects

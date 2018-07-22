@@ -24,6 +24,9 @@ tutorial_options(exercise.checker = checkr::check_for_learnr)
 ```
 
 
+## Publishing?
+
+
 ## Intro to R
 
 ### Objects
