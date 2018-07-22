@@ -21,11 +21,7 @@ library(checkr)
 knitr::opts_chunk$set(echo = FALSE)
 tutorial_options(exercise.checker = checkr::check_for_learnr)
 #knitr::opts_chunk$set(exercise.checker = checker)
-movies <- readRDS("movies.rds") %>%
-  filter(country=="USA") %>% 
-  mutate(genre1=gsub("\\|.*", "", genres)) %>% 
-  filter(content_rating %in% c("G", "PG", "PG-13", "R")) %>% 
-  filter(title_year>1982)
+movies <- readRDS("movies.rds") 
 ```
 
 ## ggplot2
