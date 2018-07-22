@@ -13,4 +13,34 @@ output:
 runtime: shiny_prerendered
 ---
 
+
+```{r setup, include=FALSE}
+library(learnr)
+library(tidyverse)
+library(checkr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.checker = checkr::check_for_learnr)
+#knitr::opts_chunk$set(exercise.checker = checker)
+movies <- readRDS("movies.rds") %>%
+  filter(country=="USA") %>% 
+  mutate(genre1=gsub("\\|.*", "", genres)) %>% 
+  filter(content_rating %in% c("G", "PG", "PG-13", "R")) %>% 
+  filter(title_year>1982)
+```
+
+## ggplot2
+
+Consider this data set from IMDB on 5,000 movies we have in the environment called **movies**.
+
+
+```{r display}
+movies
+```
+
+This is what `glimpse(movies)` outputs.
+
+```{r glimpse}
+glimpse(movies)
+```
+
 There are so many opportunities here to create a visualization using this data.
