@@ -18,6 +18,8 @@ runtime: shiny_prerendered
 library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
+years <- c(301, 978, 101)
+
 ```
 
 
@@ -52,9 +54,6 @@ years
 
 ### Functions
 
-```{r years_array, include=FALSE}
-years <- c(301, 978, 101)
-```
 
 What's the average of the array of numbers assigned to "years"?
 
