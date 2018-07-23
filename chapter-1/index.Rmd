@@ -19,6 +19,10 @@ library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
 years <- c(301, 978, 101)
+burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), shirt=c("White", "Red", "Pink", "Blue", "Yellow"))
+burgers$shirt<- factor(burgers$shirt)
+burgers$id <- factor(burgers$id)
+burgers$name <- as.character(burgers$name)
 
 ```
 
@@ -62,13 +66,6 @@ What's the average of the array of numbers assigned to "years"?
 ```
 
 ### Classes
-
-```{r factors_df, include=FALSE}
-burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), shirt=c("White", "Red", "Pink", "Blue", "Yellow"))
-burgers$shirt<- factor(burgers$shirt)
-burgers$id <- factor(burgers$id)
-burgers$name <- as.character(burgers$name)
-```
 
 Take a look at the structure of **burgers**:
 
