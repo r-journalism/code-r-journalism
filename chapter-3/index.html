@@ -100,10 +100,10 @@ unique(orcas$Species)</code></pre>
 <div class="tutorial-exercise" data-label="select" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-orcas &lt;- 
+orcas2 &lt;- orcas
   
 
-colnames(orcas)</code></pre>
+colnames(orcas2)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
 </div>
 </div>
@@ -113,10 +113,10 @@ colnames(orcas)</code></pre>
 <div class="tutorial-exercise" data-label="arrange" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-orcas &lt;- 
+orcas3 &lt;- orcas2
   
 
-head(orcas)</code></pre>
+head(orcas3)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
 </div>
 </div>
@@ -126,10 +126,10 @@ head(orcas)</code></pre>
 <div class="tutorial-exercise" data-label="mutate" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-orcas &lt;- 
+orcas4 &lt;- orcas3
   
 
-head(orcas)</code></pre>
+head(orcas4)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
 </div>
 <div id="section-mutate-hint">
@@ -142,7 +142,7 @@ head(orcas)</code></pre>
 <div class="tutorial-exercise" data-label="summarize" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-alive_dead &lt;- 
+alive_dead &lt;- orcas4
   
 alive_dead</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
@@ -158,7 +158,7 @@ alive_dead</code></pre>
 <div class="tutorial-exercise" data-label="mutate2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-percent_alive &lt;-
+percent_alive &lt;- alive_dead
 
 percent_alive</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
@@ -166,12 +166,18 @@ percent_alive</code></pre>
 </div>
 <div id="section-group-by" class="section level3">
 <h3>Group By</h3>
+<p>Consider the <strong>bo</strong> data frame again.</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["NOAA.ID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Acquisition"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Sex"],"name":[4],"type":["chr"],"align":["left"]},{"label":["Species"],"name":[5],"type":["chr"],"align":["left"]},{"label":["Birth.Date"],"name":[6],"type":["chr"],"align":["left"]},{"label":["Captivity.Date"],"name":[7],"type":["chr"],"align":["left"]},{"label":["Owner"],"name":[8],"type":["chr"],"align":["left"]},{"label":["Facility"],"name":[9],"type":["chr"],"align":["left"]},{"label":["Purpose"],"name":[10],"type":["chr"],"align":["left"]},{"label":["Status"],"name":[11],"type":["chr"],"align":["left"]},{"label":["Facility.Date"],"name":[12],"type":["chr"],"align":["left"]}],"data":[{"1":"NOA0000141","2":"UNKNOWN","3":"-","4":"MALE","5":"Killer Whale; Orca","6":"1-Jan-78","7":"Unknown","8":"Windsor Safari Park","9":"Windsor Safari Park","10":"Public Display","11":"DEAD","12":"Unknown"},{"1":"NOA0000719","2":"UNKNOWN","3":"BLANCHON","4":"MALE","5":"Beluga Whale","6":"-","7":"Unknown","8":"unreported facility in unspecified foreign country","9":"unreported facility in unspecified foreign country","10":"Public Display","11":"-","12":"Unknown"},{"1":"NOA0000719","2":"TRANSFER","3":"BLANCHON","4":"MALE","5":"Beluga Whale","6":"-","7":"-","8":"Wildlife Conservation Society","9":"New York Aquarium","10":"Public Display","11":"-","12":"-"},{"1":"NOA0000719","2":"TRANSPORT","3":"BLANCHON","4":"MALE","5":"Beluga Whale","6":"-","7":"-","8":"Wildlife Conservation Society","9":"New York Aquarium","10":"Public Display","11":"DEAD","12":"19-Jun-62"},{"1":"NOA0000720","2":"CAPTURE","3":"KATHY","4":"FEMALE","5":"Beluga Whale","6":"1-Jan-72","7":"25-Jul-76","8":"unreported facility in unspecified foreign country","9":"unreported facility in unspecified foreign country","10":"Public Display","11":"-","12":"Unknown"},{"1":"NOA0000720","2":"TRANSFER","3":"KATHY","4":"FEMALE","5":"Beluga Whale","6":"1-Jan-72","7":"-","8":"Mystic Aquarium","9":"New York Aquarium","10":"Public Display","11":"-","12":"-"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 <p>Which facilities have had the most Orcas and Belugas combined?</p>
 <p>List them from highest count to lowest.</p>
 <div class="tutorial-exercise" data-label="facilities_count" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code># Add to the line below
 
-facilities_count &lt;-
+facilities_count &lt;- bo
 
 facilities_count</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
@@ -235,7 +241,7 @@ owner_percent %&gt;%</code></pre>
 </ul>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["Owner"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Species"],"name":[2],"type":["chr"],"align":["left"]},{"label":["percent"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Acuarama S A","2":"Killer Whale; Orca","3":"100.00"},{"1":"Free Willy Keiko Foundation","2":"Killer Whale; Orca","3":"100.00"},{"1":"Georgia Aquarium","2":"Beluga Whale","3":"100.00"},{"1":"Hanna-Barbera's Marineland (Marineland of the Pacific)","2":"Killer Whale; Orca","3":"100.00"},{"1":"Loro Parque S A","2":"Killer Whale; Orca","3":"100.00"},{"1":"Marine World Africa USA","2":"Killer Whale; Orca","3":"100.00"},{"1":"Marine World Joint Powers Authority","2":"Killer Whale; Orca","3":"100.00"},{"1":"Marineland Amusements Corporation","2":"Killer Whale; Orca","3":"100.00"},{"1":"Marineland of Canada","2":"Beluga Whale","3":"57.14"},{"1":"Marineland of Canada","2":"Killer Whale; Orca","3":"42.86"},{"1":"Marineland S.A. (in France)","2":"Killer Whale; Orca","3":"100.00"},{"1":"Miami Seaquarium","2":"Killer Whale; Orca","3":"100.00"},{"1":"Minnesota Zoological Garden","2":"Beluga Whale","3":"100.00"},{"1":"Mystic Aquarium","2":"Beluga Whale","3":"100.00"},{"1":"National Aquarium in Baltimore","2":"Beluga Whale","3":"100.00"},{"1":"Navy, U.S. (SPAWAR)","2":"Beluga Whale","3":"100.00"},{"1":"NMFS (MMPA Sec. 109h/112c)","2":"Beluga Whale","3":"100.00"},{"1":"Ocean Futures Society","2":"Killer Whale; Orca","3":"100.00"},{"1":"Oregon Coast Aquarium","2":"Killer Whale; Orca","3":"100.00"},{"1":"Parc Zoologic De Barcelona","2":"Killer Whale; Orca","3":"100.00"},{"1":"Point Defiance Zoo and Aquarium","2":"Beluga Whale","3":"100.00"},{"1":"Sea World LLC","2":"Beluga Whale","3":"42.29"},{"1":"Sea World LLC","2":"Killer Whale; Orca","3":"57.71"},{"1":"Sea-Arama, Inc. (not active)","2":"Killer Whale; Orca","3":"100.00"},{"1":"Sealand of the Pacific, Ltd.","2":"Killer Whale; Orca","3":"100.00"},{"1":"Shedd (John G.) Aquarium","2":"Beluga Whale","3":"100.00"},{"1":"Trident Television, Ltd.","2":"Killer Whale; Orca","3":"100.00"},{"1":"Twentieth Century-Fox Marineland, Inc.","2":"Killer Whale; Orca","3":"100.00"},{"1":"unreported facility in Canada","2":"Beluga Whale","3":"90.91"},{"1":"unreported facility in Canada","2":"Killer Whale; Orca","3":"9.09"},{"1":"unreported facility in Japan","2":"Killer Whale; Orca","3":"100.00"},{"1":"unreported facility in unspecified foreign country","2":"Beluga Whale","3":"77.78"},{"1":"unreported facility in unspecified foreign country","2":"Killer Whale; Orca","3":"22.22"},{"1":"Vancouver Aquarium","2":"Beluga Whale","3":"91.67"},{"1":"Vancouver Aquarium","2":"Killer Whale; Orca","3":"8.33"},{"1":"Wildlife Conservation Society","2":"Beluga Whale","3":"100.00"},{"1":"Windsor Safari Park","2":"Killer Whale; Orca","3":"100.00"},{"1":"Zeedierenpark Harderwijk B V","2":"Killer Whale; Orca","3":"100.00"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["Owner"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Beluga Whale"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Killer Whale; Orca"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Acuarama S A","2":"NA","3":"100.00"},{"1":"Free Willy Keiko Foundation","2":"NA","3":"100.00"},{"1":"Georgia Aquarium","2":"100.00","3":"NA"},{"1":"Hanna-Barbera's Marineland (Marineland of the Pacific)","2":"NA","3":"100.00"},{"1":"Loro Parque S A","2":"NA","3":"100.00"},{"1":"Marine World Africa USA","2":"NA","3":"100.00"},{"1":"Marine World Joint Powers Authority","2":"NA","3":"100.00"},{"1":"Marineland Amusements Corporation","2":"NA","3":"100.00"},{"1":"Marineland of Canada","2":"57.14","3":"42.86"},{"1":"Marineland S.A. (in France)","2":"NA","3":"100.00"},{"1":"Miami Seaquarium","2":"NA","3":"100.00"},{"1":"Minnesota Zoological Garden","2":"100.00","3":"NA"},{"1":"Mystic Aquarium","2":"100.00","3":"NA"},{"1":"National Aquarium in Baltimore","2":"100.00","3":"NA"},{"1":"Navy, U.S. (SPAWAR)","2":"100.00","3":"NA"},{"1":"NMFS (MMPA Sec. 109h/112c)","2":"100.00","3":"NA"},{"1":"Ocean Futures Society","2":"NA","3":"100.00"},{"1":"Oregon Coast Aquarium","2":"NA","3":"100.00"},{"1":"Parc Zoologic De Barcelona","2":"NA","3":"100.00"},{"1":"Point Defiance Zoo and Aquarium","2":"100.00","3":"NA"},{"1":"Sea World LLC","2":"42.29","3":"57.71"},{"1":"Sea-Arama, Inc. (not active)","2":"NA","3":"100.00"},{"1":"Sealand of the Pacific, Ltd.","2":"NA","3":"100.00"},{"1":"Shedd (John G.) Aquarium","2":"100.00","3":"NA"},{"1":"Trident Television, Ltd.","2":"NA","3":"100.00"},{"1":"Twentieth Century-Fox Marineland, Inc.","2":"NA","3":"100.00"},{"1":"unreported facility in Canada","2":"90.91","3":"9.09"},{"1":"unreported facility in Japan","2":"NA","3":"100.00"},{"1":"unreported facility in unspecified foreign country","2":"77.78","3":"22.22"},{"1":"Vancouver Aquarium","2":"91.67","3":"8.33"},{"1":"Wildlife Conservation Society","2":"100.00","3":"NA"},{"1":"Windsor Safari Park","2":"NA","3":"100.00"},{"1":"Zeedierenpark Harderwijk B V","2":"NA","3":"100.00"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <ul>
@@ -368,7 +374,7 @@ bo</code></pre>
   </script>
 </div>
 <p>Based on available data, can you figure out the average age (in years) of Beluga Whales and Orca Whales in when they join a facility?</p>
-<div class="tutorial-exercise" data-label="last_analysis" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="last_analysis" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="15">
 <pre class="text"><code>bo %&gt;%</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":180,"exercise.checker":"NULL"}</script>
 </div>
@@ -376,9 +382,28 @@ bo</code></pre>
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(tidyverse)
+library(lubridate)
+library(stringr)
 knitr::opts_chunk$set(echo = FALSE)
 bo <- readRDS("bw.rds")
 colnames(bo) <- make.names(colnames(bo))
+orcas <- bo %>% filter(Species=="Killer Whale; Orca")
+orcas2 <- select(orcas, -Species)
+orcas3 <- orcas2 %>% arrange(Facility)
+orcas4 <- mutate(orcas3, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0))
+alive_dead <- orcas4 %>%
+  summarize(total=n_distinct(NOAA.ID), died=sum(status_num))
+
+owner_percent <- bo %>%
+   group_by(Owner, Species) %>%
+   summarize(total=n()) %>%
+   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
+   select(-total) %>%
+   spread(Species, percent)
+
+owner_total <- bo %>%
+   group_by(Owner, Species) %>%
+   summarize(total=n())
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">

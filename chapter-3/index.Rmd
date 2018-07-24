@@ -8,7 +8,6 @@ output:
     progressive: true
     theme: lumen
     highlight: espresso
-    
     include:
       before_body: _navbar.html
 runtime: shiny_prerendered
@@ -17,9 +16,28 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 library(tidyverse)
+library(lubridate)
+library(stringr)
 knitr::opts_chunk$set(echo = FALSE)
 bo <- readRDS("bw.rds")
 colnames(bo) <- make.names(colnames(bo))
+orcas <- bo %>% filter(Species=="Killer Whale; Orca")
+orcas2 <- select(orcas, -Species)
+orcas3 <- orcas2 %>% arrange(Facility)
+orcas4 <- mutate(orcas3, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0))
+alive_dead <- orcas4 %>%
+  summarize(total=n_distinct(NOAA.ID), died=sum(status_num))
+
+owner_percent <- bo %>%
+   group_by(Owner, Species) %>%
+   summarize(total=n()) %>%
+   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
+   select(-total) %>%
+   spread(Species, percent)
+
+owner_total <- bo %>%
+   group_by(Owner, Species) %>%
+   summarize(total=n())
 ```
 
 ## Transforming and analyzing data
@@ -58,18 +76,13 @@ unique(orcas$Species)
 
 Drop the column/variable *Species* since there's only one variable in it now.
 
-```{r orcas, include=FALSE}
-orcas <- filter(bo, Species=="Killer Whale; Orca")
-```
-
-
 ```{r select, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-orcas <- 
+orcas2 <- orcas
   
 
-colnames(orcas)
+colnames(orcas2)
 ```
 
 ### Arrange
@@ -79,10 +92,10 @@ Sort the **orcas** data frame based on the *Facility* column in alphabetical ord
 ```{r arrange, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-orcas <- 
+orcas3 <- orcas2
   
 
-head(orcas)
+head(orcas3)
 ```
 
 ### Mutate
@@ -93,10 +106,10 @@ Create a new column called *status_num* to fill with a 1 if *Status* is "DEAD" o
 ```{r mutate, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-orcas <- 
+orcas4 <- orcas3
   
 
-head(orcas)
+head(orcas4)
 ```
 
 <div id="mutate-hint">
@@ -106,16 +119,12 @@ head(orcas)
 ### Summarize
 
 
-```{r orcas2, include=FALSE}
-orcas <- mutate(orcas, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0))
-```
-
 Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*
 
 ```{r summarize, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-alive_dead <- 
+alive_dead <- orcas4
   
 alive_dead
 ```
@@ -130,22 +139,25 @@ alive_dead
 
 What's the percent of dead Orcas?
 
-```{r orcas3, include=FALSE}
-alive_dead <- mutate(orcas, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0)) %>% 
-  summarize(total=n_distinct(NOAA.ID), died=sum(status_num))
-```
 
 Now figure how the percent of Orcas still alive.
 
 ```{r mutate2, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-percent_alive <-
+percent_alive <- alive_dead
 
 percent_alive
 ```
 
 ### Group By
+
+Consider the **bo** data frame again.
+
+
+```{r data_view2}
+head(bo)
+```
 
 Which facilities have had the most Orcas and Belugas combined? 
 
@@ -154,7 +166,7 @@ List them from highest count to lowest.
 ```{r facilities_count, exercise=T, exercise.timelimit=60}
 # Add to the line below
 
-facilities_count <-
+facilities_count <- bo
 
 facilities_count
 ```
@@ -168,7 +180,7 @@ facilities_count
 
 Consider the **bo** data set again.
 
-```{r data_view2}
+```{r data_view3}
 head(bo)
 ```
 
@@ -198,15 +210,6 @@ facilities_count
 Here's a wide data frame with *Owners* and percent of Belugas compared to Orca whales owned.
 
 
-```{r clean_up, include=F}
-owner_percent <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n()) %>%
-   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
-   select(-total) %>%
-   spread(Species, percent)
-```
-
 
 ```{r display_this}
 head(owner_percent)
@@ -233,25 +236,12 @@ Consider these two data sets:
 
 * **owner_percent**
 
-```{r join_left, include=F}
-owner_percent <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n()) %>%
-   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
-   select(-total)
-```
-
 ```{r owner_percent}
 owner_percent
 ```
 
 * **owner_total**
 
-```{r join_right, include=F}
-owner_total <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n())
-```
 
 ```{r owner_total}
 owner_total
@@ -385,9 +375,6 @@ Turn *Captivity.Date* into a date data R can recognize.
 
 We'll use the **lubridate** package.
 
-```{r lubridate, include=F}
-library(lubridate)
-```
 
 
 ```{r date, exercise=T, exercise.timelimit=60}
@@ -448,7 +435,7 @@ bo
 
 Based on available data, can you figure out the average age (in years) of Beluga Whales and Orca Whales in when they join a facility?
 
-```{r last_analysis, exercise=T, exercise.timelimit=180}
+```{r last_analysis, exercise=T, exercise.timelimit=180, exercise.lines=15}
 bo %>%
   
   
