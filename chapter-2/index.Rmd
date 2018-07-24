@@ -21,6 +21,20 @@ runtime: shiny_prerendered
 library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
+burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), grade=c(NA, NA, "seventh", "eighth", "sixth"))
+
+burgers$grade <- factor(burgers$grade)
+
+burgers$id <- factor(burgers$id)
+burgers$name <- as.character(burgers$name)
+burgers <- rename(burgers, `First name`=name)
+
+burgers2 <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), grade=c(NA, NA, "seventh", "eighth", "sixth"))
+burgers2$grade <- factor(burgers2$grade)
+
+burgers2$id <- factor(burgers2$id)
+burgers2$name <- as.character(burgers2$name)
+burgers2 <- rename(burgers2, `First name`=name)
 ```
 
 
@@ -72,14 +86,6 @@ quiz(caption = "Quiz 2",
 
 What if you import in a spreadsheet with a space in the column name like below?
 
-```{r column_names, include=F}
-burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), shirt=c("White", "Red", "Pink", "Blue", "Yellow"))
-burgers$shirt<- factor(burgers$shirt)
-burgers$id <- factor(burgers$id)
-burgers$name <- as.character(burgers$name)
-burgers <- rename(burgers, `First name`=name)
-```
-
 ```{r show_burgers}
 burgers
 ```
@@ -92,14 +98,24 @@ How do you refer to the the *First name* variable/column with **$** and not the 
 burgers$
 ```
 
+
+<div id="variable2-hint">
+**Hint:** If you have spaces in a column name or it begins with a special character, you should surround the name with backticks ` next to the 1 button.
+</div>
+
 ### Clean up column name
+
+Let's create a new data frame **burgers2** from **burgers** because we're going to change it up.
 
 Run the command on the *First name* variable/column to strip out the spaces and characters and replace them with periods.
 
 ```{r variable3, exercise=T, exercise.timelimit=60}
 # Modify the line of code below
+burgers2 <- burgers
 
-colnames(burgers) <-     colnames(burgers)
+colnames(burgers2) <- _______(colnames(burgers2))
+
+burgers2
 ```
 
 ### Rename a column
@@ -109,24 +125,16 @@ Use the special **dplyr** function to rename the *id* variable in **burgers** to
 ```{r rename, exercise=T, exercise.timelimit=60}
 # Modify the line of code below
 
-burgers <- 
+burgers2 <- 
   
-burgers
+burgers2
 ```
 
 
 ### Filter out NAs
 
-```{r na_df, include=F}
-burgers <- data.frame(id=c(60006,60007,60008,60009, 60010), name=c("Bob", "Linda", "Louise", "Tina", "Gene"), age=c(45, 44, 12, 13, 11), grade=c(NA, NA, "seventh", "eighth", "sixth"))
-burgers$grade <- factor(burgers$grade)
-burgers$id <- factor(burgers$id)
-burgers$name <- as.character(burgers$name)
-burgers <- rename(burgers, `First name`=name)
-```
-
 ```{r show_burgers2}
-burgers
+burgers2
 ```
 
 Create a new data frame called **kids** by filtering out the NAs from *grade* column in **burgers**.
@@ -134,7 +142,7 @@ Create a new data frame called **kids** by filtering out the NAs from *grade* co
 ```{r filter, exercise=T, exercise.timelimit=60}
 # Modify the line of code below
 
-kids <-     burgers
+kids <-     burgers2
 
 kids
 ```

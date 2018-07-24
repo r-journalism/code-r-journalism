@@ -18,9 +18,37 @@ runtime: shiny_prerendered
 library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
-bo <- readRDS("bw.rds")
-colnames(bo) <- make.names(colnames(bo))
+
 ```
+
+## Shape files
+
+### Load this shapefile
+
+### Plot the shapefile
+
+### Load data
+
+### Join the shapefile to the data
+
+### Plot the data on the shapefile
+
+### Style it with headline, etc
+
+### Add data of locations
+
+### Plot the points on themap
+
+### Points in a polygon join
+
+### Change projection
+
+### Geolocate some data
+
+### Add it to an interactive map
+
+
+
 
 ## Transforming and analyzing data
 
