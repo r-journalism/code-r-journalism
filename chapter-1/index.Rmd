@@ -5,7 +5,6 @@ tutorial:
   version: .85
 output:
   learnr::tutorial:
-    fig_caption: no
     progressive: true
     theme: lumen
     highlight: espresso
