@@ -158,7 +158,7 @@ burgers
 </div>
 
 ```{r v1-check}
-burgers[,3]
+burgers[,4]
 ``` 
 
 
