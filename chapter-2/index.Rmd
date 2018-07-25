@@ -2,7 +2,7 @@
 title: "Chapter 2"
 tutorial:
   id: "code.r-journalism/chapter-2"
-  version: .8
+  version: .85
 output:
   learnr::tutorial:
     progressive: true
@@ -16,8 +16,6 @@ runtime: shiny_prerendered
 
 
 ```{r setup, include=FALSE}
-#install.packages("learnr")
-#install.packages("tidyverse")
 library(learnr)
 library(tidyverse)
 knitr::opts_chunk$set(echo = FALSE)
@@ -35,6 +33,28 @@ burgers2$grade <- factor(burgers2$grade)
 burgers2$id <- factor(burgers2$id)
 burgers2$name <- as.character(burgers2$name)
 burgers2 <- rename(burgers2, `First name`=name)
+
+
+nospace <- function(a) {
+  a <- gsub(" ","",a) 
+  gsub("\\n", "", a)
+  gsub("\\`", "", a)
+}
+
+is_bad_code <- function(user_code, check_code, envir_result) {
+  eval(nospace(user_code)) != eval(nospace(check_code), envir = envir_result)
+}
+
+checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
+  if (is_bad_code(user_code, check_code, envir_result)) {
+    return(list(message = "Code wasn't right!", correct = FALSE, location = "append"))
+  } else {
+    return(list(message = "Great Job!", correct = TRUE, location = "append"))
+  }
+}  
+
+tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
+
 ```
 
 
@@ -92,15 +112,20 @@ burgers
 
 How do you refer to the the *First name* variable/column with **$** and not the **[]**?
 
-```{r variable2, exercise=T, exercise.timelimit=60}
-# Add to the line below
+```{r v2, exercise=TRUE}
+# Add to the line below and delete this comment before submitting
 
 burgers$
 ```
 
 
-<div id="variable2-hint">
-**Hint:** If you have spaces in a column name or it begins with a special character, you should surround the name with backticks ` next to the 1 button.
+```{r v2-check}
+burgers$`First name`
+``` 
+
+
+<div id="v2-hint">
+**Hint:** If you have spaces in a column name or it begins with a special character, you should surround the name with backticks ` next to the 1 button. Also, did you delete the commented line before submitting?
 </div>
 
 ### Clean up column name
@@ -109,8 +134,10 @@ Let's create a new data frame **burgers2** from **burgers** because we're going 
 
 Run the command on the *First name* variable/column to strip out the spaces and characters and replace them with periods.
 
-```{r variable3, exercise=T, exercise.timelimit=60}
-# Modify the line of code below
+
+```{r v3, exercise=TRUE}
+# Modify the line of code below and delete this comment before submitting
+
 burgers2 <- burgers
 
 colnames(burgers2) <- _______(colnames(burgers2))
@@ -118,18 +145,45 @@ colnames(burgers2) <- _______(colnames(burgers2))
 burgers2
 ```
 
+
+```{r v3-check}
+burgers2 <- burgers
+
+colnames(burgers2) <- make.names(colnames(burgers2))
+
+burgers2
+``` 
+
+
+<div id="v3-hint">
+**Hint:** Delete the commented line out before submitting.
+</div>
+
 ### Rename a column
 
 Use the special **dplyr** function to rename the *id* variable in **burgers** to *employee_id*
 
-```{r rename, exercise=T, exercise.timelimit=60}
-# Modify the line of code below
+
+
+```{r rn, exercise=TRUE}
+# Modify the line of code below and delete this comment before submitting
 
 burgers2 <- 
   
 burgers2
 ```
 
+
+```{r rn-check}
+burgers2 <- rename(burgers2, `First name`=name)
+
+burgers2
+``` 
+
+
+<div id="rn-hint">
+**Hint:** Delete the commented line out before submitting.
+</div>
 
 ### Filter out NAs
 
@@ -139,10 +193,23 @@ burgers2
 
 Create a new data frame called **kids** by filtering out the NAs from *grade* column in **burgers**.
 
-```{r filter, exercise=T, exercise.timelimit=60}
-# Modify the line of code below
 
-kids <-     burgers2
+```{r na, exercise=TRUE}
+# Modify the line of code below and delete this comment before submitting
+
+kids <- _______(burgers2, !____(______))
 
 kids
 ```
+
+
+```{r na-check}
+kids <- filter(burgers2, !is.na(grade))
+
+kids
+``` 
+
+
+<div id="na-hint">
+**Hint:** Delete the commented line out before submitting.
+</div>
