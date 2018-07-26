@@ -2,7 +2,7 @@
 title: "Chapter 2"
 tutorial:
   id: "code.r-journalism/chapter-2"
-  version: .85
+  version: .9
 output:
   learnr::tutorial:
     progressive: true
