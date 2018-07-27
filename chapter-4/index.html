@@ -111,9 +111,12 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="section-make-a-scatterplot" class="section level3">
 <h3>Make a scatterplot</h3>
 <p>Let’s start easy with a simple scatter plot comparing box office gross to the budget.</p>
-<div class="tutorial-exercise" data-label="scatter1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="s1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______) + geom_________(aes(______,______))</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+</div>
+<div class="tutorial-exercise-support" data-label="s1-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(movies) + geom_point(aes(x=gross,y=budget))</code></pre>
 </div>
 </div>
 <div id="section-change-the-color" class="section level3">
@@ -121,7 +124,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>Let’s change the color of the circles to blue.</p>
 <div class="tutorial-exercise" data-label="scatter2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______) + geom_________(aes(______,______), ________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 </div>
 <div id="section-make-a-scatterplot-with-color-groups" class="section level3">
@@ -129,7 +132,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p>Add a color factor based on <code>content_rating</code>.</p>
 <div class="tutorial-exercise" data-label="scatter3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______) + geom_________(aes(______, ______, ______))</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <p>Did you notice the placement of the second-to-last parenthesis for color this time?</p>
 <p>### Bar plot</p>
@@ -138,7 +141,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="text"><code>ggplot(______,
              aes(x=_________)) +
   geom__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 </div>
 <div id="section-stacked-bar-plot-ver.-1" class="section level3">
@@ -148,7 +151,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="text"><code>ggplot(______,
              aes(x=_________,__________)) +
   geom__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-geom_bar2-hint">
 <p><strong>Hint:</strong> You may want to use the <code>fill</code> argument.</p>
@@ -161,7 +164,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
   filter(___________) %&gt;%
   ggplot(aes(x=_________,__________)) +
   geom__________(________________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-geom_bar3-hint">
 <p><strong>Hint:</strong> You may want to use the <code>position</code> argument in the <code>geom_bar()</code> function.</p>
@@ -173,7 +176,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 filter(___________) %&gt;%
 ggplot(aes(x=_________,__________)) +
 geom__________(________________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 </div>
 </div>
@@ -225,7 +228,7 @@ geom__________(________________)</code></pre>
   filter(__________) %&gt;% 
   ggplot(aes(__________,___________)) +
   geom_bar(___________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-jc1-hint">
 <p><strong>Hint:</strong> You may want to pass the argument <code>stat=</code> to the <code>geom_bar()</code> function. What do you fill with stat? You’ll need to check your <a href="https://learn.r-journalism.com/en/visualizing/charts_with_ggplot/ggplot2/">notes</a>.</p>
@@ -240,7 +243,7 @@ filter(__________) %&gt;%
 ggplot(aes(__________,___________)) +
 geom_bar(___________) +
 __________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-jc2-hint">
 <p><strong>Hint:</strong> What’s that line you need to add? You’re <strong>flip</strong>ping the <strong>coord</strong>inates.</p>
@@ -258,7 +261,7 @@ filter(__________) %&gt;%
 ggplot(aes(x=fct_reorder(_________,desc(_______)), y=___________)) +
 geom_bar(___________) +
 __________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-jc3-hint">
 <p><strong>Hint:</strong> I’ve already given you the <code>fct_reorder()</code> function! Just <a href="http://learn.r-journalism.com/en/visualizing/customizing_charts/customizing-exporting-ggplot2/">look up</a> how it works so you use it right.</p>
@@ -278,7 +281,7 @@ ____=___________,
 ______=__________________,
 ______=___________________) +
 theme_minimal()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-jc4-hint">
 <p><strong>Hint:</strong> You might want to use the <code>labs()</code> function. But you’ll have to <a href="http://learn.r-journalism.com/en/visualizing/customizing_charts/customizing-exporting-ggplot2/">look up</a> the rest.</p>
@@ -302,7 +305,7 @@ movies %&gt;%
            ______=___________________) +
   theme_minimal() +
   ______________(values=wes_palette(&quot;BottleRocket1&quot;), guide=F)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-jc5-hint">
 <p><strong>Hint:</strong> In the last line, you’re using a scale function that lets you change the fill colors manually. Here’s the <a href="https://github.com/karthik/wesanderson">documentation</a> on the Wes Anderson palette</p>
@@ -320,7 +323,7 @@ filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&q
 ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
 geom_point() +
 geom_____________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":9,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":864,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":9,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":864,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-ggrepel-hint">
 <p><strong>Hint:</strong> The filter code that lets you filter by group is <code>%in%</code>. The color is based on the director and the label is based on the movie name. Can you find those variable names in the <strong>movies</strong> data frame? And what’s the function for the last line? If you forgot, refer to <a href="http://learn.r-journalism.com/en/visualizing/more_charts/fancy-charts/">the lesson</a>.</p>
@@ -335,7 +338,7 @@ geom_____________()</code></pre>
   geom_____________(size=2)
 _____________(~____________, nrow=2) +
   theme(legend.position=&quot;none&quot;)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":576,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":"NULL"}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":576,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div id="section-ggrepel_facet-hint">
 <p><strong>Hint:</strong> What’s the term for creating facets of the chart? It’s facet_<em>something</em>. There’s <a href="http://learn.r-journalism.com/en/visualizing/charts_with_ggplot/ggplot2/">more than one</a>, but we want the one that we can specify the number of rows in the output (with <code>nrow</code>).</p>
@@ -350,6 +353,45 @@ movies <- readRDS("movies.rds") %>%
   mutate(genre1=gsub("\\|.*", "", genres)) %>% 
   filter(content_rating %in% c("G", "PG", "PG-13", "R")) %>% 
   filter(title_year>1982)
+
+
+
+
+is_bad_code <- function(user_code, check_code, envir_result) {
+
+  e_rows <- nrow(eval(parse(text = user_code)))
+  r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
+  e_cols <- ncol(eval(parse(text = user_code)))
+  r_cols <- ncol(eval(parse(text = check_code), envir = envir_result))
+  e_type <- typeof(eval(parse(text = user_code)))
+  r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
+  e_len <- length(eval(parse(text = user_code)))
+  r_len <- length(eval(parse(text = check_code)))
+  
+  if (e_len!=0 & r_len!=0) {
+    if (e_type==r_type) {
+      if (e_type!="character" & e_type!="double" & e_type!="integer") {
+        if (e_rows==r_rows && e_cols==r_cols) {
+          eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
+        } else {
+          TRUE
+        }
+      } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
+    } else {
+      TRUE
+    }
+  } else { TRUE }
+}
+
+checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
+  if (is_bad_code(user_code, check_code, envir_result)) {
+    return(list(message = "Code wasn't right!", correct = FALSE, location = "append"))
+  } else {
+    return(list(message = "Great Job!", correct = TRUE, location = "append"))
+  }
+}  
+
+tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
@@ -357,9 +399,9 @@ learnr:::register_http_handlers(session, metadata = list(id = "code.r-journalism
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-scatter1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-scatter1-code-editor`)), session)
-output$`tutorial-exercise-scatter1-output` <- renderUI({
-  `tutorial-exercise-scatter1-result`()
+`tutorial-exercise-s1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-s1-code-editor`)), session)
+output$`tutorial-exercise-s1-output` <- renderUI({
+  `tutorial-exercise-s1-result`()
 })
 </script>
  

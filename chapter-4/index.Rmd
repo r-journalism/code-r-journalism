@@ -23,6 +23,45 @@ movies <- readRDS("movies.rds") %>%
   mutate(genre1=gsub("\\|.*", "", genres)) %>% 
   filter(content_rating %in% c("G", "PG", "PG-13", "R")) %>% 
   filter(title_year>1982)
+
+
+
+
+is_bad_code <- function(user_code, check_code, envir_result) {
+
+  e_rows <- nrow(eval(parse(text = user_code)))
+  r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
+  e_cols <- ncol(eval(parse(text = user_code)))
+  r_cols <- ncol(eval(parse(text = check_code), envir = envir_result))
+  e_type <- typeof(eval(parse(text = user_code)))
+  r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
+  e_len <- length(eval(parse(text = user_code)))
+  r_len <- length(eval(parse(text = check_code)))
+  
+  if (e_len!=0 & r_len!=0) {
+    if (e_type==r_type) {
+      if (e_type!="character" & e_type!="double" & e_type!="integer") {
+        if (e_rows==r_rows && e_cols==r_cols) {
+          eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
+        } else {
+          TRUE
+        }
+      } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
+    } else {
+      TRUE
+    }
+  } else { TRUE }
+}
+
+checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
+  if (is_bad_code(user_code, check_code, envir_result)) {
+    return(list(message = "Code wasn't right!", correct = FALSE, location = "append"))
+  } else {
+    return(list(message = "Great Job!", correct = TRUE, location = "append"))
+  }
+}  
+
+tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
 ```
 
 ## ggplot2
@@ -45,9 +84,19 @@ glimpse(movies)
 
 Let's start easy with a simple scatter plot comparing box office gross to the budget.
 
-```{r scatter1, exercise=T, exercise.timelimit=60, warning=F, message=F}
+
+```{r s1, exercise=TRUE, warning=F, message=F}
+
 ggplot(______) + geom_________(aes(______,______))
 ```
+
+
+```{r s1-check}
+ggplot(movies) + geom_point(aes(x=gross,y=budget))
+
+``` 
+
+
 
 ### Change the color
 
