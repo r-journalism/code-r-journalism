@@ -2,7 +2,7 @@
 title: "Chapter 4"
 tutorial:
   id: "code.r-journalism/chapter-4"
-  version: .8
+  version: .85
 output:
   learnr::tutorial:
     progressive: true
@@ -26,9 +26,17 @@ movies <- readRDS("movies.rds") %>%
 
 
 
+nospace <- function(a) {
+  a <- gsub(" ","",a) 
+  a <- gsub("\\\n", "", a)
+  gsub("\\`", "", a)
+}
+
 
 is_bad_code <- function(user_code, check_code, envir_result) {
 
+  is_null <- is.null(eval(parse(text = user_code)))
+  is_gg <- any(grepl("gg", class(eval(parse(text = user_code)))))
   e_rows <- nrow(eval(parse(text = user_code)))
   r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
   e_cols <- ncol(eval(parse(text = user_code)))
@@ -37,21 +45,23 @@ is_bad_code <- function(user_code, check_code, envir_result) {
   r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
   e_len <- length(eval(parse(text = user_code)))
   r_len <- length(eval(parse(text = check_code)))
-  
-  if (e_len!=0 & r_len!=0) {
-    if (e_type==r_type) {
-      if (e_type!="character" & e_type!="double" & e_type!="integer") {
-        if (e_rows==r_rows && e_cols==r_cols) {
-          eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
-        } else {
-          TRUE
-        }
-      } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
-    } else {
-      TRUE
-    }
-  } else { TRUE }
+  if (is_null!=T & is_gg!=T){
+    if (e_len!=0 & r_len!=0) {
+      if (e_type==r_type) {
+        if (e_type!="character" & e_type!="double" & e_type!="integer" & e_type!="logical") {
+          if (e_rows==r_rows && e_cols==r_cols) {
+            eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
+          } else {
+            TRUE
+          }
+        } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
+      } else {
+        TRUE
+      }
+    } else { TRUE }
+  } else {nospace(user_code) != nospace(check_code)}
 }
+
 
 checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
   if (is_bad_code(user_code, check_code, envir_result)) {
@@ -62,6 +72,7 @@ checker <- function(label, user_code, check_code, envir_result, evaluate_result,
 }  
 
 tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
+
 ```
 
 ## ggplot2
@@ -85,16 +96,17 @@ glimpse(movies)
 Let's start easy with a simple scatter plot comparing box office gross to the budget.
 
 
-```{r s1, exercise=TRUE, warning=F, message=F}
-
+```{r v2, exercise=TRUE}
 ggplot(______) + geom_________(aes(______,______))
+
 ```
 
 
-```{r s1-check}
+```{r v2-check}
 ggplot(movies) + geom_point(aes(x=gross,y=budget))
-
 ``` 
+
+
 
 
 

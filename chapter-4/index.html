@@ -111,11 +111,11 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="section-make-a-scatterplot" class="section level3">
 <h3>Make a scatterplot</h3>
 <p>Let’s start easy with a simple scatter plot comparing box office gross to the budget.</p>
-<div class="tutorial-exercise" data-label="s1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="v2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______) + geom_________(aes(______,______))</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div class="tutorial-exercise-support" data-label="s1-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise-support" data-label="v2-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(movies) + geom_point(aes(x=gross,y=budget))</code></pre>
 </div>
 </div>
@@ -356,9 +356,17 @@ movies <- readRDS("movies.rds") %>%
 
 
 
+nospace <- function(a) {
+  a <- gsub(" ","",a) 
+  a <- gsub("\\\n", "", a)
+  gsub("\\`", "", a)
+}
+
 
 is_bad_code <- function(user_code, check_code, envir_result) {
 
+  is_null <- is.null(eval(parse(text = user_code)))
+  is_gg <- any(grepl("gg", class(eval(parse(text = user_code)))))
   e_rows <- nrow(eval(parse(text = user_code)))
   r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
   e_cols <- ncol(eval(parse(text = user_code)))
@@ -367,21 +375,23 @@ is_bad_code <- function(user_code, check_code, envir_result) {
   r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
   e_len <- length(eval(parse(text = user_code)))
   r_len <- length(eval(parse(text = check_code)))
-  
-  if (e_len!=0 & r_len!=0) {
-    if (e_type==r_type) {
-      if (e_type!="character" & e_type!="double" & e_type!="integer") {
-        if (e_rows==r_rows && e_cols==r_cols) {
-          eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
-        } else {
-          TRUE
-        }
-      } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
-    } else {
-      TRUE
-    }
-  } else { TRUE }
+  if (is_null!=T & is_gg!=T){
+    if (e_len!=0 & r_len!=0) {
+      if (e_type==r_type) {
+        if (e_type!="character" & e_type!="double" & e_type!="integer") {
+          if (e_rows==r_rows && e_cols==r_cols) {
+            eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
+          } else {
+            TRUE
+          }
+        } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
+      } else {
+        TRUE
+      }
+    } else { TRUE }
+  } else {nospace(user_code) != nospace(check_code)}
 }
+
 
 checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
   if (is_bad_code(user_code, check_code, envir_result)) {
@@ -392,16 +402,17 @@ checker <- function(label, user_code, check_code, envir_result, evaluate_result,
 }  
 
 tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
+
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::register_http_handlers(session, metadata = list(id = "code.r-journalism/chapter-4", version = 0.8))
+learnr:::register_http_handlers(session, metadata = list(id = "code.r-journalism/chapter-4", version = 0.85))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-s1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-s1-code-editor`)), session)
-output$`tutorial-exercise-s1-output` <- renderUI({
-  `tutorial-exercise-s1-result`()
+`tutorial-exercise-v2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-v2-code-editor`)), session)
+output$`tutorial-exercise-v2-output` <- renderUI({
+  `tutorial-exercise-v2-result`()
 })
 </script>
  
