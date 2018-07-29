@@ -112,7 +112,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h3>Make a scatterplot</h3>
 <p>Let’s start easy with a simple scatter plot comparing box office gross to the budget.</p>
 <div class="tutorial-exercise" data-label="v2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>ggplot(______) + geom_________(aes(______,______))</code></pre>
+<pre class="text"><code>ggplot(______) + geom_________(aes(x=____,y=_____))</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
 <div class="tutorial-exercise-support" data-label="v2-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
@@ -122,61 +122,95 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <div id="section-change-the-color" class="section level3">
 <h3>Change the color</h3>
 <p>Let’s change the color of the circles to blue.</p>
-<div class="tutorial-exercise" data-label="scatter2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>ggplot(______) + geom_________(aes(______,______), ________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<div class="tutorial-exercise" data-label="s1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(______) + geom_________(aes(x=_____,y=_____), ________)</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+</div>
+<div class="tutorial-exercise-support" data-label="s1-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(movies) + geom_point(aes(x=gross,y=budget), color=&quot;blue&quot;)</code></pre>
 </div>
 </div>
 <div id="section-make-a-scatterplot-with-color-groups" class="section level3">
 <h3>Make a scatterplot with color groups</h3>
 <p>Add a color factor based on <code>content_rating</code>.</p>
-<div class="tutorial-exercise" data-label="scatter3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>ggplot(______) + geom_________(aes(______, ______, ______))</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<div class="tutorial-exercise" data-label="sc1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(______) + geom_________(aes(x=_____, y=______, _______=_____))</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+</div>
+<div class="tutorial-exercise-support" data-label="sc1-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(movies) + geom_point(aes(x=gross,y=budget, color=content_rating))</code></pre>
 </div>
 <p>Did you notice the placement of the second-to-last parenthesis for color this time?</p>
-<p>### Bar plot</p>
-<p>Make a bar plot chart that counts up the number of titles per year.</p>
-<div class="tutorial-exercise" data-label="geom_bar1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+</div>
+<div id="section-bar-plot" class="section level3">
+<h3>Bar plot</h3>
+<p>Make a bar plot chart that counts up the number of titles per year (<em>title_year</em>).</p>
+<div class="tutorial-exercise" data-label="bp1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______,
              aes(x=_________)) +
   geom__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+</div>
+<div class="tutorial-exercise-support" data-label="bp1-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(movies,
+             aes(x=title_year)) +
+  geom_bar()</code></pre>
 </div>
 </div>
 <div id="section-stacked-bar-plot-ver.-1" class="section level3">
 <h3>Stacked bar plot ver. 1</h3>
 <p>Add <em>content_rating</em> as a grouping per year counting up the movies to create a stacked bar chart.</p>
-<div class="tutorial-exercise" data-label="geom_bar2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="bp2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>ggplot(______,
-             aes(x=_________,__________)) +
+             aes(x=_________,_________)) +
   geom__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-geom_bar2-hint">
-<p><strong>Hint:</strong> You may want to use the <code>fill</code> argument.</p>
+<div class="tutorial-exercise-support" data-label="bp2-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>ggplot(movies,
+             aes(x=title_year, fill=content_rating)) +
+  geom_bar()</code></pre>
 </div>
-<p>### Stacked bar plot ver. 2</p>
+<div id="section-bp2-hint">
+<p><strong>Hint:</strong> You may want to use the <code>fill</code> argument in the <code>aes()</code>.</p>
+</div>
+</div>
+<div id="section-stacked-bar-plot-ver.-2" class="section level3">
+<h3>Stacked bar plot ver. 2</h3>
 <p>Great, now split up the bars so they’re not stacked but next to each other.</p>
 <p>And we’ll focus on movies created after 2001 (<em>title_year</em> is the variable).</p>
-<div class="tutorial-exercise" data-label="geom_bar3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="bp3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
   filter(___________) %&gt;%
-  ggplot(aes(x=_________,__________)) +
+  ggplot(aes(x=_________,fill=________)) +
   geom__________(________________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-geom_bar3-hint">
+<div class="tutorial-exercise-support" data-label="bp3-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(title_year&gt;2001) %&gt;%
+  ggplot(aes(x=title_year,fill=content_rating)) +
+  geom_bar(position=&quot;dodge&quot;)</code></pre>
+</div>
+<div id="section-bp3-hint">
 <p><strong>Hint:</strong> You may want to use the <code>position</code> argument in the <code>geom_bar()</code> function.</p>
 </div>
-<p>### Stacked bar plot ver. 3</p>
+</div>
+<div id="section-stacked-bar-plot-ver.-3" class="section level3">
+<h3>Stacked bar plot ver. 3</h3>
 <p>Alright, let’s make a percent stacked chart this time:</p>
-<div class="tutorial-exercise" data-label="geom_bar4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="bp4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
-filter(___________) %&gt;%
-ggplot(aes(x=_________,__________)) +
-geom__________(________________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+  filter(___________) %&gt;%
+  ggplot(aes(x=_________,fill=_________)) +
+  geom__________(position=________)</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+</div>
+<div class="tutorial-exercise-support" data-label="bp4-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(title_year&gt;2001) %&gt;%
+  ggplot(aes(x=title_year,fill=content_rating)) +
+  geom_bar(position=&quot;fill&quot;)</code></pre>
 </div>
 </div>
 </div>
@@ -223,29 +257,42 @@ geom__________(________________)</code></pre>
 ## $ movie_facebook_likes      &lt;int&gt; 33000, 0, 164000, 24000, 0, 29000, 1...
 ## $ genre1                    &lt;chr&gt; &quot;Action&quot;, &quot;Action&quot;, &quot;Action&quot;, &quot;Actio...</code></pre>
 <p>Let’s look at box office results for all the movies that James Cameron has created (variable is <em>director_name</em>).</p>
-<div class="tutorial-exercise" data-label="jc1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="jc" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
   filter(__________) %&gt;% 
-  ggplot(aes(__________,___________)) +
+  ggplot(aes(x=_________,y=___________)) +
   geom_bar(___________)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-jc1-hint">
+<div class="tutorial-exercise-support" data-label="jc-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name==&quot;James Cameron&quot;) %&gt;%
+  ggplot(aes(x=movie_title,y=gross)) +
+  geom_bar(stat=&quot;identity&quot;)</code></pre>
+</div>
+<div id="section-jc-hint">
 <p><strong>Hint:</strong> You may want to pass the argument <code>stat=</code> to the <code>geom_bar()</code> function. What do you fill with stat? You’ll need to check your <a href="https://learn.r-journalism.com/en/visualizing/charts_with_ggplot/ggplot2/">notes</a>.</p>
 </div>
 </div>
 <div id="section-flip-that-chart" class="section level3">
 <h3>Flip that chart</h3>
 <p>Transpose that chart so that the movies are on the y axis instead of the x axis (without swapping the coords from the code above).</p>
-<div class="tutorial-exercise" data-label="jc2, " data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<div class="tutorial-exercise" data-label="j_c2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
-filter(__________) %&gt;% 
-ggplot(aes(__________,___________)) +
-geom_bar(___________) +
-__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+  filter(__________) %&gt;% 
+  ggplot(aes(x=movie_title,y=gross)) +
+  geom_bar(___________) +
+  __________()</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-jc2-hint">
+<div class="tutorial-exercise-support" data-label="j_c2-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name==&quot;James Cameron&quot;) %&gt;%
+  ggplot(aes(x=movie_title,y=gross)) +
+  geom_bar(stat=&quot;identity&quot;) +
+  coord_flip()</code></pre>
+</div>
+<div id="section-j_c2-hint">
 <p><strong>Hint:</strong> What’s that line you need to add? You’re <strong>flip</strong>ping the <strong>coord</strong>inates.</p>
 </div>
 </div>
@@ -253,49 +300,67 @@ __________()</code></pre>
 <h3>Reorder the labels in the chart</h3>
 <p>Let’s recreate the chart so that the movies listed are in order of release date (variable is <em>title_year</em>).</p>
 <p>Remember, you’ll need to use the library <strong>forcats</strong> and the function <code>fct_reorder()</code>.</p>
-<div class="tutorial-exercise" data-label="jc3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>library(forcats)
-
-movies %&gt;% 
-filter(__________) %&gt;%
-ggplot(aes(x=fct_reorder(_________,desc(_______)), y=___________)) +
-geom_bar(___________) +
-__________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<div class="tutorial-exercise" data-label="j_c3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(__________) %&gt;%
+  ggplot(aes(x=fct_reorder(_________,____(_______)), y=___________)) +
+  geom_bar(___________) +
+  __________()</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-jc3-hint">
+<div class="tutorial-exercise-support" data-label="j_c3-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name==&quot;James Cameron&quot;) %&gt;%
+  ggplot(aes(x=fct_reorder(movie_title,desc(title_year)), y=gross)) +
+  geom_bar(stat=&quot;identity&quot;) +
+  coord_flip()</code></pre>
+</div>
+<div id="section-j_c3-hint">
 <p><strong>Hint:</strong> I’ve already given you the <code>fct_reorder()</code> function! Just <a href="http://learn.r-journalism.com/en/visualizing/customizing_charts/customizing-exporting-ggplot2/">look up</a> how it works so you use it right.</p>
 </div>
 </div>
 <div id="section-style-it" class="section level3">
 <h3>Style it</h3>
-<p>Let’s fix the x-axis and y-axis labels, as well as add a title to the chart (“How James Cameron movies performed at the box office”“) and caption for where the data came from (”Source: IMDB.com“”)</p>
-<div class="tutorial-exercise" data-label="jc4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<p>Let’s fix the x-axis and y-axis labels (“Movie” and “Box Office Gross”), as well as add a title to the chart (“How James Cameron movies performed at the box office”) and caption for where the data came from (“Source: IMDB.com”)</p>
+<div class="tutorial-exercise" data-label="j_c4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
-filter(__________) %&gt;%
-ggplot(aes(x=fct_reorder(_________,desc(_______)), y=___________)) +
-geom_bar(___________) +
-__________() +
-____(____=___________,
-____=___________,
-______=__________________,
-______=___________________) +
-theme_minimal()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+  filter(____________) %&gt;%
+  ggplot(aes(x=fct_reorder(__________,desc(_______)), y=_____)) +
+  geom_bar(stat=&quot;identity&quot;) +
+  coord_flip() +
+  ____(x=___________,
+       y=___________,
+       title=___________,
+       sub____=___________) +
+  theme_minimal()</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-jc4-hint">
+<div class="tutorial-exercise-support" data-label="j_c4-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name==&quot;James Cameron&quot;) %&gt;%
+  ggplot(aes(x=fct_reorder(movie_title,desc(title_year)), y=gross)) +
+  geom_bar(stat=&quot;identity&quot;) +
+  coord_flip() +
+  labs(x=&quot;Movie&quot;,
+       y=&quot;Box Office Gross&quot;,
+       title=&quot;How James Cameron movies performed at the box office&quot;,
+       subtitle=&quot;Source: IMDB.com&quot;) +
+  theme_minimal()</code></pre>
+</div>
+<div id="section-j_c4-hint">
 <p><strong>Hint:</strong> You might want to use the <code>labs()</code> function. But you’ll have to <a href="http://learn.r-journalism.com/en/visualizing/customizing_charts/customizing-exporting-ggplot2/">look up</a> the rest.</p>
 </div>
-<p>### Color palettes</p>
+</div>
+<div id="section-color-palettes" class="section level3">
+<h3>Color palettes</h3>
 <p>Let’s look at Wes Anderson’s box office performance using the code as above, but with Wes Anderson substituted out for James Cameron.</p>
-<p>And for fun, we’ll use the <strong>wesanderson</strong> color palette from his first movie, Bottle Rocket.</p>
+<p>And for fun, we’ll use the <strong>wesanderson</strong> color palette from his first movie, Bottle Rocket (<em>BottleRocket1</em>).</p>
 <p>Because you’re changing the color of the bars based on the <em>movie_title</em> variable, you need to add that to the <code>aes()</code>.</p>
-<div class="tutorial-exercise" data-label="jc5" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>#install.packages(&quot;wesanderson&quot;)
-library(wesanderson)
-
-movies %&gt;% 
-  filter(__________) %&gt;%
+<p>Keep the movie title similar to the previous chart but with Wes Anderson instead of James Cameron.</p>
+<pre><code>library(wesanderson)</code></pre>
+<div class="tutorial-exercise" data-label="j_c5" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director==&quot;Wes Anderson&quot;) %&gt;%
   ggplot(aes(x=fct_reorder(_________,desc(_______)), y=___________, ____=_____________)) +
   geom_bar(___________) +
   __________() +
@@ -304,33 +369,57 @@ movies %&gt;%
            ______=__________________,
            ______=___________________) +
   theme_minimal() +
-  ______________(values=wes_palette(&quot;BottleRocket1&quot;), guide=F)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+  ______________(values=wes_palette(&quot;_________&quot;), guide=F)</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-jc5-hint">
+<div class="tutorial-exercise-support" data-label="j_c5-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name==&quot;James Cameron&quot;) %&gt;%
+  ggplot(aes(x=fct_reorder(movie_title,desc(title_year)), y=gross, fill=movie_title)) +
+  geom_bar(stat=&quot;identity&quot;) +
+  coord_flip() +
+  labs(x=&quot;Movie&quot;,
+       y=&quot;Box Office Gross&quot;,
+       title=&quot;How Wes Anderson movies performed at the box office&quot;,
+       subtitle=&quot;Source: IMDB.com&quot;) +
+  theme_minimal() +
+  scale_fill_manual(values=wes_palette(&quot;BottleRocket1&quot;), guide=F)</code></pre>
+</div>
+<div id="section-j_c5-hint">
 <p><strong>Hint:</strong> In the last line, you’re using a scale function that lets you change the fill colors manually. Here’s the <a href="https://github.com/karthik/wesanderson">documentation</a> on the Wes Anderson palette</p>
 </div>
-<p>### Labeling</p>
+</div>
+<div id="section-labeling" class="section level3">
+<h3>Labeling</h3>
 <p>Let’s filter these movies to those directed by “Kathryn Bigelow”, “Martin Scorsese”, and “Steven Spielberg” and then make a scatter plot comparing box office to budget.</p>
 <p>The color should represent the different director.</p>
 <p>Then add a label for the movie using the <a href="https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html"><strong>ggrepel</strong></a> package.</p>
-<div class="tutorial-exercise" data-label="ggrepel" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>#install.packages(&quot;ggrepel&quot;)
-library(ggrepel)
-
-movies %&gt;% 
-filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
-ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
-geom_point() +
-geom_____________()</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":9,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":864,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<pre><code>library(ggrepel)</code></pre>
+<div class="tutorial-exercise" data-label="ggr" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
+  ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
+  geom_point() +
+  geom_____________()</code></pre>
+<script type="application/json" data-opts-chunk="1">{"fig.width":7,"fig.height":7,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":672,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-ggrepel-hint">
+<div class="tutorial-exercise-support" data-label="ggr-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name %in% c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
+  ggplot(aes(x=gross, y=budget, color=director_name, label=movie_title)) +
+  geom_point() +
+  geom_text_repel()</code></pre>
+</div>
+<div id="section-ggr-hint">
 <p><strong>Hint:</strong> The filter code that lets you filter by group is <code>%in%</code>. The color is based on the director and the label is based on the movie name. Can you find those variable names in the <strong>movies</strong> data frame? And what’s the function for the last line? If you forgot, refer to <a href="http://learn.r-journalism.com/en/visualizing/more_charts/fancy-charts/">the lesson</a>.</p>
 </div>
-<p>### Small multiples</p>
-<p>Nice! Let’s break them out individually by director so it’s easier to see the patterns.</p>
-<div class="tutorial-exercise" data-label="ggrepel_facet" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+</div>
+<div id="section-small-multiples" class="section level3">
+<h3>Small multiples</h3>
+<p>Nice!</p>
+<p>But crowded.</p>
+<p>Let’s break them out individually by director so it’s easier to see the patterns.</p>
+<div class="tutorial-exercise" data-label="ggrf" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>movies %&gt;% 
   filter(director_name ____ c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
   ggplot(aes(x=gross, y=budget, color=______________, ______=___________)) +
@@ -338,15 +427,29 @@ geom_____________()</code></pre>
   geom_____________(size=2)
 _____________(~____________, nrow=2) +
   theme(legend.position=&quot;none&quot;)</code></pre>
-<script type="application/json" data-opts-chunk="1">{"fig.width":6,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":576,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":60,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
+<script type="application/json" data-opts-chunk="1">{"fig.width":6,"fig.height":6,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":576,"warning":false,"error":false,"message":false,"exercise.df_print":"paged","exercise.timelimit":30,"exercise.checker":["function (label, user_code, check_code, envir_result, evaluate_result, ","    ...) ","{","    if (is_bad_code(user_code, check_code, envir_result)) {","        return(list(message = \"Code wasn't right!\", correct = FALSE, ","            location = \"append\"))","    }","    else {","        return(list(message = \"Great Job!\", correct = TRUE, location = \"append\"))","    }","}"]}</script>
 </div>
-<div id="section-ggrepel_facet-hint">
+<div class="tutorial-exercise-support" data-label="ggrf-check" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
+<pre class="text"><code>movies %&gt;% 
+  filter(director_name %in% c(&quot;Kathryn Bigelow&quot;, &quot;Martin Scorsese&quot;, &quot;Steven Spielberg&quot;)) %&gt;% 
+  ggplot(aes(x=gross, y=budget, color=director_name, label=movie_title)) +
+  geom_point() +
+  geom_text_repel(size=2) +
+  facet_wrap(~director_name, nrow=2) +
+  theme(legend.position=&quot;none&quot;)</code></pre>
+</div>
+<div id="section-ggrf_facet-hint">
 <p><strong>Hint:</strong> What’s the term for creating facets of the chart? It’s facet_<em>something</em>. There’s <a href="http://learn.r-journalism.com/en/visualizing/charts_with_ggplot/ggplot2/">more than one</a>, but we want the one that we can specify the number of rows in the output (with <code>nrow</code>).</p>
 </div>
 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(tidyverse)
+library(forcats)
+#install.packages("wesanderson")
+library(wesanderson)
+library(ggrepel)
+
 knitr::opts_chunk$set(echo = FALSE)
 movies <- readRDS("movies.rds") %>%
   filter(country=="USA") %>% 
@@ -378,7 +481,7 @@ is_bad_code <- function(user_code, check_code, envir_result) {
   if (is_null!=T & is_gg!=T){
     if (e_len!=0 & r_len!=0) {
       if (e_type==r_type) {
-        if (e_type!="character" & e_type!="double" & e_type!="integer") {
+        if (e_type!="character" & e_type!="double" & e_type!="integer" & e_type!="logical") {
           if (e_rows==r_rows && e_cols==r_cols) {
             eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
           } else {
@@ -417,93 +520,93 @@ output$`tutorial-exercise-v2-output` <- renderUI({
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-scatter2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-scatter2-code-editor`)), session)
-output$`tutorial-exercise-scatter2-output` <- renderUI({
-  `tutorial-exercise-scatter2-result`()
+`tutorial-exercise-s1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-s1-code-editor`)), session)
+output$`tutorial-exercise-s1-output` <- renderUI({
+  `tutorial-exercise-s1-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-scatter3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-scatter3-code-editor`)), session)
-output$`tutorial-exercise-scatter3-output` <- renderUI({
-  `tutorial-exercise-scatter3-result`()
+`tutorial-exercise-sc1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-sc1-code-editor`)), session)
+output$`tutorial-exercise-sc1-output` <- renderUI({
+  `tutorial-exercise-sc1-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-geom_bar1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-geom_bar1-code-editor`)), session)
-output$`tutorial-exercise-geom_bar1-output` <- renderUI({
-  `tutorial-exercise-geom_bar1-result`()
+`tutorial-exercise-bp1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-bp1-code-editor`)), session)
+output$`tutorial-exercise-bp1-output` <- renderUI({
+  `tutorial-exercise-bp1-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-geom_bar2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-geom_bar2-code-editor`)), session)
-output$`tutorial-exercise-geom_bar2-output` <- renderUI({
-  `tutorial-exercise-geom_bar2-result`()
+`tutorial-exercise-bp2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-bp2-code-editor`)), session)
+output$`tutorial-exercise-bp2-output` <- renderUI({
+  `tutorial-exercise-bp2-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-geom_bar3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-geom_bar3-code-editor`)), session)
-output$`tutorial-exercise-geom_bar3-output` <- renderUI({
-  `tutorial-exercise-geom_bar3-result`()
+`tutorial-exercise-bp3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-bp3-code-editor`)), session)
+output$`tutorial-exercise-bp3-output` <- renderUI({
+  `tutorial-exercise-bp3-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-geom_bar4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-geom_bar4-code-editor`)), session)
-output$`tutorial-exercise-geom_bar4-output` <- renderUI({
-  `tutorial-exercise-geom_bar4-result`()
+`tutorial-exercise-bp4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-bp4-code-editor`)), session)
+output$`tutorial-exercise-bp4-output` <- renderUI({
+  `tutorial-exercise-bp4-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-jc1-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc1-code-editor`)), session)
-output$`tutorial-exercise-jc1-output` <- renderUI({
-  `tutorial-exercise-jc1-result`()
+`tutorial-exercise-jc-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc-code-editor`)), session)
+output$`tutorial-exercise-jc-output` <- renderUI({
+  `tutorial-exercise-jc-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-jc2, -result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc2, -code-editor`)), session)
-output$`tutorial-exercise-jc2, -output` <- renderUI({
-  `tutorial-exercise-jc2, -result`()
+`tutorial-exercise-j_c2-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-j_c2-code-editor`)), session)
+output$`tutorial-exercise-j_c2-output` <- renderUI({
+  `tutorial-exercise-j_c2-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-jc3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc3-code-editor`)), session)
-output$`tutorial-exercise-jc3-output` <- renderUI({
-  `tutorial-exercise-jc3-result`()
+`tutorial-exercise-j_c3-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-j_c3-code-editor`)), session)
+output$`tutorial-exercise-j_c3-output` <- renderUI({
+  `tutorial-exercise-j_c3-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-jc4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc4-code-editor`)), session)
-output$`tutorial-exercise-jc4-output` <- renderUI({
-  `tutorial-exercise-jc4-result`()
+`tutorial-exercise-j_c4-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-j_c4-code-editor`)), session)
+output$`tutorial-exercise-j_c4-output` <- renderUI({
+  `tutorial-exercise-j_c4-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-jc5-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-jc5-code-editor`)), session)
-output$`tutorial-exercise-jc5-output` <- renderUI({
-  `tutorial-exercise-jc5-result`()
+`tutorial-exercise-j_c5-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-j_c5-code-editor`)), session)
+output$`tutorial-exercise-j_c5-output` <- renderUI({
+  `tutorial-exercise-j_c5-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggrepel-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggrepel-code-editor`)), session)
-output$`tutorial-exercise-ggrepel-output` <- renderUI({
-  `tutorial-exercise-ggrepel-result`()
+`tutorial-exercise-ggr-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggr-code-editor`)), session)
+output$`tutorial-exercise-ggr-output` <- renderUI({
+  `tutorial-exercise-ggr-result`()
 })
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
-`tutorial-exercise-ggrepel_facet-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggrepel_facet-code-editor`)), session)
-output$`tutorial-exercise-ggrepel_facet-output` <- renderUI({
-  `tutorial-exercise-ggrepel_facet-result`()
+`tutorial-exercise-ggrf-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-ggrf-code-editor`)), session)
+output$`tutorial-exercise-ggrf-output` <- renderUI({
+  `tutorial-exercise-ggrf-result`()
 })
 </script>
  <!--html_preserve-->
