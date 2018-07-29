@@ -236,24 +236,27 @@ burgers$id
 class(burgers$id)
 ```   
 
+*Note:* Is the answer the same as above (correct) or is it 1-5 (false)? 
 
 ### Boolean logic
 
 Check if Gene's age is 11.
 
-*Note:* Is the answer the same as above (correct) or is it 1-5 (false)? 
 
+**Note**: This is the last question in the section. And there is a bug that only some correct answers are recognized.
 
 ```{r b, exercise=TRUE}
-# Modify the line of code below 
+# Replace __ with the correct characters
 
-age_test <- burgers$age[5]    11
+age_test <- burgers$age[5]  __  11
 
 age_test
 ```
 
 ```{r b-check}
-age_test <- burgers$age[5] ==   11
+# Replace __ with the correct characters
+
+age_test <- burgers$age[5] == 11
 
 age_test
 ```   
