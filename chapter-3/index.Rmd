@@ -573,7 +573,7 @@ head(bo)
 ```
 
 
-Create a new data frame called **seaworlds** and filter out rows that mention "Sea World" in the *Facility* column.
+Create a new data frame called **seaworlds** and use filter to keep only the rows that mention "Sea World" in the *Facility* column.
 
 
 ```{r det, exercise=TRUE, exercise.lines=5}
@@ -646,7 +646,7 @@ bo_dates2
 
 
 
-Create a new column called *month_number* and extract the month (as a number) from the *Captivity.Date*.
+Create a new column called *month_number* and extract the month (as a label) from the *Captivity.Date*.
 
 
 

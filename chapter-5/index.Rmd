@@ -8,7 +8,6 @@ output:
     progressive: true
     theme: lumen
     highlight: espresso
-    
     include:
       before_body: _navbar.html
 runtime: shiny_prerendered
@@ -17,13 +16,108 @@ runtime: shiny_prerendered
 ```{r setup, include=FALSE}
 library(learnr)
 library(tidyverse)
+library(sf)
 knitr::opts_chunk$set(echo = FALSE)
+
+map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
+
+boston <- st_read(map_filepath)
+
+nospace <- function(a) {
+  a <- gsub(" ","",a) 
+  a <- gsub("\\\n", "", a)
+  gsub("\\`", "", a)
+}
+
+
+is_bad_code <- function(user_code, check_code, envir_result) {
+
+  is_null <- is.null(eval(parse(text = user_code)))
+  is_gg <- any(grepl("gg", class(eval(parse(text = user_code)))))
+  e_class <- class(eval(parse(text = user_code)))[1]
+  r_class <- class((eval(parse(text = check_code), envir = envir_result)))
+  e_rows <- nrow(eval(parse(text = user_code)))
+  r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
+  e_cols <- ncol(eval(parse(text = user_code)))
+  r_cols <- ncol(eval(parse(text = check_code), envir = envir_result))
+  e_type <- typeof(eval(parse(text = user_code)))
+  r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
+  e_len <- length(eval(parse(text = user_code)))
+  r_len <- length(eval(parse(text = check_code)))
+  if (is_null!=T & is_gg!=T & r_class!="sf"){
+    if (e_len!=0 & r_len!=0) {
+      if (e_type==r_type) {
+        if (e_type!="character" & e_type!="double" & e_type!="integer" & e_type!="logical") {
+          if (e_rows==r_rows && e_cols==r_cols) {
+            eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result)
+          } else {
+            TRUE
+          }
+        } else { eval(parse(text = user_code)) != eval(parse(text = check_code), envir = envir_result) }
+      } else {
+        TRUE
+      }
+    } else { TRUE }
+  } else {nospace(user_code) != nospace(check_code)}
+}
+
+
+checker <- function(label, user_code, check_code, envir_result, evaluate_result, ...) {
+  if (is_bad_code(user_code, check_code, envir_result)) {
+    return(list(message = "Code wasn't right!", correct = FALSE, location = "append"))
+  } else {
+    return(list(message = "Great Job!", correct = TRUE, location = "append"))
+  }
+}  
+
+#tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
 
 ```
 
 ## Shape files
 
 ### Load this shapefile
+
+Let's load the libraries you need for working with maps.
+
+```
+library(ggplot2)
+library(sf)
+```
+
+Let's load in a shapefile we have on the computer locally.
+
+It's in the folder *Boston_Neighborhoods* and the shapefile is also called *Boston_Neighborhoods*. Load it in.
+
+Call the object *boston*.
+
+```{r print}
+print(getwd())
+```
+
+```{r map, exercise=TRUE}
+map_filepath <- "Boston_Neighborhoods/______________"
+
+boston <- _______(map_filepath)
+boston
+```
+
+
+```{r map-check}
+map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
+
+boston <- st_read(map_filepath)
+
+boston
+``` 
+
+### Glimpse
+
+Let's take a look at the data behind the shapefile.
+
+
+
+
 
 ### Plot the shapefile
 
@@ -49,443 +143,3 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-
-## Transforming and analyzing data
-
-Consider this Marine Mammal Inventory Report data set from the National Oceaninc and Atmospheric Administration.
-
-It has the location of every Beluga and Orca whale in the United States since the '70s.
-
-Currently, the data frame is in the environment and has 494 rows.
-
-This view shows the first six rows.
-
-```{r data_view}
-head(bo)
-```
-
-Each animal is represented by a *NOAA.ID* (because some do not have names) and might show up multiple times in the data frame.
-
-For example, the Beluga Whale Blanchon is NOA0000719 and has been at three facilities but his latest *Status* shows him as "DEAD".
-
-### Filter
-
-Please create a data frame of Orca whales only from the **bo** data frame.
-
-We'll name the new data frame **orcas**.
-
-```{r filter, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-orcas <- 
-  
-unique(orcas$Species)
-```
-
-### Select
-
-Drop the column/variable *Species* since there's only one variable in it now.
-
-```{r orcas, include=FALSE}
-orcas <- filter(bo, Species=="Killer Whale; Orca")
-```
-
-
-```{r select, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-orcas <- 
-  
-
-colnames(orcas)
-```
-
-### Arrange
-
-Sort the **orcas** data frame based on the *Facility* column in alphabetical order.
-
-```{r arrange, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-orcas <- 
-  
-
-head(orcas)
-```
-
-### Mutate
-
-Create a new column called *status_num* to fill with a 1 if *Status* is "DEAD" or 0 if alive. Save the transformed data frame back into **orcas**
-
-
-```{r mutate, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-orcas <- 
-  
-
-head(orcas)
-```
-
-<div id="mutate-hint">
-**Hint:** You may want to use the dplyr `case_when()` function nested in another function.
-</div>
-
-### Summarize
-
-
-```{r orcas2, include=FALSE}
-orcas <- mutate(orcas, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0))
-```
-
-Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*
-
-```{r summarize, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-alive_dead <- 
-  
-alive_dead
-```
-
-
-<div id="summarize-hint">
-**Hint:** You may want to use the dplyr `n_distinct()` function nested in another function.
-</div>
-
-### Percent
-
-
-What's the percent of dead Orcas?
-
-```{r orcas3, include=FALSE}
-alive_dead <- mutate(orcas, status_num=case_when(Status=="DEAD" ~ 1, TRUE ~ 0)) %>% 
-  summarize(total=n_distinct(NOAA.ID), died=sum(status_num))
-```
-
-Now figure how the percent of Orcas still alive.
-
-```{r mutate2, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-percent_alive <-
-
-percent_alive
-```
-
-### Group By
-
-Which facilities have had the most Orcas and Belugas combined? 
-
-List them from highest count to lowest.
-
-```{r facilities_count, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-facilities_count <-
-
-facilities_count
-```
-
-
-<div id="facilities_count-hint">
-**Hint:** You may want to use the **bo** data frame. Double check the variables available above.
-</div>
-
-## Tidying and joining data
-
-Consider the **bo** data set again.
-
-```{r data_view2}
-head(bo)
-```
-
-### Turn a tall data frame wide
-
-Summarize the data and count the *total* number of Orcas and Belugas per facility from the *Species* variable.
-
-Then turn the tall data into a wide data frame that has these columns: Facility, Belugas, Orcas.
-
-```{r wide, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-facilities_count <- bo %>%
-   group_by(Facility, ________) %>%
-   summarize(_______=___) %>%
-   ______(_______, _____)
-
-facilities_count
-```
-
-<div id="wide-hint">
-**Hint:** You may want to use the **bo** data frame. And eventually the `spread()` function from the **tidyr** package.
-</div>
-
-### Turn a wide data frame into a tall tidy data frame
-
-Here's a wide data frame with *Owners* and percent of Belugas compared to Orca whales owned.
-
-
-```{r clean_up, include=F}
-owner_percent <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n()) %>%
-   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
-   select(-total) %>%
-   spread(Species, percent)
-```
-
-
-```{r display_this}
-head(owner_percent)
-```
-
-
-Make this dataframe called **owner_percent** tidy for me.
-
-```{r tall, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-owner_percent %>%
-  
-  
-```
-
-<div id="tall-hint">
-**Hint:** You may want to use the `gather()` function.
-</div>
-
-### Join Data
-
-Consider these two data sets:
-
-* **owner_percent**
-
-```{r join_left, include=F}
-owner_percent <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n()) %>%
-   mutate(percent=round(total/sum(total, na.rm=T)*100,2)) %>%
-   select(-total)
-```
-
-```{r owner_percent}
-owner_percent
-```
-
-* **owner_total**
-
-```{r join_right, include=F}
-owner_total <- bo %>%
-   group_by(Owner, Species) %>%
-   summarize(total=n())
-```
-
-```{r owner_total}
-owner_total
-```
-
-Join these two data sets and call it **owner_total_percent**.
-
-```{r join, exercise=T, exercise.timelimit=60}
-# Add to the line below
-
-owner_total_percent <- _________(________, ________)
-  
-owner_total_percent
-```
-
-
-## Handling strings
-
-Let's load the **stringr** package.
-
-Consider the **bo** data frame again.
-
-```{r string_data}
-library(stringr)
-
-bo
-```
-
-### Lower case
-
-Let's use the functions in it to manipulate the strings in this data frame.
-
-Turn the names in *Name* to lower case.
-
-```{r lowercase, exercise=T, exercise.timelimit=60}
-bo$Name <- ________(bo$Name)
-
-bo
-```
-
-```{r name_lower, include=F}
-bo$Name <- str_to_lower(bo$Name)
-```
-
-### Title case
-
-Convert the variables in *Sex* to title case.
-
-```{r titlecase, exercise=T, exercise.timelimit=60}
-bo$Sex <- ________(bo$Sex)
-
-bo
-```
-
-
-```{r name_title, include=F}
-bo$Name <- str_to_title(bo$Name)
-```
-
-### Combine string
-
-Please create a new variable called *sex_species* that combines *Sex* and *Species* columns with a space in between.
-
-```{r combine, exercise=T, exercise.timelimit=60}
-bo <- mutate(bo, 
-             _________=_____(_______________________))
-bo
-```
-
-
-```{r combined, include=F}
-bo <- mutate(bo,
-             sex_species=str_c(Sex, " ", Species))
-
-```
-### Substitute string
-
-Now, replace all mentions of " Killer Whale;" and " Whale" from the *sex_species* column with a blank.
-
-So "Male Killer Whale; Orca" turns in to "Male Orca" and "Male Beluga Whale" turns into "Male Beluga"
-
-
-
-```{r replace, exercise=T, exercise.timelimit=60}
-bo <- mutate(bo, 
-             sex_species=________(_______________________)) %>%
-      mutate(sex_species=________(_______________________))
-
-bo$sex_species
-```
-
-
-
-<div id="replace-hint">
-**Hint:** You may need to use the str_xxxxxxxx function more than once. Also, pay attention to the order. That will be important.
-</div>
-
-
-
-```{r replaced, include=F}
-bo <- mutate(bo,
-             sex_species=str_replace(sex_species, " Killer Whale;", "")) %>%
-      mutate(sex_species=str_replace(sex_species, " Whale", ""))
-```
-
-### Detect strings
-
-Create a new data frame called **seaworlds** and filter out rows that mention "Sea World" in the *Facility* column.
-
-```{r detect_string, exercise=T, exercise.timelimit=60}
-seaworlds <- filter(bo,
-                    ______(_____________))
-
-seaworlds
-```
-
-
-```{r seaworlds, de=F}
-seaworlds <- filter(bo,
-             str_detect(Facility, "Sea World"))
-
-```
-
-## Dealing with dates
-
-Consider the modified **bo** data frame we've created.
-
-### Convert this date
-
-Turn *Captivity.Date* into a date data R can recognize.
-
-We'll use the **lubridate** package.
-
-```{r lubridate, include=F}
-library(lubridate)
-```
-
-
-```{r date, exercise=T, exercise.timelimit=60}
-bo <- bo %>%
-  mutate(Captivity.Date=____(_______))
-
-bo
-```
-
-
-```{r dated, include=F}
-bo <- bo %>%
-  mutate(Captivity.Date=dmy(Captivity.Date))
-
-```
-
-### Extract the month
-
-Create a new column called *month_number* and extract the month (as a number) from the *Captivity.Date*.
-
-```{r date_month, exercise=T, exercise.timelimit=60}
-bo <- bo %>%
-  mutate(month=____(_______))
-
-bo
-```
-
-
-```{r dated_month, include=F}
-bo <- bo %>%
-  mutate(month_number=month(Captivity.Date))
-
-```
-
-Create a new column called *month_number* and extract the month (as a number) from the *Captivity.Date*.
-
-```{r date_month2, exercise=T, exercise.timelimit=60}
-bo <- bo %>%
-  mutate(month_label=____(_______))
-
-bo
-```
-
-
-```{r dated_month2, include=F}
-bo <- bo %>%
-  mutate(month_label=month(Captivity.Date, label=T))
-
-```
-
-### Time difference
-
-Consider the modified **bo** data frame we've created.
-
-```{r last_bo}
-bo
-```
-
-Based on available data, can you figure out the average age (in years) of Beluga Whales and Orca Whales in when they join a facility?
-
-```{r last_analysis, exercise=T, exercise.timelimit=180}
-bo %>%
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-```
