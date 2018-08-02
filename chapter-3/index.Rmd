@@ -227,7 +227,7 @@ head(orcas4)
 ### Summarize
 
 
-Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*. You want to summarize with two columns: *total* (by counting distinct NOAA.IDS and *died*)
+Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*. You want to summarize with two columns: *total* (by counting distinct NOAA.IDS and adding up number of those that have *died*)
 
 
 
