@@ -1,0 +1,714 @@
+Neighborhood,Decade,Race and or Ethnicity,Number of People,Percent of Population
+Allston,1950,White,15452,98.30%
+Allston,1950,Black/ African American,207,1.32%
+Allston,1950,Other,59,0.38%
+Allston,1960,White,13307,97.98%
+Allston,1960,Black/ African American,169,1.24%
+Allston,1960,Other,105,0.77%
+Allston,1970,White,13147,90.76%
+Allston,1970,Black/ African American,374,2.58%
+Allston,1970,Hispanic,451,3.11%
+Allston,1970,Asian/PI,463,3.20%
+Allston,1970,Other,51,0.35%
+Allston,1980,White,12370,78.48%
+Allston,1980,Black/ African American,820,5.20%
+Allston,1980,Hispanic,942,5.98%
+Allston,1980,Asian/PI,1374,8.72%
+Allston,1980,Other,255,1.62%
+Allston,1990,White,11638,63.18%
+Allston,1990,Black/ African American,1599,8.68%
+Allston,1990,Hispanic,2427,13.18%
+Allston,1990,Asian/PI,2587,14.04%
+Allston,1990,Other,170,0.92%
+Allston,2000,White,11253,58.99%
+Allston,2000,Black/ African American,973,5.10%
+Allston,2000,Hispanic,2545,13.34%
+Allston,2000,Asian/PI,3397,17.81%
+Allston,2000,Other,907,4.75%
+Allston,2010,White,12808,57.40%
+Allston,2010,Black/ African American,1075,4.82%
+Allston,2010,Hispanic,2799,12.54%
+Allston,2010,Asian/PI,4510,20.21%
+Allston,2010,Other,1120,5.02%
+Back Bay,1950,White,20627,97.17%
+Back Bay,1950,Black/ African American,533,2.51%
+Back Bay,1950,Other,68,0.32%
+Back Bay,1960,White,17100,94.19%
+Back Bay,1960,Black/ African American,837,4.61%
+Back Bay,1960,Other,217,1.20%
+Back Bay,1970,White,16345,90.22%
+Back Bay,1970,Black/ African American,1046,5.77%
+Back Bay,1970,Hispanic,395,2.18%
+Back Bay,1970,Asian/PI,233,1.29%
+Back Bay,1970,Other,98,0.54%
+Back Bay,1980,White,16140,88.02%
+Back Bay,1980,Black/ African American,1048,5.72%
+Back Bay,1980,Hispanic,621,3.39%
+Back Bay,1980,Asian/PI,389,2.12%
+Back Bay,1980,Other,138,0.75%
+Back Bay,1990,White,14507,86.84%
+Back Bay,1990,Black/ African American,745,4.46%
+Back Bay,1990,Hispanic,652,3.90%
+Back Bay,1990,Asian/PI,746,4.47%
+Back Bay,1990,Other,55,0.33%
+Back Bay,2000,White,13870,83.15%
+Back Bay,2000,Black/ African American,614,3.68%
+Back Bay,2000,Hispanic,730,4.38%
+Back Bay,2000,Asian/PI,1101,6.60%
+Back Bay,2000,Other,366,2.19%
+Back Bay,2010,White,13096,78.79%
+Back Bay,2010,Black/ African American,661,3.98%
+Back Bay,2010,Hispanic,943,5.67%
+Back Bay,2010,Asian/PI,1564,9.41%
+Back Bay,2010,Other,358,2.15%
+Beacon Hill,1950,White,14163,99.20%
+Beacon Hill,1950,Black/ African American,88,0.62%
+Beacon Hill,1950,Other,25,0.18%
+Beacon Hill,1960,White,11570,98.57%
+Beacon Hill,1960,Black/ African American,84,0.72%
+Beacon Hill,1960,Other,84,0.72%
+Beacon Hill,1970,White,10048,96.57%
+Beacon Hill,1970,Black/ African American,153,1.47%
+Beacon Hill,1970,Hispanic,44,0.42%
+Beacon Hill,1970,Asian/PI,115,1.11%
+Beacon Hill,1970,Other,45,0.43%
+Beacon Hill,1980,White,9939,93.44%
+Beacon Hill,1980,Black/ African American,245,2.30%
+Beacon Hill,1980,Hispanic,194,1.82%
+Beacon Hill,1980,Asian/PI,188,1.77%
+Beacon Hill,1980,Other,71,0.67%
+Beacon Hill,1990,White,8430,91.40%
+Beacon Hill,1990,Black/ African American,196,2.13%
+Beacon Hill,1990,Hispanic,193,2.09%
+Beacon Hill,1990,Asian/PI,381,4.13%
+Beacon Hill,1990,Other,24,0.26%
+Beacon Hill,2000,White,7904,87.33%
+Beacon Hill,2000,Black/ African American,288,3.18%
+Beacon Hill,2000,Hispanic,295,3.26%
+Beacon Hill,2000,Asian/PI,442,4.88%
+Beacon Hill,2000,Other,122,1.35%
+Beacon Hill,2010,White,7832,86.80%
+Beacon Hill,2010,Black/ African American,178,1.97%
+Beacon Hill,2010,Hispanic,374,4.14%
+Beacon Hill,2010,Asian/PI,483,5.35%
+Beacon Hill,2010,Other,156,1.73%
+Brighton,1950,White,51339,99.77%
+Brighton,1950,Black/ African American,77,0.15%
+Brighton,1950,Other,42,0.08%
+Brighton,1960,White,50383,99.37%
+Brighton,1960,Black/ African American,163,0.32%
+Brighton,1960,Other,155,0.31%
+Brighton,1970,White,46544,94.66%
+Brighton,1970,Black/ African American,760,1.55%
+Brighton,1970,Hispanic,884,1.80%
+Brighton,1970,Asian/PI,832,1.69%
+Brighton,1970,Other,151,0.31%
+Brighton,1980,White,42944,86.75%
+Brighton,1980,Black/ African American,1738,3.51%
+Brighton,1980,Hispanic,1969,3.98%
+Brighton,1980,Asian/PI,2370,4.79%
+Brighton,1980,Other,482,0.97%
+Brighton,1990,White,39757,76.66%
+Brighton,1990,Black/ African American,3051,5.88%
+Brighton,1990,Hispanic,3986,7.69%
+Brighton,1990,Asian/PI,4784,9.22%
+Brighton,1990,Other,285,0.55%
+Brighton,2000,White,36582,72.34%
+Brighton,2000,Black/ African American,2137,4.23%
+Brighton,2000,Hispanic,3791,7.50%
+Brighton,2000,Asian/PI,6214,12.29%
+Brighton,2000,Other,1849,3.66%
+Brighton,2010,White,36761,69.78%
+Brighton,2010,Black/ African American,2356,4.47%
+Brighton,2010,Hispanic,4641,8.81%
+Brighton,2010,Asian/PI,7058,13.40%
+Brighton,2010,Other,1869,3.55%
+Charlestown,1950,White,30922,98.69%
+Charlestown,1950,Black/ African American,323,1.03%
+Charlestown,1950,Other,87,0.28%
+Charlestown,1960,White,20030,99.42%
+Charlestown,1960,Black/ African American,30,0.15%
+Charlestown,1960,Other,87,0.43%
+Charlestown,1970,White,14704,95.77%
+Charlestown,1970,Black/ African American,76,0.50%
+Charlestown,1970,Hispanic,430,2.80%
+Charlestown,1970,Asian/PI,108,0.70%
+Charlestown,1970,Other,35,0.23%
+Charlestown,1980,White,13034,97.53%
+Charlestown,1980,Black/ African American,24,0.18%
+Charlestown,1980,Hispanic,124,0.93%
+Charlestown,1980,Asian/PI,124,0.93%
+Charlestown,1980,Other,58,0.43%
+Charlestown,1990,White,13785,94.76%
+Charlestown,1990,Black/ African American,85,0.58%
+Charlestown,1990,Hispanic,306,2.10%
+Charlestown,1990,Asian/PI,313,2.15%
+Charlestown,1990,Other,59,0.41%
+Charlestown,2000,White,11946,78.62%
+Charlestown,2000,Black/ African American,539,3.55%
+Charlestown,2000,Hispanic,1764,11.61%
+Charlestown,2000,Asian/PI,761,5.01%
+Charlestown,2000,Other,185,1.22%
+Charlestown,2010,White,12458,75.78%
+Charlestown,2010,Black/ African American,764,4.65%
+Charlestown,2010,Hispanic,1591,9.68%
+Charlestown,2010,Asian/PI,1344,8.18%
+Charlestown,2010,Other,282,1.72%
+Dorchester,1950,White,161417,99.55%
+Dorchester,1950,Black/ African American,602,0.37%
+Dorchester,1950,Other,120,0.07%
+Dorchester,1960,White,143663,94.39%
+Dorchester,1960,Black/ African American,8191,5.38%
+Dorchester,1960,Other,353,0.23%
+Dorchester,1970,White,100416,69.56%
+Dorchester,1970,Black/ African American,38610,26.74%
+Dorchester,1970,Hispanic,4093,2.84%
+Dorchester,1970,Asian/PI,443,0.31%
+Dorchester,1970,Other,805,0.56%
+Dorchester,1980,White,54251,49.56%
+Dorchester,1980,Black/ African American,43655,39.88%
+Dorchester,1980,Hispanic,8746,7.99%
+Dorchester,1980,Asian/PI,494,0.45%
+Dorchester,1980,Other,2325,2.12%
+Dorchester,1990,White,42086,37.53%
+Dorchester,1990,Black/ African American,49779,44.39%
+Dorchester,1990,Hispanic,13312,11.87%
+Dorchester,1990,Asian/PI,3666,3.27%
+Dorchester,1990,Other,3289,2.93%
+Dorchester,2000,White,28924,24.33%
+Dorchester,2000,Black/ African American,53329,44.86%
+Dorchester,2000,Hispanic,16277,13.69%
+Dorchester,2000,Asian/PI,9896,8.32%
+Dorchester,2000,Other,10449,8.79%
+Dorchester,2010,White,25322,22.16%
+Dorchester,2010,Black/ African American,49144,43.01%
+Dorchester,2010,Hispanic,19407,16.99%
+Dorchester,2010,Asian/PI,10637,9.31%
+Dorchester,2010,Other,9739,8.52%
+Downtown,1950,White,5694,79.37%
+Downtown,1950,Black/ African American,182,2.54%
+Downtown,1950,Other,1298,18.09%
+Downtown,1960,White,3529,65.70%
+Downtown,1960,Black/ African American,72,1.34%
+Downtown,1960,Other,1770,32.95%
+Downtown,1970,White,2364,63.82%
+Downtown,1970,Black/ African American,37,1.00%
+Downtown,1970,Hispanic,42,1.13%
+Downtown,1970,Asian/PI,1249,33.72%
+Downtown,1970,Other,12,0.32%
+Downtown,1980,White,4493,53.86%
+Downtown,1980,Black/ African American,321,3.85%
+Downtown,1980,Hispanic,125,1.50%
+Downtown,1980,Asian/PI,3327,39.88%
+Downtown,1980,Other,77,0.92%
+Downtown,1990,White,4601,51.92%
+Downtown,1990,Black/ African American,320,3.61%
+Downtown,1990,Hispanic,237,2.67%
+Downtown,1990,Asian/PI,3686,41.60%
+Downtown,1990,Other,17,0.19%
+Downtown,2000,White,6089,53.23%
+Downtown,2000,Black/ African American,432,3.78%
+Downtown,2000,Hispanic,451,3.94%
+Downtown,2000,Asian/PI,4277,37.39%
+Downtown,2000,Other,189,1.65%
+Downtown,2010,White,9261,57.91%
+Downtown,2010,Black/ African American,706,4.41%
+Downtown,2010,Hispanic,759,4.75%
+Downtown,2010,Asian/PI,4933,30.85%
+Downtown,2010,Other,333,2.08%
+East Boston,1950,White,51077,99.85%
+East Boston,1950,Black/ African American,53,0.10%
+East Boston,1950,Other,22,0.04%
+East Boston,1960,White,43738,99.84%
+East Boston,1960,Black/ African American,46,0.11%
+East Boston,1960,Other,25,0.06%
+East Boston,1970,White,37945,97.61%
+East Boston,1970,Black/ African American,326,0.84%
+East Boston,1970,Hispanic,486,1.25%
+East Boston,1970,Asian/PI,50,0.13%
+East Boston,1970,Other,66,0.17%
+East Boston,1980,White,30839,95.84%
+East Boston,1980,Black/ African American,121,0.38%
+East Boston,1980,Hispanic,942,2.93%
+East Boston,1980,Asian/PI,109,0.34%
+East Boston,1980,Other,167,0.52%
+East Boston,1990,White,24977,75.82%
+East Boston,1990,Black/ African American,702,2.13%
+East Boston,1990,Hispanic,5805,17.62%
+East Boston,1990,Asian/PI,1260,3.83%
+East Boston,1990,Other,197,0.60%
+East Boston,2000,White,19078,49.67%
+East Boston,2000,Black/ African American,1177,3.06%
+East Boston,2000,Hispanic,14990,39.02%
+East Boston,2000,Asian/PI,1553,4.04%
+East Boston,2000,Other,1615,4.20%
+East Boston,2010,White,15051,37.16%
+East Boston,2010,Black/ African American,1283,3.17%
+East Boston,2010,Hispanic,21419,52.88%
+East Boston,2010,Asian/PI,1413,3.49%
+East Boston,2010,Other,1342,3.31%
+Fenway,1950,White,25188,97.61%
+Fenway,1950,Black/ African American,434,1.68%
+Fenway,1950,Other,182,0.71%
+Fenway,1960,White,22353,95.53%
+Fenway,1960,Black/ African American,641,2.74%
+Fenway,1960,Other,404,1.73%
+Fenway,1970,White,25373,91.66%
+Fenway,1970,Black/ African American,1218,4.40%
+Fenway,1970,Hispanic,314,1.13%
+Fenway,1970,Asian/PI,600,2.17%
+Fenway,1970,Other,178,0.64%
+Fenway,1980,White,21158,79.50%
+Fenway,1980,Black/ African American,2435,9.15%
+Fenway,1980,Hispanic,1354,5.09%
+Fenway,1980,Asian/PI,1083,4.07%
+Fenway,1980,Other,584,2.19%
+Fenway,1990,White,21450,72.23%
+Fenway,1990,Black/ African American,2630,8.86%
+Fenway,1990,Hispanic,2289,7.71%
+Fenway,1990,Asian/PI,2941,9.90%
+Fenway,1990,Other,387,1.30%
+Fenway,2000,White,20876,69.23%
+Fenway,2000,Black/ African American,1720,5.70%
+Fenway,2000,Hispanic,2269,7.52%
+Fenway,2000,Asian/PI,4255,14.11%
+Fenway,2000,Other,1036,3.44%
+Fenway,2010,White,21995,64.89%
+Fenway,2010,Black/ African American,1659,4.89%
+Fenway,2010,Hispanic,2751,8.12%
+Fenway,2010,Asian/PI,6379,18.82%
+Fenway,2010,Other,1111,3.28%
+Harbor Islands,1950,White,2029,94.64%
+Harbor Islands,1950,Black/ African American,111,5.18%
+Harbor Islands,1950,Other,4,0.19%
+Harbor Islands,1960,White,1614,89.07%
+Harbor Islands,1960,Black/ African American,189,10.43%
+Harbor Islands,1960,Other,9,0.50%
+Harbor Islands,1970,White,980,78.97%
+Harbor Islands,1970,Black/ African American,256,20.63%
+Harbor Islands,1970,Hispanic,0,0.00%
+Harbor Islands,1970,Asian/PI,1,0.08%
+Harbor Islands,1970,Other,4,0.32%
+Harbor Islands,1980,White,342,67.06%
+Harbor Islands,1980,Black/ African American,139,27.25%
+Harbor Islands,1980,Hispanic,22,4.31%
+Harbor Islands,1980,Asian/PI,3,0.59%
+Harbor Islands,1980,Other,4,0.78%
+Harbor Islands,1990,White,482,37.60%
+Harbor Islands,1990,Black/ African American,626,48.83%
+Harbor Islands,1990,Hispanic,156,12.17%
+Harbor Islands,1990,Asian/PI,7,0.55%
+Harbor Islands,1990,Other,11,0.86%
+Harbor Islands,2000,White,260,40.62%
+Harbor Islands,2000,Black/ African American,244,38.12%
+Harbor Islands,2000,Hispanic,120,18.75%
+Harbor Islands,2000,Asian/PI,5,0.78%
+Harbor Islands,2000,Other,11,1.72%
+Harbor Islands,2010,White,165,30.84%
+Harbor Islands,2010,Black/ African American,204,38.13%
+Harbor Islands,2010,Hispanic,134,25.05%
+Harbor Islands,2010,Asian/PI,9,1.68%
+Harbor Islands,2010,Other,23,4.30%
+Hyde Park,1950,White,26078,99.81%
+Hyde Park,1950,Black/ African American,29,0.11%
+Hyde Park,1950,Other,21,0.08%
+Hyde Park,1960,White,29596,99.67%
+Hyde Park,1960,Black/ African American,53,0.18%
+Hyde Park,1960,Other,44,0.15%
+Hyde Park,1970,White,34875,98.10%
+Hyde Park,1970,Black/ African American,352,0.99%
+Hyde Park,1970,Hispanic,198,0.56%
+Hyde Park,1970,Asian/PI,97,0.27%
+Hyde Park,1970,Other,27,0.08%
+Hyde Park,1980,White,25178,82.96%
+Hyde Park,1980,Black/ African American,4197,13.83%
+Hyde Park,1980,Hispanic,593,1.95%
+Hyde Park,1980,Asian/PI,160,0.53%
+Hyde Park,1980,Other,221,0.73%
+Hyde Park,1990,White,21378,70.20%
+Hyde Park,1990,Black/ African American,7074,23.23%
+Hyde Park,1990,Hispanic,1522,5.00%
+Hyde Park,1990,Asian/PI,343,1.13%
+Hyde Park,1990,Other,137,0.45%
+Hyde Park,2000,White,13443,42.01%
+Hyde Park,2000,Black/ African American,12716,39.73%
+Hyde Park,2000,Hispanic,4155,12.98%
+Hyde Park,2000,Asian/PI,483,1.51%
+Hyde Park,2000,Other,1206,3.77%
+Hyde Park,2010,White,9128,28.25%
+Hyde Park,2010,Black/ African American,15111,46.76%
+Hyde Park,2010,Hispanic,6507,20.13%
+Hyde Park,2010,Asian/PI,535,1.66%
+Hyde Park,2010,Other,1036,3.21%
+Jamaica Plain,1950,White,52445,99.42%
+Jamaica Plain,1950,Black/ African American,271,0.51%
+Jamaica Plain,1950,Other,37,0.07%
+Jamaica Plain,1960,White,50397,97.24%
+Jamaica Plain,1960,Black/ African American,1296,2.50%
+Jamaica Plain,1960,Other,137,0.26%
+Jamaica Plain,1970,White,38443,84.60%
+Jamaica Plain,1970,Black/ African American,4159,9.15%
+Jamaica Plain,1970,Hispanic,2315,5.09%
+Jamaica Plain,1970,Asian/PI,277,0.61%
+Jamaica Plain,1970,Other,247,0.54%
+Jamaica Plain,1980,White,23503,63.65%
+Jamaica Plain,1980,Black/ African American,4870,13.19%
+Jamaica Plain,1980,Hispanic,7575,20.52%
+Jamaica Plain,1980,Asian/PI,513,1.39%
+Jamaica Plain,1980,Other,460,1.25%
+Jamaica Plain,1990,White,19882,52.84%
+Jamaica Plain,1990,Black/ African American,5635,14.98%
+Jamaica Plain,1990,Hispanic,10503,27.91%
+Jamaica Plain,1990,Asian/PI,1385,3.68%
+Jamaica Plain,1990,Other,222,0.59%
+Jamaica Plain,2000,White,17541,48.76%
+Jamaica Plain,2000,Black/ African American,5373,14.93%
+Jamaica Plain,2000,Hispanic,10285,28.59%
+Jamaica Plain,2000,Asian/PI,1565,4.35%
+Jamaica Plain,2000,Other,1213,3.37%
+Jamaica Plain,2010,White,19061,53.63%
+Jamaica Plain,2010,Black/ African American,4462,12.55%
+Jamaica Plain,2010,Hispanic,9140,25.72%
+Jamaica Plain,2010,Asian/PI,1692,4.76%
+Jamaica Plain,2010,Other,1186,3.34%
+Longwood Medical Area,1950,White,2559,98.73%
+Longwood Medical Area,1950,Black/ African American,22,0.85%
+Longwood Medical Area,1950,Other,11,0.42%
+Longwood Medical Area,1960,White,2540,68.19%
+Longwood Medical Area,1960,Black/ African American,1140,30.60%
+Longwood Medical Area,1960,Other,45,1.21%
+Longwood Medical Area,1970,White,2884,76.44%
+Longwood Medical Area,1970,Black/ African American,827,21.92%
+Longwood Medical Area,1970,Hispanic,25,0.66%
+Longwood Medical Area,1970,Asian/PI,25,0.66%
+Longwood Medical Area,1970,Other,12,0.32%
+Longwood Medical Area,1980,White,2113,68.05%
+Longwood Medical Area,1980,Black/ African American,735,23.67%
+Longwood Medical Area,1980,Hispanic,184,5.93%
+Longwood Medical Area,1980,Asian/PI,46,1.48%
+Longwood Medical Area,1980,Other,27,0.87%
+Longwood Medical Area,1990,White,1774,68.15%
+Longwood Medical Area,1990,Black/ African American,521,20.02%
+Longwood Medical Area,1990,Hispanic,202,7.76%
+Longwood Medical Area,1990,Asian/PI,92,3.53%
+Longwood Medical Area,1990,Other,15,0.58%
+Longwood Medical Area,2000,White,2446,62.59%
+Longwood Medical Area,2000,Black/ African American,506,12.95%
+Longwood Medical Area,2000,Hispanic,530,13.56%
+Longwood Medical Area,2000,Asian/PI,315,8.06%
+Longwood Medical Area,2000,Other,111,2.84%
+Longwood Medical Area,2010,White,3381,69.55%
+Longwood Medical Area,2010,Black/ African American,377,7.76%
+Longwood Medical Area,2010,Hispanic,457,9.40%
+Longwood Medical Area,2010,Asian/PI,481,9.90%
+Longwood Medical Area,2010,Other,165,3.39%
+Mattapan,1950,White,23776,99.73%
+Mattapan,1950,Black/ African American,43,0.18%
+Mattapan,1950,Other,21,0.09%
+Mattapan,1960,White,24303,99.59%
+Mattapan,1960,Black/ African American,66,0.27%
+Mattapan,1960,Other,34,0.14%
+Mattapan,1970,White,20033,77.92%
+Mattapan,1970,Black/ African American,4906,19.08%
+Mattapan,1970,Hispanic,493,1.92%
+Mattapan,1970,Asian/PI,167,0.65%
+Mattapan,1970,Other,110,0.43%
+Mattapan,1980,White,5805,25.43%
+Mattapan,1980,Black/ African American,15933,69.80%
+Mattapan,1980,Hispanic,702,3.08%
+Mattapan,1980,Asian/PI,65,0.28%
+Mattapan,1980,Other,323,1.41%
+Mattapan,1990,White,3363,13.99%
+Mattapan,1990,Black/ African American,19205,79.89%
+Mattapan,1990,Hispanic,1094,4.55%
+Mattapan,1990,Asian/PI,218,0.91%
+Mattapan,1990,Other,158,0.66%
+Mattapan,2000,White,1734,7.14%
+Mattapan,2000,Black/ African American,19037,78.34%
+Mattapan,2000,Hispanic,1798,7.40%
+Mattapan,2000,Asian/PI,386,1.59%
+Mattapan,2000,Other,1344,5.53%
+Mattapan,2010,White,1434,6.37%
+Mattapan,2010,Black/ African American,17179,76.35%
+Mattapan,2010,Hispanic,2722,12.10%
+Mattapan,2010,Asian/PI,386,1.72%
+Mattapan,2010,Other,779,3.46%
+Mission Hill ,1950,White,21889,98.51%
+Mission Hill ,1950,Black/ African American,296,1.33%
+Mission Hill ,1950,Other,34,0.15%
+Mission Hill ,1960,White,17598,92.17%
+Mission Hill ,1960,Black/ African American,1272,6.66%
+Mission Hill ,1960,Other,222,1.16%
+Mission Hill ,1970,White,12547,75.62%
+Mission Hill ,1970,Black/ African American,2660,16.03%
+Mission Hill ,1970,Hispanic,902,5.44%
+Mission Hill ,1970,Asian/PI,362,2.18%
+Mission Hill ,1970,Other,121,0.73%
+Mission Hill ,1980,White,7539,53.34%
+Mission Hill ,1980,Black/ African American,3362,23.78%
+Mission Hill ,1980,Hispanic,2302,16.29%
+Mission Hill ,1980,Asian/PI,570,4.03%
+Mission Hill ,1980,Other,361,2.55%
+Mission Hill ,1990,White,6645,41.56%
+Mission Hill ,1990,Black/ African American,4072,25.47%
+Mission Hill ,1990,Hispanic,3640,22.77%
+Mission Hill ,1990,Asian/PI,1477,9.24%
+Mission Hill ,1990,Other,154,0.96%
+Mission Hill ,2000,White,6732,45.29%
+Mission Hill ,2000,Black/ African American,2867,19.29%
+Mission Hill ,2000,Hispanic,2474,16.64%
+Mission Hill ,2000,Asian/PI,2161,14.54%
+Mission Hill ,2000,Other,630,4.24%
+Mission Hill ,2010,White,7992,47.36%
+Mission Hill ,2010,Black/ African American,2680,15.88%
+Mission Hill ,2010,Hispanic,3216,19.06%
+Mission Hill ,2010,Asian/PI,2523,14.95%
+Mission Hill ,2010,Other,463,2.74%
+North End,1950,White,16014,99.55%
+North End,1950,Black/ African American,54,0.34%
+North End,1950,Other,19,0.12%
+North End,1960,White,11847,99.85%
+North End,1960,Black/ African American,11,0.09%
+North End,1960,Other,7,0.06%
+North End,1970,White,9600,94.73%
+North End,1970,Black/ African American,6,0.06%
+North End,1970,Hispanic,502,4.95%
+North End,1970,Asian/PI,13,0.13%
+North End,1970,Other,13,0.13%
+North End,1980,White,8206,96.45%
+North End,1980,Black/ African American,91,1.07%
+North End,1980,Hispanic,149,1.75%
+North End,1980,Asian/PI,20,0.24%
+North End,1980,Other,42,0.49%
+North End,1990,White,7666,96.04%
+North End,1990,Black/ African American,11,0.14%
+North End,1990,Hispanic,210,2.63%
+North End,1990,Asian/PI,86,1.08%
+North End,1990,Other,9,0.11%
+North End,2000,White,7594,94.45%
+North End,2000,Black/ African American,30,0.37%
+North End,2000,Hispanic,169,2.10%
+North End,2000,Asian/PI,154,1.92%
+North End,2000,Other,93,1.16%
+North End,2010,White,7888,91.64%
+North End,2010,Black/ African American,53,0.62%
+North End,2010,Hispanic,308,3.58%
+North End,2010,Asian/PI,250,2.90%
+North End,2010,Other,109,1.27%
+Roslindale,1950,White,28784,99.94%
+Roslindale,1950,Black/ African American,8,0.03%
+Roslindale,1950,Other,10,0.03%
+Roslindale,1960,White,29193,99.82%
+Roslindale,1960,Black/ African American,16,0.05%
+Roslindale,1960,Other,36,0.12%
+Roslindale,1970,White,31401,99.10%
+Roslindale,1970,Black/ African American,91,0.29%
+Roslindale,1970,Hispanic,73,0.23%
+Roslindale,1970,Asian/PI,76,0.24%
+Roslindale,1970,Other,45,0.14%
+Roslindale,1980,White,26134,94.69%
+Roslindale,1980,Black/ African American,434,1.57%
+Roslindale,1980,Hispanic,689,2.50%
+Roslindale,1980,Asian/PI,155,0.56%
+Roslindale,1980,Other,188,0.68%
+Roslindale,1990,White,22660,84.46%
+Roslindale,1990,Black/ African American,1258,4.69%
+Roslindale,1990,Hispanic,2408,8.98%
+Roslindale,1990,Asian/PI,445,1.66%
+Roslindale,1990,Other,58,0.22%
+Roslindale,2000,White,17041,60.86%
+Roslindale,2000,Black/ African American,4287,15.31%
+Roslindale,2000,Hispanic,4971,17.75%
+Roslindale,2000,Asian/PI,643,2.30%
+Roslindale,2000,Other,1057,3.78%
+Roslindale,2010,White,13363,50.68%
+Roslindale,2010,Black/ African American,5376,20.39%
+Roslindale,2010,Hispanic,6156,23.35%
+Roslindale,2010,Asian/PI,675,2.56%
+Roslindale,2010,Other,798,3.03%
+Roxbury,1950,White,75911,74.92%
+Roxbury,1950,Black/ African American,25183,24.85%
+Roxbury,1950,Other,232,0.23%
+Roxbury,1960,White,33845,46.47%
+Roxbury,1960,Black/ African American,38451,52.79%
+Roxbury,1960,Other,542,0.74%
+Roxbury,1970,White,8266,16.20%
+Roxbury,1970,Black/ African American,38314,75.08%
+Roxbury,1970,Hispanic,3695,7.24%
+Roxbury,1970,Asian/PI,128,0.25%
+Roxbury,1970,Other,629,1.23%
+Roxbury,1980,White,2693,6.18%
+Roxbury,1980,Black/ African American,34367,78.85%
+Roxbury,1980,Hispanic,5182,11.89%
+Roxbury,1980,Asian/PI,132,0.30%
+Roxbury,1980,Other,1209,2.77%
+Roxbury,1990,White,1975,4.49%
+Roxbury,1990,Black/ African American,32251,73.26%
+Roxbury,1990,Hispanic,8131,18.47%
+Roxbury,1990,Asian/PI,186,0.42%
+Roxbury,1990,Other,1478,3.36%
+Roxbury,2000,White,2244,5.28%
+Roxbury,2000,Black/ African American,26383,62.06%
+Roxbury,2000,Hispanic,9979,23.47%
+Roxbury,2000,Asian/PI,370,0.87%
+Roxbury,2000,Other,3539,8.32%
+Roxbury,2010,White,5002,10.19%
+Roxbury,2010,Black/ African American,25691,52.31%
+Roxbury,2010,Hispanic,14175,28.86%
+Roxbury,2010,Asian/PI,1030,2.10%
+Roxbury,2010,Other,3213,6.54%
+South Boston Waterfront,1950,White,2183,100.00%
+South Boston Waterfront,1950,Black/ African American,0,0.00%
+South Boston Waterfront,1950,Other,0,0.00%
+South Boston Waterfront,1960,White,1296,99.93%
+South Boston Waterfront,1960,Black/ African American,0,0.00%
+South Boston Waterfront,1960,Other,3,0.23%
+South Boston Waterfront,1970,White,969,95.66%
+South Boston Waterfront,1970,Black/ African American,1,0.10%
+South Boston Waterfront,1970,Hispanic,0,0.00%
+South Boston Waterfront,1970,Asian/PI,1,0.10%
+South Boston Waterfront,1970,Other,41,4.05%
+South Boston Waterfront,1980,White,706,99.02%
+South Boston Waterfront,1980,Black/ African American,0,0.00%
+South Boston Waterfront,1980,Hispanic,1,0.14%
+South Boston Waterfront,1980,Asian/PI,0,0.00%
+South Boston Waterfront,1980,Other,6,0.84%
+South Boston Waterfront,1990,White,917,91.79%
+South Boston Waterfront,1990,Black/ African American,12,1.20%
+South Boston Waterfront,1990,Hispanic,19,1.90%
+South Boston Waterfront,1990,Asian/PI,48,4.80%
+South Boston Waterfront,1990,Other,3,0.30%
+South Boston Waterfront,2000,White,1234,88.08%
+South Boston Waterfront,2000,Black/ African American,22,1.57%
+South Boston Waterfront,2000,Hispanic,36,2.57%
+South Boston Waterfront,2000,Asian/PI,75,5.35%
+South Boston Waterfront,2000,Other,34,2.43%
+South Boston Waterfront,2010,White,2194,85.57%
+South Boston Waterfront,2010,Black/ African American,40,1.56%
+South Boston Waterfront,2010,Hispanic,129,5.03%
+South Boston Waterfront,2010,Asian/PI,154,6.01%
+South Boston Waterfront,2010,Other,47,1.83%
+South Boston,1950,White,53399,99.88%
+South Boston,1950,Black/ African American,42,0.08%
+South Boston,1950,Other,22,0.04%
+South Boston,1960,White,42538,99.71%
+South Boston,1960,Black/ African American,70,0.16%
+South Boston,1960,Other,51,0.12%
+South Boston,1970,White,36466,97.44%
+South Boston,1970,Black/ African American,386,1.03%
+South Boston,1970,Hispanic,329,0.88%
+South Boston,1970,Asian/PI,151,0.40%
+South Boston,1970,Other,93,0.25%
+South Boston,1980,White,29152,98.46%
+South Boston,1980,Black/ African American,15,0.05%
+South Boston,1980,Hispanic,159,0.54%
+South Boston,1980,Asian/PI,142,0.48%
+South Boston,1980,Other,140,0.47%
+South Boston,1990,White,27154,95.63%
+South Boston,1990,Black/ African American,251,0.88%
+South Boston,1990,Hispanic,411,1.45%
+South Boston,1990,Asian/PI,474,1.67%
+South Boston,1990,Other,105,0.37%
+South Boston,2000,White,24082,84.39%
+South Boston,2000,Black/ African American,719,2.52%
+South Boston,2000,Hispanic,2199,7.71%
+South Boston,2000,Asian/PI,1086,3.81%
+South Boston,2000,Other,451,1.58%
+South Boston,2010,White,24344,78.25%
+South Boston,2010,Black/ African American,1532,4.92%
+South Boston,2010,Hispanic,3216,10.34%
+South Boston,2010,Asian/PI,1488,4.78%
+South Boston,2010,Other,530,1.70%
+South End,1950,White,38046,76.47%
+South End,1950,Black/ African American,11354,22.82%
+South End,1950,Other,353,0.71%
+South End,1960,White,20770,66.24%
+South End,1960,Black/ African American,9749,31.09%
+South End,1960,Other,835,2.66%
+South End,1970,White,10802,49.38%
+South End,1970,Black/ African American,6817,31.16%
+South End,1970,Hispanic,1192,5.45%
+South End,1970,Asian/PI,2912,13.31%
+South End,1970,Other,153,0.70%
+South End,1980,White,10303,42.75%
+South End,1980,Black/ African American,7175,29.77%
+South End,1980,Hispanic,2972,12.33%
+South End,1980,Asian/PI,3291,13.66%
+South End,1980,Other,359,1.49%
+South End,1990,White,12170,47.11%
+South End,1990,Black/ African American,6119,23.69%
+South End,1990,Hispanic,3609,13.97%
+South End,1990,Asian/PI,3741,14.48%
+South End,1990,Other,195,0.75%
+South End,2000,White,13339,51.06%
+South End,2000,Black/ African American,4771,18.26%
+South End,2000,Hispanic,3677,14.07%
+South End,2000,Asian/PI,3565,13.65%
+South End,2000,Other,774,2.96%
+South End,2010,White,16024,54.11%
+South End,2010,Black/ African American,3968,13.40%
+South End,2010,Hispanic,4019,13.57%
+South End,2010,Asian/PI,4762,16.08%
+South End,2010,Other,839,2.83%
+West End,1950,White,12657,98.84%
+West End,1950,Black/ African American,138,1.08%
+West End,1950,Other,12,0.09%
+West End,1960,White,1809,95.11%
+West End,1960,Black/ African American,82,4.31%
+West End,1960,Other,11,0.58%
+West End,1970,White,2962,92.50%
+West End,1970,Black/ African American,131,4.09%
+West End,1970,Hispanic,70,2.19%
+West End,1970,Asian/PI,25,0.78%
+West End,1970,Other,14,0.44%
+West End,1980,White,3884,91.24%
+West End,1980,Black/ African American,191,4.49%
+West End,1980,Hispanic,90,2.11%
+West End,1980,Asian/PI,57,1.34%
+West End,1980,Other,35,0.82%
+West End,1990,White,2942,82.43%
+West End,1990,Black/ African American,230,6.44%
+West End,1990,Hispanic,189,5.30%
+West End,1990,Asian/PI,204,5.72%
+West End,1990,Other,3,0.08%
+West End,2000,White,3320,71.83%
+West End,2000,Black/ African American,423,9.15%
+West End,2000,Hispanic,275,5.95%
+West End,2000,Asian/PI,486,10.51%
+West End,2000,Other,118,2.55%
+West End,2010,White,3450,63.62%
+West End,2010,Black/ African American,615,11.34%
+West End,2010,Hispanic,481,8.87%
+West End,2010,Asian/PI,746,13.76%
+West End,2010,Other,131,2.42%
+West Roxbury,1950,White,27051,99.94%
+West Roxbury,1950,Black/ African American,7,0.03%
+West Roxbury,1950,Other,8,0.03%
+West Roxbury,1960,White,29726,99.77%
+West Roxbury,1960,Black/ African American,37,0.12%
+West Roxbury,1960,Other,31,0.10%
+West Roxbury,1970,White,33941,99.21%
+West Roxbury,1970,Black/ African American,79,0.23%
+West Roxbury,1970,Hispanic,54,0.16%
+West Roxbury,1970,Asian/PI,115,0.34%
+West Roxbury,1970,Other,24,0.07%
+West Roxbury,1980,White,30332,96.81%
+West Roxbury,1980,Black/ African American,185,0.59%
+West Roxbury,1980,Hispanic,395,1.26%
+West Roxbury,1980,Asian/PI,286,0.91%
+West Roxbury,1980,Other,135,0.43%
+West Roxbury,1990,White,27968,94.30%
+West Roxbury,1990,Black/ African American,472,1.59%
+West Roxbury,1990,Hispanic,624,2.10%
+West Roxbury,1990,Asian/PI,563,1.90%
+West Roxbury,1990,Other,33,0.11%
+West Roxbury,2000,White,24029,83.57%
+West Roxbury,2000,Black/ African American,1718,5.98%
+West Roxbury,2000,Hispanic,1309,4.55%
+West Roxbury,2000,Asian/PI,1090,3.79%
+West Roxbury,2000,Other,607,2.11%
+West Roxbury,2010,White,22302,73.25%
+West Roxbury,2010,Black/ African American,2959,9.72%
+West Roxbury,2010,Hispanic,2573,8.45%
+West Roxbury,2010,Asian/PI,1976,6.49%
+West Roxbury,2010,Other,635,2.09%

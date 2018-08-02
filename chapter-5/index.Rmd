@@ -23,6 +23,10 @@ map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
 
 boston <- st_read(map_filepath)
 
+homicides <- read_csv("homicide-data.csv")
+
+race_ethnicity <- read_csv("race-and-or-ethnicity.csv")
+
 nospace <- function(a) {
   a <- gsub(" ","",a) 
   a <- gsub("\\\n", "", a)
@@ -70,7 +74,7 @@ checker <- function(label, user_code, check_code, envir_result, evaluate_result,
   }
 }  
 
-#tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
+tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
 
 ```
 
@@ -91,37 +95,59 @@ It's in the folder *Boston_Neighborhoods* and the shapefile is also called *Bost
 
 Call the object *boston*.
 
-```{r print}
-print(getwd())
 ```
+library(sf)
+library(ggplot2)
+library(dplyr)
 
-```{r map, exercise=TRUE}
-map_filepath <- "Boston_Neighborhoods/______________"
-
-boston <- _______(map_filepath)
-boston
-```
-
-
-```{r map-check}
 map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
 
 boston <- st_read(map_filepath)
-
-boston
-``` 
+```
 
 ### Glimpse
 
 Let's take a look at the data behind the shapefile.
 
+```{r glimpse, exercise=TRUE}
+_____(boston)
+```
 
-
-
+```{r glimpse-check}
+glimpse(boston)
+``` 
 
 ### Plot the shapefile
 
+```{r plot, exercise=TRUE}
+_____(_______) +
+  _________()
+```
+
+```{r plot-check}
+ggplot(boston) +
+  geom_sf()
+``` 
+
+Good job. Not much to display, yet.
+
+So let's bring in some data to join it with.
+
 ### Load data
+
+The data is historical population and race data by neighborhood from the City of Boston. 
+
+It's loaded in your environment as **race_ethnicity**.
+
+Take a glimpse.
+
+```{r glimpse2, exercise=TRUE}
+_____(race_ethnicit))
+```
+
+```{r glimpse2-check}
+glimpse(race_ethnicity)
+```
 
 ### Join the shapefile to the data
 
@@ -134,6 +160,22 @@ Let's take a look at the data behind the shapefile.
 ### Plot the points on themap
 
 ### Points in a polygon join
+
+
+The data comes from The Washington Post's Murder with Impunity series.
+
+It's specifically slicing out Boston's data.
+
+Take a glimpse at the structure of the data, which is in the environment as **homicides**.
+
+```{r glimpse3, exercise=TRUE}
+_____(homicides)
+```
+
+```{r glimpse3-check}
+glimpse(homicides)
+```
+
 
 ### Change projection
 

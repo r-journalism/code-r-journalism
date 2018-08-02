@@ -227,7 +227,7 @@ head(orcas4)
 ### Summarize
 
 
-Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*
+Count up the number of total Orcas by counting the unique *NOAA.ID*s and how many have died by adding up the *status_num*. You want to summarize with two columns: *total* (by counting distinct NOAA.IDS and *died*)
 
 
 
@@ -245,7 +245,7 @@ alive_dead <- orcas4 %>%
   summarize(total=n_distinct(NOAA.ID), died=sum(status_num))
 ``` 
 
-<div id="summarize-hint">
+<div id="sum-hint">
 **Hint:** You may want to use the dplyr `n_distinct()` function nested in another function.
 </div>
 
