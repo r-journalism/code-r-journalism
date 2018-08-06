@@ -408,7 +408,7 @@ movies %>%
 
 ```{r j_c5-check}
 movies %>% 
-  filter(director_name=="James Cameron") %>%
+  filter(director_name=="Wes Anderson") %>%
   ggplot(aes(x=fct_reorder(movie_title,desc(title_year)), y=gross, fill=movie_title)) +
   geom_bar(stat="identity") +
   coord_flip() +

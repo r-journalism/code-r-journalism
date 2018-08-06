@@ -17,6 +17,8 @@ runtime: shiny_prerendered
 library(learnr)
 library(tidyverse)
 library(sf)
+library(leaflet)
+
 knitr::opts_chunk$set(echo = FALSE)
 
 map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
@@ -24,8 +26,16 @@ map_filepath <- "Boston_Neighborhoods/Boston_Neighborhoods.shp"
 boston <- st_read(map_filepath)
 
 homicides <- read_csv("homicide-data.csv")
+homicides <- homicides %>% 
+  filter(city=="Boston") %>% 
+  filter(!is.na(lon))
 
 race_ethnicity <- read_csv("race-and-or-ethnicity.csv")
+colnames(race_ethnicity) <- make.names(colnames(race_ethnicity))
+race_ethnicity$Percent.of.Population <- as.numeric(gsub("\\%", "", race_ethnicity$Percent.of.Population))
+race_ethnicity2010 <- filter(race_ethnicity, Decade==2010)
+boston_population <- race_ethnicity2010 %>% group_by(Neighborhood) %>% 
+  summarize(Population=sum(Number.of.People))
 
 nospace <- function(a) {
   a <- gsub(" ","",a) 
@@ -137,46 +147,308 @@ So let's bring in some data to join it with.
 
 The data is historical population and race data by neighborhood from the City of Boston. 
 
-It's loaded in your environment as **race_ethnicity**.
+It's loaded in your environment as **boston_population**.
 
 Take a glimpse.
 
 ```{r glimpse2, exercise=TRUE}
-_____(race_ethnicit))
+_____(boston_population))
 ```
 
 ```{r glimpse2-check}
-glimpse(race_ethnicity)
+glimpse(boston_population)
 ```
 
 ### Join the shapefile to the data
 
+Combine the shape file **boston** to the data frame **boston_population**.
+
+Use the function that joins from the left from *dplyr*.
+
+```{r join, exercise=TRUE}
+boston_pop_map <- _____(______, _______, by=c(_______=_______))
+```
+
+```{r join-check}
+boston_pop_map <- left_join(boston_population, boston, by=c("Neighborhood"="Name"))
+```
+
 ### Plot the data on the shapefile
 
-### Style it with headline, etc
-
-### Add data of locations
-
-### Plot the points on themap
-
-### Points in a polygon join
+```{r plot2, exercise=TRUE, warning=F}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=________))
+``` 
 
 
-The data comes from The Washington Post's Murder with Impunity series.
+```{r plot2-check}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=Population))
+``` 
+
+### Style it
+
+First, let's fix the legend so the gradient goes in the other direction.
+
+And also add a title "Boston neighborhood population" and source in the caption.
+
+```{r plot3, exercise=TRUE, warning=F}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=Population)) +
+  scale_fill__________(_________=1, _______="Population") +
+  _____(_________=________________, _______="Source: City of Boston")
+``` 
+
+
+```{r plot3-check}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=Population))  +
+  scale_fill_distiller(direction=1, name="Population") +
+  labs(title="Population of 48 states", caption="Source: US Census")
+``` 
+
+Also, let's get rid of the axis marks and the background gray grid.
+
+```{r plot3a, exercise=TRUE, warning=F}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=Population)) +
+  scale_fill__________(_________=1, _______="Population") +
+  _____(_________=________________, _______="Source: City of Boston") +
+  theme________() +
+  theme(_________________ = element_line(colour = ____________)) +
+
+``` 
+
+
+```{r plot3a-check}
+ggplot(boston_pop_map) +
+  geom_sf(aes(fill=Population))  +
+  scale_fill_distiller(direction=1, name="Population") + 
+  labs(title="Population of 48 states", caption="Source: US Census") +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent'))
+``` 
+
+## Small multiples
+
+### More data
+
+The data is historical population and race data by neighborhood from the City of Boston. 
+
+It's loaded in your environment as **race_ethnicity2010**.
+
+Take a glimpse.
+
+```{r glimpse4, exercise=TRUE}
+_____(race_ethnicity2010))
+```
+
+```{r glimpse4-check}
+glimpse(race_ethnicity2010)
+```
+
+### Join the shapefile to the data
+
+Combine the shape file **boston** to the data frame **race_ethnicity2010**.
+
+Use the function that joins from the left from *dplyr*.
+
+```{r join2, exercise=TRUE}
+boston_race_map <- _____(race_ethnicity2010, _______, by=c(_______=_______))
+```
+
+```{r join2-check}
+boston_race_map <- left_join(race_ethnicity2010, boston, by=c("Neighborhood"="Name"))
+
+boston_race_map
+```
+
+
+### Plot the data on the shapefile
+
+Map the data, setting the color based on *Percent.of.Population*. 
+
+Also, facet wrap out by *Race.and.or.Ethnicity* this time.
+
+```{r plot4, exercise=TRUE, warning=F}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=________)) +
+  __________(~___________, ncol=2)
+``` 
+
+
+```{r plot4-check}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=Percent.of.Population)) +
+  facet_wrap(~Race.and.or.Ethnicity, ncol=2)
+``` 
+
+### Style it again
+
+First, let's fix the legend so the gradient goes in the other direction.
+
+And also add a title "Boston neighborhood population by race" and source in the caption.
+
+```{r plot5, exercise=TRUE, warning=F}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=Percent.of.Population)) +
+    __________(~___________, ncol=2) +
+  scale_fill__________(_________=1, _______="Percent of Population") +
+  _____(_________=________________, _______="Source: City of Boston")
+``` 
+
+
+```{r plot5-check}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=Percent.of.Population)) +
+  facet_wrap(~Race.and.or.Ethnicity, ncol=2) +
+  scale_fill_distiller(direction=1, name="Population") +
+  labs(title="Population of 48 states", caption="Source: US Census")
+``` 
+
+Also, let's get rid of the axis marks and the background gray grid.
+
+```{r plot6, exercise=TRUE, warning=F}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=Percent.of.Population)) +
+  scale_fill__________(_________=1, _______="Percent of Population") +
+  _____(_________=________________, _______="Source: City of Boston") +
+  theme________() +
+  theme(_________________ = element_line(colour = ____________)) +
+
+``` 
+
+
+```{r plot6-check}
+ggplot(boston_race_map) +
+  geom_sf(aes(fill=Percent.of.Population))  +
+  scale_fill_distiller(direction=1, name="Percent of Population") + 
+  facet_wrap(~Race.and.or.Ethnicity, ncol=2) +
+  labs(title="Population of 48 states", caption="Source: US Census") +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent'))
+``` 
+
+## Mapping murders
+
+
+This data comes from The Washington Post's Murder with Impunity series.
 
 It's specifically slicing out Boston's data.
 
 Take a glimpse at the structure of the data, which is in the environment as **homicides**.
 
-```{r glimpse3, exercise=TRUE}
+```{r glimpse5, exercise=TRUE}
 _____(homicides)
 ```
 
-```{r glimpse3-check}
+```{r glimpse5-check}
 glimpse(homicides)
 ```
 
+### Plot the points on the map
 
+Let's use the leaflet package to map out all the locations of the murders in Boston.
+
+We'll use the **boston** shape file as the base. Then add the locations based on the latitude and longitude columns in the **homicides** data frame.
+
+```
+library(leaflet)
+```
+
+```{r leaflet, exercise=TRUE, warning=F}
+leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>% 
+  setView(-71.087010, 42.316240, zoom = 11) %>% 
+    addPolygons( 
+              fillColor = "transparent", 
+              fillOpacity = 0.9, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ffa500", stroke = TRUE, fillOpacity = 0.8) 
+```
+
+```{r leaflet-check}
+leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>% 
+  setView(-71.087010, 42.316240, zoom = 11) %>% 
+    addPolygons( 
+              fillColor = "transparent", 
+              fillOpacity = 0.9, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ffa500", stroke = TRUE, fillOpacity = 0.8) 
+```
+
+### Points in a polygon join
+
+```{r pointsin-check}
+murders_spatial <- homicides %>% 
+  st_as_sf(coords=c("lon", "lat"), crs = "+proj=longlat") %>% 
+  st_transform(crs=st_crs(boston))
+
+points_in <- st_join(boston, murders_spatial, left=T)
+points_in
+```
+
+```{r choro1-check}
+library(viridis)
+
+points_in %>% 
+  group_by(Name) %>%
+  summarize(murders=n()) %>% 
+ggplot() +
+  geom_sf(aes(fill = murders), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Total murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Murders") +
+  scale_fill_viridis(option="magma", direction=-1)
+
+```
+
+Let's figure out percent of unsolved by neighborhood and map that out.
+
+
+```{r choro2-check}
+library(viridis)
+
+points_in %>% 
+  group_by(Name, disposition) %>%
+  summarize(murders=n()) %>% 
+  mutate(percent=murders/sum(murders)*100) %>% 
+  filter(disposition=="Open/No arrest") %>% 
+ggplot() +
+  geom_sf(aes(fill = percent), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Rate of solved murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Percent unsolved") +
+  scale_fill_viridis(option="magma", direction=-1)
+
+```
+
+
+```{r choro3-check}
+
+points_in %>% 
+  group_by(Name, victim_race, disposition) %>%
+  summarize(murders=n()) %>% 
+  mutate(percent=murders/sum(murders)*100) %>% 
+  filter(disposition=="Open/No arrest") %>% 
+ggplot() +
+  geom_sf(aes(fill = percent), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Rate of solved murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Percent unsolved") +
+  scale_fill_viridis(option="magma", direction=-1) +
+  facet_wrap(~victim_race)
+
+```
 ### Change projection
 
 ### Geolocate some data
