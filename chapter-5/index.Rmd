@@ -36,6 +36,7 @@ race_ethnicity$Percent.of.Population <- as.numeric(gsub("\\%", "", race_ethnicit
 race_ethnicity2010 <- filter(race_ethnicity, Decade==2010)
 boston_population <- race_ethnicity2010 %>% group_by(Neighborhood) %>% 
   summarize(Population=sum(Number.of.People))
+boston_race_map <- left_join(race_ethnicity2010, boston, by=c("Neighborhood"="Name"))
 
 nospace <- function(a) {
   a <- gsub(" ","",a) 
@@ -365,7 +366,7 @@ leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>%
               weight = 1, 
               smoothFactor = 0.2,
               color="black") %>% 
-    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ffa500", stroke = TRUE, fillOpacity = 0.8) 
+    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ff0000", stroke = TRUE, fillOpacity = 0.8) 
 ```
 
 ```{r leaflet-check}
@@ -377,7 +378,7 @@ leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>%
               weight = 1, 
               smoothFactor = 0.2,
               color="black") %>% 
-    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ffa500", stroke = TRUE, fillOpacity = 0.8) 
+    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ff0000", stroke = TRUE, fillOpacity = 0.8) 
 ```
 
 ### Points in a polygon join
@@ -449,11 +450,37 @@ ggplot() +
   facet_wrap(~victim_race)
 
 ```
-### Change projection
 
-### Geolocate some data
 
 ### Add it to an interactive map
 
+Unsolved murders in Black majority neighborhoods.
+
+```{r leaflet2-check}
+black_boston <- boston_race_map %>% 
+  filter(Race.and.or.Ethnicity=="Black/ African American") %>% 
+  filter(Percent.of.Population>43)
+
+black_boston <- st_as_sf(black_boston, sf_column_name = "geometry")
+
+disp <- colorFactor(c("#ff0000", "#13ED3F"), domain=c("Closed by arrest", "Open/No arrest"))
+
+leaflet() %>% addProviderTiles("CartoDB.Positron") %>% 
+  setView(-71.087010, 42.316240, zoom = 11) %>% 
+    addPolygons(data=boston,
+              fillColor = "transparent", 
+              fillOpacity = 0.9, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    addPolygons(data=black_boston, 
+              fillColor = "transparent", 
+              fillOpacity = 1, 
+              weight = 3, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    addCircles(data=homicides, ~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color=~disp(disposition), stroke = TRUE, fillOpacity = 0.8) %>% 
+    addLegend("bottomright", colors= c("#ff0000", "#13ED3F"), labels=c("Arrest made/Closed", "Open"), title="Disposition") 
+```
 
 

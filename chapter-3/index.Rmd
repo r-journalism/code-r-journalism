@@ -559,7 +559,7 @@ bo4$sex_species
 
 
 <div id="rep-hint">
-**Hint:** You may need to use the str_xxxxxxxx function more than once. Also, pay attention to the order. That will be important.
+**Hint:** You may need to use the str_replace function more than once. Also, pay attention to the order. That will be important.
 </div>
 
 
