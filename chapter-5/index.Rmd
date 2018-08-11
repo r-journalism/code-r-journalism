@@ -18,6 +18,7 @@ library(learnr)
 library(tidyverse)
 library(sf)
 library(leaflet)
+library(viridis)
 
 knitr::opts_chunk$set(echo = FALSE)
 
@@ -34,9 +35,28 @@ race_ethnicity <- read_csv("race-and-or-ethnicity.csv")
 colnames(race_ethnicity) <- make.names(colnames(race_ethnicity))
 race_ethnicity$Percent.of.Population <- as.numeric(gsub("\\%", "", race_ethnicity$Percent.of.Population))
 race_ethnicity2010 <- filter(race_ethnicity, Decade==2010)
+
 boston_population <- race_ethnicity2010 %>% group_by(Neighborhood) %>% 
   summarize(Population=sum(Number.of.People))
+
 boston_race_map <- left_join(race_ethnicity2010, boston, by=c("Neighborhood"="Name"))
+
+boston_pop_map <- left_join(boston_population, boston, by=c("Neighborhood"="Name"))
+
+
+boston_black_perc <- readRDS("boston_black.rds")
+
+black_boston <- boston_black_perc %>% 
+  rename(black_percent=black_residents) %>% 
+  filter(black_percent > 50)
+
+murders_spatial <- homicides %>% 
+  st_as_sf(coords=c("lon", "lat"), crs = "+proj=longlat") %>% 
+  st_transform(crs=st_crs(boston))
+
+points_in <- st_join(boston, murders_spatial, left=T)
+
+disp <- colorFactor(c("#ff0000", "#13ED3F"), domain=c("Closed by arrest", "Open/No arrest"))
 
 nospace <- function(a) {
   a <- gsub(" ","",a) 
@@ -50,7 +70,7 @@ is_bad_code <- function(user_code, check_code, envir_result) {
   is_null <- is.null(eval(parse(text = user_code)))
   is_gg <- any(grepl("gg", class(eval(parse(text = user_code)))))
   e_class <- class(eval(parse(text = user_code)))[1]
-  r_class <- class((eval(parse(text = check_code), envir = envir_result)))
+  r_class <- class((eval(parse(text = check_code), envir = envir_result)))[1]
   e_rows <- nrow(eval(parse(text = user_code)))
   r_rows <- nrow(eval(parse(text = check_code), envir = envir_result))
   e_cols <- ncol(eval(parse(text = user_code)))
@@ -59,7 +79,7 @@ is_bad_code <- function(user_code, check_code, envir_result) {
   r_type <- typeof(eval(parse(text = check_code), envir=envir_result))
   e_len <- length(eval(parse(text = user_code)))
   r_len <- length(eval(parse(text = check_code)))
-  if (is_null!=T & is_gg!=T & r_class!="sf"){
+  if (is_null!=T & is_gg!=T & r_class!="sf" & r_class!="tbl_df" & r_class!="leaflet"){
     if (e_len!=0 & r_len!=0) {
       if (e_type==r_type) {
         if (e_type!="character" & e_type!="double" & e_type!="integer" & e_type!="logical") {
@@ -93,7 +113,7 @@ tutorial_options(exercise.timelimit = 30, exercise.checker = checker)
 
 ### Load this shapefile
 
-Let's load the libraries you need for working with maps.
+The libraries you need for working with maps are already loaded.
 
 ```
 library(ggplot2)
@@ -140,6 +160,11 @@ ggplot(boston) +
   geom_sf()
 ``` 
 
+
+<div id="plot-hint">
+The ggplot2 and sf function you need to map out a shapefile is geom_sf().
+</div>
+
 Good job. Not much to display, yet.
 
 So let's bring in some data to join it with.
@@ -166,15 +191,25 @@ Combine the shape file **boston** to the data frame **boston_population**.
 
 Use the function that joins from the left from *dplyr*.
 
-```{r join, exercise=TRUE}
+```{r join, exercise=TRUE, warning=F}
 boston_pop_map <- _____(______, _______, by=c(_______=_______))
+
+boston_pop_map
 ```
 
 ```{r join-check}
 boston_pop_map <- left_join(boston_population, boston, by=c("Neighborhood"="Name"))
+
+boston_pop_map
 ```
 
+<div id="join-hint">
+The dplyr verb you need to use to join to the left is left_join() and don't forget that variable names in by need to be in quotes.
+</div>
+
 ### Plot the data on the shapefile
+
+Make a choropleth with colors based on *Population*.
 
 ```{r plot2, exercise=TRUE, warning=F}
 ggplot(boston_pop_map) +
@@ -205,8 +240,13 @@ ggplot(boston_pop_map) +
 ggplot(boston_pop_map) +
   geom_sf(aes(fill=Population))  +
   scale_fill_distiller(direction=1, name="Population") +
-  labs(title="Population of 48 states", caption="Source: US Census")
+  labs(title="Boston neighborhood population", caption="Source: US Census")
 ``` 
+
+
+<div id="plot3-hint">
+scale_fill_distiller()
+</div>
 
 Also, let's get rid of the axis marks and the background gray grid.
 
@@ -225,23 +265,29 @@ ggplot(boston_pop_map) +
 ggplot(boston_pop_map) +
   geom_sf(aes(fill=Population))  +
   scale_fill_distiller(direction=1, name="Population") + 
-  labs(title="Population of 48 states", caption="Source: US Census") +
+  labs(title="Boston neighborhood population", caption="Source: US Census") +
   theme_void() +
   theme(panel.grid.major = element_line(colour = 'transparent'))
 ``` 
+
+
+
+<div id="plot3a-hint">
+These style tweaks are in [Chapter 5](http://learn.r-journalism.com/en/mapping/static_maps/static-maps/).
+</div>
 
 ## Small multiples
 
 ### More data
 
-The data is historical population and race data by neighborhood from the City of Boston. 
+Let's map historical population and race data by neighborhood from the City of Boston. 
 
 It's loaded in your environment as **race_ethnicity2010**.
 
 Take a glimpse.
 
 ```{r glimpse4, exercise=TRUE}
-_____(race_ethnicity2010))
+_____(race_ethnicity2010)
 ```
 
 ```{r glimpse4-check}
@@ -254,9 +300,12 @@ Combine the shape file **boston** to the data frame **race_ethnicity2010**.
 
 Use the function that joins from the left from *dplyr*.
 
-```{r join2, exercise=TRUE}
+```{r join2, exercise=TRUE, warning=F}
 boston_race_map <- _____(race_ethnicity2010, _______, by=c(_______=_______))
+
+boston_race_map
 ```
+
 
 ```{r join2-check}
 boston_race_map <- left_join(race_ethnicity2010, boston, by=c("Neighborhood"="Name"))
@@ -265,11 +314,14 @@ boston_race_map
 ```
 
 
+
 ### Plot the data on the shapefile
 
 Map the data, setting the color based on *Percent.of.Population*. 
 
 Also, facet wrap out by *Race.and.or.Ethnicity* this time.
+
+**This will take a few moments to render**.
 
 ```{r plot4, exercise=TRUE, warning=F}
 ggplot(boston_race_map) +
@@ -284,11 +336,13 @@ ggplot(boston_race_map) +
   facet_wrap(~Race.and.or.Ethnicity, ncol=2)
 ``` 
 
-### Style it again
+### Style with title and color fix
 
 First, let's fix the legend so the gradient goes in the other direction.
 
 And also add a title "Boston neighborhood population by race" and source in the caption.
+
+**This will take a few moments to render**.
 
 ```{r plot5, exercise=TRUE, warning=F}
 ggplot(boston_race_map) +
@@ -303,11 +357,15 @@ ggplot(boston_race_map) +
 ggplot(boston_race_map) +
   geom_sf(aes(fill=Percent.of.Population)) +
   facet_wrap(~Race.and.or.Ethnicity, ncol=2) +
-  scale_fill_distiller(direction=1, name="Population") +
-  labs(title="Population of 48 states", caption="Source: US Census")
+  scale_fill_distiller(direction=1, name="Percent of Population") +
+  labs(title="Boston neighborhood population by race", caption="Source: City of Boston")
 ``` 
 
+### Style with grid and axis fixes
+
 Also, let's get rid of the axis marks and the background gray grid.
+
+**This will take a few moments to render**.
 
 ```{r plot6, exercise=TRUE, warning=F}
 ggplot(boston_race_map) +
@@ -325,17 +383,16 @@ ggplot(boston_race_map) +
   geom_sf(aes(fill=Percent.of.Population))  +
   scale_fill_distiller(direction=1, name="Percent of Population") + 
   facet_wrap(~Race.and.or.Ethnicity, ncol=2) +
-  labs(title="Population of 48 states", caption="Source: US Census") +
+  labs(title="Boston neighborhood population by race", caption="Source: City of Boston") +
   theme_void() +
   theme(panel.grid.major = element_line(colour = 'transparent'))
 ``` 
 
 ## Mapping murders
 
+This data comes from The Washington Post's [Murder with Impunity](https://www.washingtonpost.com/graphics/2018/investigations/where-murders-go-unsolved/) series.
 
-This data comes from The Washington Post's Murder with Impunity series.
-
-It's specifically slicing out Boston's data.
+We'll start out with a slice of Boston's data.
 
 Take a glimpse at the structure of the data, which is in the environment as **homicides**.
 
@@ -357,16 +414,20 @@ We'll use the **boston** shape file as the base. Then add the locations based on
 library(leaflet)
 ```
 
+Fill in the blanks to 1) add the shapefile of Boston neighborhoods. Remember, the shapefile is in the global environment as **boston**. Then, 2) Add circles for every longitude and latitude in the **homicides** data frame and have the popup be the *disposition* variable.
+
+
 ```{r leaflet, exercise=TRUE, warning=F}
-leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>% 
+leaflet(________) %>% addProviderTiles("CartoDB.Positron") %>% 
   setView(-71.087010, 42.316240, zoom = 11) %>% 
-    addPolygons( 
+    __________( 
               fillColor = "transparent", 
               fillOpacity = 0.9, 
               weight = 1, 
               smoothFactor = 0.2,
               color="black") %>% 
-    addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ff0000", stroke = TRUE, fillOpacity = 0.8) 
+    add_______(~________$____, ~_________$__, popup=______$______, weight = 3, 
+               radius=40, color="#ff0000", stroke = TRUE, fillOpacity = 0.8) 
 ```
 
 ```{r leaflet-check}
@@ -381,20 +442,79 @@ leaflet(boston) %>% addProviderTiles("CartoDB.Positron") %>%
     addCircles(~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color="#ff0000", stroke = TRUE, fillOpacity = 0.8) 
 ```
 
-### Points in a polygon join
+### Points in a polygon prep
 
-```{r pointsin-check}
+We want to associate each dot with a corresponding neighborhood.
+
+Prepare points for join by making points fit the projection of the  shapefile it will be joined with.
+
+
+```{r projection, exercise=TRUE, warning=F}
+murders_spatial <- homicides %>% 
+  ________(coords=c("lon", "lat"), crs = "+proj=longlat") %>% 
+  __________(crs=_____(boston)) 
+
+str(murders_spatial)
+```
+
+
+```{r projection-check}
 murders_spatial <- homicides %>% 
   st_as_sf(coords=c("lon", "lat"), crs = "+proj=longlat") %>% 
   st_transform(crs=st_crs(boston))
 
-points_in <- st_join(boston, murders_spatial, left=T)
+str(murders_spatial)
+```
+
+
+<div id="pointsin-hint">
+You'll be using three different st_xxxxx functions. If you need reference, we've [used it before](
+http://learn.r-journalism.com/en/mapping/case_study/traffic-stops/).
+</div>
+
+### Points in a polygon join
+
+Use the special function that sees where the geometries we’ve set in **murders_spatial** fall into which polygon in **boston**.
+
+```{r pointsin, exercise=TRUE, warning=F}
+points_in <- __________(boston, _________, left=T)
+
 points_in
 ```
 
-```{r choro1-check}
-library(viridis)
+```{r pointsin-check}
+points_in <- st_join(boston, murders_spatial, left=T)
 
+points_in
+```
+
+We'll bring in the viridis library for colors.
+
+```
+library(viridis)
+```
+
+And now we can make a choropleth map with this new transformed data frame.
+
+Start with the **points_in** data frame and figure out the number of murders per neighborhood (**Name** is the variable name). You'll need to create a new variable called *murders*.
+
+
+
+```{r choro1, exercise=TRUE, warning=F}
+points_in %>% 
+  group_by(_____) %>%
+  __________(_________=___) %>% 
+________() +
+  ________(aes(fill = ________), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Total murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Murders") +
+  scale_fill_viridis(option="magma", direction=-1)
+```
+
+```{r choro1-check}
 points_in %>% 
   group_by(Name) %>%
   summarize(murders=n()) %>% 
@@ -409,21 +529,26 @@ ggplot() +
 
 ```
 
-Let's figure out percent of unsolved by neighborhood and map that out.
+Nice!
 
+Now, let's figure out percent of unsolved murders by neighborhood and map that out.
 
-```{r choro2-check}
-library(viridis)
+You'll have to add another variable (*disposition*) to group by and after summarizing by creating a new variable (*murders*), you'll then create another variable *percent* that figures out the percent.
 
+And then filter disposition for `"Open/No arrest"`. 
+
+Then plot it with the function from ggplot2().
+
+```{r choro2, exercise=TRUE, warning=F}
 points_in %>% 
-  group_by(Name, disposition) %>%
-  summarize(murders=n()) %>% 
-  mutate(percent=murders/sum(murders)*100) %>% 
-  filter(disposition=="Open/No arrest") %>% 
+  ______(____, ________) %>%
+  ________(________=___) %>% 
+  ________(______=______/___(_________)*100) %>% 
+  filter(____________=="Open/No arrest") %>% 
 ggplot() +
-  geom_sf(aes(fill = percent), color=NA) +
+  _______(aes(fill = _______), color=NA) +
   coord_sf(datum=NA) +
-  labs(title = "Rate of solved murders in Boston by neighborhood",
+  labs(title = "Rate of unsolved murders in Boston by neighborhood",
        subtitle = "Between 2008 and 2018",
        caption = "Source: Washington Post",
        fill = "Percent unsolved") +
@@ -432,10 +557,40 @@ ggplot() +
 ```
 
 
-```{r choro3-check}
-
+```{r choro2-check}
 points_in %>% 
-  group_by(Name, victim_race, disposition) %>%
+  group_by(Name, disposition) %>%
+  summarize(murders=n()) %>% 
+  mutate(percent=murders/sum(murders)*100) %>% 
+  filter(disposition=="Open/No arrest") %>% 
+ggplot() +
+  geom_sf(aes(fill = percent), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Rate of unsolved murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Percent unsolved") +
+  scale_fill_viridis(option="magma", direction=-1)
+
+```
+
+<div id="choro2-hint">
+Remember, to find the percent of something, it's `something/sum(something)*100`.
+</div>
+
+Let's see if we can do the analysis above but for each ethnicity listed in Boston.
+
+Quickly take a look at the **points_in** data frame to look up what variable you want to add.
+
+```{r glimpsed}
+glimpse(points_in)
+```
+
+Now add that variable into the group_by and make a small multiples viz of the map based on that new variable.
+
+```{r choro3, exercise=TRUE, warning=F}
+points_in %>% 
+  group_by(Name, __________, disposition) %>%
   summarize(murders=n()) %>% 
   mutate(percent=murders/sum(murders)*100) %>% 
   filter(disposition=="Open/No arrest") %>% 
@@ -447,27 +602,124 @@ ggplot() +
        caption = "Source: Washington Post",
        fill = "Percent unsolved") +
   scale_fill_viridis(option="magma", direction=-1) +
-  facet_wrap(~victim_race)
+  __________(~_________)
+```
 
+
+
+```{r choro3-check}
+points_in %>% 
+  group_by(Name, victim_race, disposition) %>%
+  summarize(murders=n()) %>% 
+  mutate(percent=murders/sum(murders)*100) %>% 
+  filter(disposition=="Open/No arrest") %>% 
+ggplot() +
+  geom_sf(aes(fill = percent), color=NA) +
+  coord_sf(datum=NA) +
+  labs(title = "Rate of unsolved murders in Boston by neighborhood",
+       subtitle = "Between 2008 and 2018",
+       caption = "Source: Washington Post",
+       fill = "Percent unsolved") +
+  scale_fill_viridis(option="magma", direction=-1) +
+  facet_wrap(~victim_race)
+```
+
+That's a slick-looking graphic.
+
+These are the results as a data frame if you didn't map it:
+
+```{r dataframe}
+points_in %>% 
+  group_by(Name, victim_race, disposition) %>%
+  summarize(murders=n()) %>% 
+  mutate(percent=murders/sum(murders)*100) %>% 
+  filter(disposition=="Open/No arrest") 
 ```
 
 
 ### Add it to an interactive map
 
-Unsolved murders in Black majority neighborhoods.
+One last map.
 
-```{r leaflet2-check}
-black_boston <- boston_race_map %>% 
-  filter(Race.and.or.Ethnicity=="Black/ African American") %>% 
-  filter(Percent.of.Population>43)
+Let's figure out where unsolved murders occurr in context of Black-majority population neighborhoods.
 
-black_boston <- st_as_sf(black_boston, sf_column_name = "geometry")
+I've already loaded the Census tracts with the percent of Black population as the data frame **boston_black_perc**. 
 
+Here's how the polygons look:
+
+```{r tracts}
+ggplot(boston_black_perc) +
+  geom_sf()
+``` 
+
+And here's how the data frame looks:
+
+```{r blackpop}
+glimpse(boston_black_perc)
+```
+
+First, let's create a new data frame that breaks out census tracts where the Black population is the majority.
+
+```{r breakout, exercise=TRUE, warning=F}
+black_boston <- boston_black_perc %>% 
+  filter(__________ > 50)
+
+black_boston
+```
+
+```{r breakout-check}
+black_boston <- boston_black_perc %>% 
+  filter(black_percent > 50)
+
+black_boston
+```
+
+
+### Final map
+
+Alright, I've set up some colors based on "Closed by arrest" and "Open/No arrest".
+
+```
 disp <- colorFactor(c("#ff0000", "#13ED3F"), domain=c("Closed by arrest", "Open/No arrest"))
+```
 
+We're going to create a layered interactive map.
+
+First layer is all the Boston census tracts with a minimal border (**boston_black_perc**).
+
+Second layer is the Black only census tracts with a thicker border (**black_boston**).
+
+The third and final layer are circles representing solved and unsolved murders (the colors are based on the code above).
+
+Then, add a legend.
+
+```{r leaflet2, exercise=TRUE, warning=F}
 leaflet() %>% addProviderTiles("CartoDB.Positron") %>% 
   setView(-71.087010, 42.316240, zoom = 11) %>% 
-    addPolygons(data=boston,
+    add_______(data=________,
+              fillColor = "transparent", 
+              fillOpacity = 0.9, 
+              weight = 1, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    add_______(data=________, 
+              fillColor = "transparent", 
+              fillOpacity = 1, 
+              weight = 3, 
+              smoothFactor = 0.2,
+              color="black") %>% 
+    add_______(data=homicides, ~homicides$lon, ~homicides$lat, popup=homicides$_________,
+               weight = 3, radius=40, color=~______(disposition), stroke = TRUE,
+               fillOpacity = 0.8) %>% 
+    add_______("bottomright", colors= c("#ff0000", "#13ED3F"), 
+              labels=c("Arrest made/Closed", "Open"), title="Disposition") 
+```
+
+
+```{r leaflet2-check}
+leaflet() %>% addProviderTiles("CartoDB.Positron") %>% 
+  setView(-71.087010, 42.316240, zoom = 11) %>% 
+    addPolygons(data=boston_black_perc,
               fillColor = "transparent", 
               fillOpacity = 0.9, 
               weight = 1, 
@@ -482,5 +734,9 @@ leaflet() %>% addProviderTiles("CartoDB.Positron") %>%
     addCircles(data=homicides, ~homicides$lon, ~homicides$lat, popup=homicides$disposition, weight = 3, radius=40, color=~disp(disposition), stroke = TRUE, fillOpacity = 0.8) %>% 
     addLegend("bottomright", colors= c("#ff0000", "#13ED3F"), labels=c("Arrest made/Closed", "Open"), title="Disposition") 
 ```
+
+Congratulations!
+
+You're done with this chapter!
 
 

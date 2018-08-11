@@ -30,7 +30,7 @@ RUN export JAVA_HOME
 # RUN Rscript depends.r
 # COPY start.sh /srv/shiny-server/
 
-RUN R -e "install.packages(c('shiny', 'shinydashboard', 'tidyverse', 'learnr', 'rmarkdown', 'lubridate', 'stringr', 'forcats', 'wesanderson', 'ggrepel'), repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages(c('shiny', 'shinydashboard', 'tidyverse', 'learnr', 'rmarkdown', 'lubridate', 'stringr', 'forcats', 'wesanderson', 'ggrepel', 'viridis', 'leaflet', 'sf'), repos='http://cran.rstudio.com/')"
 
 
 RUN mkdir -p /srv/shiny-server/chapter-1
@@ -64,8 +64,16 @@ RUN mkdir -p /srv/shiny-server/chapter-5
 COPY /chapter-5/index.Rmd /srv/shiny-server/chapter-5
 COPY /chapter-5/index.html /srv/shiny-server/chapter-5
 COPY /chapter-5/_navbar.html /srv/shiny-server/chapter-5
-COPY /chapter-5/bw.rds /srv/shiny-server/chapter-5
+COPY /chapter-5/boston_blacks.rds /srv/shiny-server/chapter-5
+COPY /chapter-5/homicide-data.csv /srv/shiny-server/chapter-5
+COPY /chapter-5/race-and-or-ethnicity.csv /srv/shiny-server/chapter-5
 
+RUN mkdir -p /srv/shiny-server/chapter-5/Boston_Neighborhoods
+COPY /chapter-5/Boston_Neighborhoods/Boston_Neighborhoods.shp /srv/shiny-server/chapter-5/Boston_Neighborhoods
+COPY /chapter-5/Boston_Neighborhoods/Boston_Neighborhoods.cpg /srv/shiny-server/chapter-5/Boston_Neighborhoods
+COPY /chapter-5/Boston_Neighborhoods/Boston_Neighborhoods.prj /srv/shiny-server/chapter-5/Boston_Neighborhoods
+COPY /chapter-5/Boston_Neighborhoods/Boston_Neighborhoods.shx /srv/shiny-server/chapter-5/Boston_Neighborhoods
+COPY /chapter-5/Boston_Neighborhoods/Boston_Neighborhoods.dbf /srv/shiny-server/chapter-5/Boston_Neighborhoods
 
 RUN mkdir -p /srv/shiny-server/chapter-6
 COPY /chapter-6/index.Rmd /srv/shiny-server/chapter-6
