@@ -64,7 +64,7 @@ RUN mkdir -p /srv/shiny-server/chapter-5
 COPY /chapter-5/index.Rmd /srv/shiny-server/chapter-5
 COPY /chapter-5/index.html /srv/shiny-server/chapter-5
 COPY /chapter-5/_navbar.html /srv/shiny-server/chapter-5
-COPY /chapter-5/boston_blacks.rds /srv/shiny-server/chapter-5
+COPY /chapter-5/boston_black.rds /srv/shiny-server/chapter-5
 COPY /chapter-5/homicide-data.csv /srv/shiny-server/chapter-5
 COPY /chapter-5/race-and-or-ethnicity.csv /srv/shiny-server/chapter-5
 
