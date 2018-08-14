@@ -393,7 +393,7 @@ library(wesanderson)
 
 ```{r j_c5, exercise=TRUE, warning=F, message=F}
 movies %>% 
-  filter(director=="Wes Anderson") %>%
+  filter(director_name=="Wes Anderson") %>%
   ggplot(aes(x=fct_reorder(_________,desc(_______)), y=___________, ____=_____________)) +
   geom_bar(___________) +
   __________() +
