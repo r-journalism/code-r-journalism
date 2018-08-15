@@ -178,7 +178,7 @@ It's loaded in your environment as **boston_population**.
 Take a glimpse.
 
 ```{r glimpse2, exercise=TRUE}
-_____(boston_population))
+_____(boston_population)
 ```
 
 ```{r glimpse2-check}
